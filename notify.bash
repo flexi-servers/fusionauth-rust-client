@@ -14,7 +14,7 @@ API_VERSION=$(grep 'version:' "api.yaml" | awk '{print $2}')
 CARGO_VERSION=$(grep -m 1 '^version =' "Cargo.toml" | sed -E 's/version = "(.*)"/\1/')
 
 
-if [ "$API_VERSION" == "$CARGO_VERSION" ]; then
+if [ "$API_VERSION" != "$CARGO_VERSION" ]; then
     curl -X POST -H "Authorization: token $GITHUB_TOKEN" \
          -d "{\"title\": \"New Version $API_VERSION Available\", \"body\": \"A new version of the software is available: $API_VERSION.\", \"assignees\": [\"$ASSIGNEE\"]}" \
          "https://api.github.com/repos/$REPO/issues"
