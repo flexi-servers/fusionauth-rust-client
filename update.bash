@@ -1,9 +1,20 @@
 #!/bin/bash
 
+
 url=https://raw.githubusercontent.com/FusionAuth/fusionauth-openapi/master/openapi.yaml
 echo "Fetching swagger from $url"
 
 curl "$url" --max-time 5 > api.yaml
+
+
+API_VERSION=$(grep 'version:' "api.yaml" | awk '{print $2}')
+CARGO_VERSION=$(grep -m 1 '^version =' "Cargo.toml" | sed -E 's/version = "(.*)"/\1/')
+
+
+if [ "$API_VERSION" == "$CARGO_VERSION" ]; then
+    echo "The versions match."
+    exit 0
+fi
 
 if [ -d "fusionauth" ]; then rm -r fusionauth; fi
 
@@ -17,9 +28,7 @@ docker run --rm -v "${PWD}:/client" openapitools/openapi-generator-cli:v7.1.0 \
     --additional-properties=pubName=fusionauth,pubHomepage=https://flexi-servers.com
 rm api.yaml
 
-cd fusionauth
-cp -r * ../
-cd ..
+cp -r fusionauth/* ../
 rm -rf fusionauth
 rm git_push.sh
 sed -i '' 's/name = "openapi"/name = "fusionauth-rust-client"/' "Cargo.toml"
@@ -43,7 +52,7 @@ else
     git tag "v$version"
     git push origin "v$version"
 
-    cargo publish
+    # cargo publish
 
     echo "Version $version tagged and published."
 fi
