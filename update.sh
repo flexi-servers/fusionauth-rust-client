@@ -26,3 +26,19 @@ sed -i '' 's/name = "openapi"/name = "fusionauth-rust-client"/' "Cargo.toml"
 sed -i '' '/## Installation/,/```/d' "README.md"
 sed -i '' '/openapi = { path = ".\/openapi" }/,/```/d' "README.md"
 
+version=$(grep -m 1 '^version =' "Cargo.toml" | sed -E 's/version = "(.*)"/\1/')
+if [ -z "$version" ]; then
+    echo "Unable to extract the version from Cargo.toml."
+    exit 1
+fi
+
+if git rev-parse "v$version" >/dev/null 2>&1; then
+    echo "Git tag v$version already exists."
+else
+    git tag "v$version"
+    git push origin "v$version"
+
+    cargo publish
+
+    echo "Version $version tagged and published."
+fi
