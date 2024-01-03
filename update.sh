@@ -16,9 +16,13 @@ docker run --rm -v "${PWD}:/client" openapitools/openapi-generator-cli:v7.1.0 \
     -o /client/fusionauth \
     --additional-properties=pubName=fusionauth,pubHomepage=https://flexi-servers.com
 rm api.yaml
+
 cd fusionauth
 cp -r * ../
 cd ..
 rm -rf fusionauth
 rm git_push.sh
 sed -i '' 's/name = "openapi"/name = "fusionauth-rust-client"/' "Cargo.toml"
+sed -i '' '/## Installation/,/```/d' "README.md"
+sed -i '' '/openapi = { path = ".\/openapi" }/,/```/d' "README.md"
+
