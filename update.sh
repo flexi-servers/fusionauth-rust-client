@@ -25,6 +25,8 @@ rm git_push.sh
 sed -i '' 's/name = "openapi"/name = "fusionauth-rust-client"/' "Cargo.toml"
 sed -i '' '/## Installation/,/```/d' "README.md"
 sed -i '' '/openapi = { path = ".\/openapi" }/,/```/d' "README.md"
+sed -i '' 's/license = "Apache2"/license = "Apache-2.0"/' "Cargo.toml"
+
 
 version=$(grep -m 1 '^version =' "Cargo.toml" | sed -E 's/version = "(.*)"/\1/')
 if [ -z "$version" ]; then
