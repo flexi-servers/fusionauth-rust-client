@@ -1,0 +1,56 @@
+# Templates
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**account_edit** | Option<**String**> |  | [optional]
+**account_index** | Option<**String**> |  | [optional]
+**account_two_factor_disable** | Option<**String**> |  | [optional]
+**account_two_factor_enable** | Option<**String**> |  | [optional]
+**account_two_factor_index** | Option<**String**> |  | [optional]
+**account_web_authn_add** | Option<**String**> |  | [optional]
+**account_web_authn_delete** | Option<**String**> |  | [optional]
+**account_web_authn_index** | Option<**String**> |  | [optional]
+**email_complete** | Option<**String**> |  | [optional]
+**email_sent** | Option<**String**> |  | [optional]
+**email_verification_required** | Option<**String**> |  | [optional]
+**email_verify** | Option<**String**> |  | [optional]
+**helpers** | Option<**String**> |  | [optional]
+**index** | Option<**String**> |  | [optional]
+**oauth2_authorize** | Option<**String**> |  | [optional]
+**oauth2_authorized_not_registered** | Option<**String**> |  | [optional]
+**oauth2_child_registration_not_allowed** | Option<**String**> |  | [optional]
+**oauth2_child_registration_not_allowed_complete** | Option<**String**> |  | [optional]
+**oauth2_complete_registration** | Option<**String**> |  | [optional]
+**oauth2_device** | Option<**String**> |  | [optional]
+**oauth2_device_complete** | Option<**String**> |  | [optional]
+**oauth2_error** | Option<**String**> |  | [optional]
+**oauth2_logout** | Option<**String**> |  | [optional]
+**oauth2_passwordless** | Option<**String**> |  | [optional]
+**oauth2_register** | Option<**String**> |  | [optional]
+**oauth2_start_id_p_link** | Option<**String**> |  | [optional]
+**oauth2_two_factor** | Option<**String**> |  | [optional]
+**oauth2_two_factor_enable** | Option<**String**> |  | [optional]
+**oauth2_two_factor_enable_complete** | Option<**String**> |  | [optional]
+**oauth2_two_factor_methods** | Option<**String**> |  | [optional]
+**oauth2_wait** | Option<**String**> |  | [optional]
+**oauth2_web_authn** | Option<**String**> |  | [optional]
+**oauth2_web_authn_reauth** | Option<**String**> |  | [optional]
+**oauth2_web_authn_reauth_enable** | Option<**String**> |  | [optional]
+**password_change** | Option<**String**> |  | [optional]
+**password_complete** | Option<**String**> |  | [optional]
+**password_forgot** | Option<**String**> |  | [optional]
+**password_sent** | Option<**String**> |  | [optional]
+**registration_complete** | Option<**String**> |  | [optional]
+**registration_sent** | Option<**String**> |  | [optional]
+**registration_verification_required** | Option<**String**> |  | [optional]
+**registration_verify** | Option<**String**> |  | [optional]
+**samlv2_logout** | Option<**String**> |  | [optional]
+**unauthorized** | Option<**String**> |  | [optional]
+**email_send** | Option<**String**> |  | [optional]
+**registration_send** | Option<**String**> |  | [optional]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
