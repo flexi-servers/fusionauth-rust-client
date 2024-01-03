@@ -35,6 +35,9 @@ fi
 if git rev-parse "v$version" >/dev/null 2>&1; then
     echo "Git tag v$version already exists."
 else
+    git add .
+    git commit -m "Version $version"
+    git push origin master
     git tag "v$version"
     git push origin "v$version"
 
