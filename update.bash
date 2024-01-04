@@ -64,7 +64,7 @@ else
     git tag "v$version"
     git push origin "v$version"
 
-    # cargo publish
+    cargo publish
 
     echo "Version $version tagged and published."
 fi
