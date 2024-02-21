@@ -36,7 +36,7 @@ impl FusionAuthConnectorConfiguration {
     /// Models the FusionAuth connector.
     pub fn new() -> FusionAuthConnectorConfiguration {
         FusionAuthConnectorConfiguration {
-            data: None: None,
+            data: None,
             debug: None,
             id: None,
             insert_instant: None,

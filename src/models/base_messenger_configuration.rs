@@ -38,7 +38,7 @@ impl BaseMessengerConfiguration {
     /// Do not require a setter for 'type', it is defined by the concrete class and is not mutable
     pub fn new() -> BaseMessengerConfiguration {
         BaseMessengerConfiguration {
-            data: None: None,
+            data: None,
             debug: None,
             id: None,
             insert_instant: None,

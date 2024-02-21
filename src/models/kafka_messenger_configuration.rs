@@ -44,7 +44,7 @@ impl KafkaMessengerConfiguration {
         KafkaMessengerConfiguration {
             default_topic: None,
             producer: None,
-            data: None: None,
+            data: None,
             debug: None,
             id: None,
             insert_instant: None,

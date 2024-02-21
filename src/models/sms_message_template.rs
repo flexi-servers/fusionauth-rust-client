@@ -26,7 +26,7 @@ impl SmsMessageTemplate {
     pub fn new() -> SmsMessageTemplate {
         SmsMessageTemplate {
             default_template: None,
-            localized_templates: None: None,
+            localized_templates: None,
         }
     }
 }

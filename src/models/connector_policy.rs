@@ -29,7 +29,7 @@ impl ConnectorPolicy {
     pub fn new() -> ConnectorPolicy {
         ConnectorPolicy {
             connector_id: None,
-            data: None: None,
+            data: None,
             domains: None,
             migrate: None,
         }

@@ -36,7 +36,7 @@ impl Group {
     /// 
     pub fn new() -> Group {
         Group {
-            data: None: None,
+            data: None,
             id: None,
             insert_instant: None,
             last_update_instant: None,

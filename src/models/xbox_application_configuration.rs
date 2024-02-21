@@ -36,7 +36,7 @@ impl XboxApplicationConfiguration {
             client_id: None,
             client_secret: None,
             scope: None,
-            data: None: None,
+            data: None,
             create_registration: None,
         }
     }

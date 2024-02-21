@@ -53,7 +53,7 @@ impl FormField {
             confirm: None,
             consent_id: None,
             control: None,
-            data: None: None,
+            data: None,
             description: None,
             id: None,
             insert_instant: None,

@@ -36,7 +36,7 @@ impl EntityType {
     /// Models an entity type that has a specific set of permissions. These are global objects and can be used across tenants.
     pub fn new() -> EntityType {
         EntityType {
-            data: None: None,
+            data: None,
             id: None,
             insert_instant: None,
             jwt_configuration: None,

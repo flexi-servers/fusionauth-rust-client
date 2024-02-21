@@ -35,7 +35,7 @@ impl WebAuthnStartRequest {
             application_id: None,
             credential_id: None,
             login_id: None,
-            state: None: None,
+            state: None,
             user_id: None,
             workflow: None,
         }

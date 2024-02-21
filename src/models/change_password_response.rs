@@ -25,7 +25,7 @@ impl ChangePasswordResponse {
     pub fn new() -> ChangePasswordResponse {
         ChangePasswordResponse {
             one_time_password: None,
-            state: None: None,
+            state: None,
         }
     }
 }

@@ -24,7 +24,7 @@ pub struct MetaData {
 impl MetaData {
     pub fn new() -> MetaData {
         MetaData {
-            data: None: None,
+            data: None,
             device: None,
             scopes: None,
         }

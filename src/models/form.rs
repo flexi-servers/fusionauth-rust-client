@@ -36,7 +36,7 @@ impl Form {
     /// 
     pub fn new() -> Form {
         Form {
-            data: None: None,
+            data: None,
             id: None,
             insert_instant: None,
             last_update_instant: None,

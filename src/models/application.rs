@@ -86,7 +86,7 @@ impl Application {
             active: None,
             authentication_token_configuration: None,
             clean_speak_configuration: None,
-            data: None: None,
+            data: None,
             email_configuration: None,
             external_identifier_configuration: None,
             form_configuration: None,

@@ -36,7 +36,7 @@ impl EventInfo {
     /// Information about a user event (login, register, etc) that helps identify the source of the event (location, device type, OS, etc).
     pub fn new() -> EventInfo {
         EventInfo {
-            data: None: None,
+            data: None,
             device_description: None,
             device_name: None,
             device_type: None,

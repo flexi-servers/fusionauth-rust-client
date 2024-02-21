@@ -31,7 +31,7 @@ impl PasswordlessSendRequest {
             application_id: None,
             code: None,
             login_id: None,
-            state: None: None,
+            state: None,
         }
     }
 }

@@ -41,7 +41,7 @@ impl IdentityProviderStartLoginRequest {
             data: None,
             identity_provider_id: None,
             login_id: None,
-            state: None: None,
+            state: None,
             application_id: None,
             ip_address: None,
             meta_data: None,

@@ -25,7 +25,7 @@ impl UserActionOption {
     /// Models content user action options.
     pub fn new() -> UserActionOption {
         UserActionOption {
-            localized_names: None: None,
+            localized_names: None,
             name: None,
         }
     }

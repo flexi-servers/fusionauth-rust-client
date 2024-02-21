@@ -33,7 +33,7 @@ impl OpenIdConnectApplicationConfiguration {
             button_image_url: None,
             button_text: None,
             oauth2: None,
-            data: None: None,
+            data: None,
             create_registration: None,
         }
     }

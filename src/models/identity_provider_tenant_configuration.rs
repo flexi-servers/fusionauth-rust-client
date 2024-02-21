@@ -24,7 +24,7 @@ impl IdentityProviderTenantConfiguration {
     /// 
     pub fn new() -> IdentityProviderTenantConfiguration {
         IdentityProviderTenantConfiguration {
-            data: None: None,
+            data: None,
             limit_user_link_count: None,
         }
     }

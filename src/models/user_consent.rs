@@ -42,7 +42,7 @@ impl UserConsent {
     /// Models a User consent.
     pub fn new() -> UserConsent {
         UserConsent {
-            data: None: None,
+            data: None,
             consent: None,
             consent_id: None,
             giver_user_id: None,

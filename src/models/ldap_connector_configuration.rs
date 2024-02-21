@@ -69,7 +69,7 @@ impl LdapConnectorConfiguration {
             security_method: None,
             system_account_dn: None,
             system_account_password: None,
-            data: None: None,
+            data: None,
             debug: None,
             id: None,
             insert_instant: None,

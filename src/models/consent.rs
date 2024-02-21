@@ -45,9 +45,9 @@ impl Consent {
     /// Models a consent.
     pub fn new() -> Consent {
         Consent {
-            data: None: None,
+            data: None,
             consent_email_template_id: None,
-            country_minimum_age_for_self_consent: None: None,
+            country_minimum_age_for_self_consent: None,
             default_minimum_age_for_self_consent: None,
             email_plus: None,
             id: None,

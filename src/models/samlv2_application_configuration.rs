@@ -30,7 +30,7 @@ impl Samlv2ApplicationConfiguration {
         Samlv2ApplicationConfiguration {
             button_image_url: None,
             button_text: None,
-            data: None: None,
+            data: None,
             create_registration: None,
         }
     }

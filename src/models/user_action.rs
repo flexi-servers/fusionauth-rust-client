@@ -66,7 +66,7 @@ impl UserAction {
             include_email_in_event_json: None,
             insert_instant: None,
             last_update_instant: None,
-            localized_names: None: None,
+            localized_names: None,
             modify_email_template_id: None,
             name: None,
             options: None,

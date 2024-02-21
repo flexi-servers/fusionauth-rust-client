@@ -62,7 +62,7 @@ impl FacebookIdentityProvider {
             fields: None,
             login_method: None,
             permissions: None,
-            data: None: None,
+            data: None,
             application_configuration: None,
             debug: None,
             id: None,

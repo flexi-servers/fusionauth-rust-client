@@ -27,7 +27,7 @@ impl Error {
     pub fn new() -> Error {
         Error {
             code: None,
-            data: None: None,
+            data: None,
             message: None,
         }
     }

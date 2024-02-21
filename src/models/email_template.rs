@@ -60,10 +60,10 @@ impl EmailTemplate {
             id: None,
             insert_instant: None,
             last_update_instant: None,
-            localized_from_names: None: None,
-            localized_html_templates: None: None,
-            localized_subjects: None: None,
-            localized_text_templates: None: None,
+            localized_from_names: None,
+            localized_html_templates: None,
+            localized_subjects: None,
+            localized_text_templates: None,
             name: None,
         }
     }

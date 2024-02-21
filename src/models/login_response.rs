@@ -67,7 +67,7 @@ impl LoginResponse {
             refresh_token: None,
             refresh_token_id: None,
             registration_verification_id: None,
-            state: None: None,
+            state: None,
             threats_detected: None,
             token: None,
             token_expiration_instant: None,

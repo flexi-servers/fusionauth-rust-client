@@ -57,7 +57,7 @@ impl UserRegistration {
     /// User registration information for a single application.
     pub fn new() -> UserRegistration {
         UserRegistration {
-            data: None: None,
+            data: None,
             preferred_languages: None,
             tokens: None,
             application_id: None,

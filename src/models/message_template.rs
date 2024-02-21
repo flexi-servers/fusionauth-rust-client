@@ -34,7 +34,7 @@ impl MessageTemplate {
     /// Stores an message template used to distribute messages;
     pub fn new() -> MessageTemplate {
         MessageTemplate {
-            data: None: None,
+            data: None,
             id: None,
             insert_instant: None,
             last_update_instant: None,

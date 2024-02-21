@@ -54,13 +54,13 @@ impl GenericMessengerConfiguration {
     pub fn new() -> GenericMessengerConfiguration {
         GenericMessengerConfiguration {
             connect_timeout: None,
-            headers: None: None,
+            headers: None,
             http_authentication_password: None,
             http_authentication_username: None,
             read_timeout: None,
             ssl_certificate: None,
             url: None,
-            data: None: None,
+            data: None,
             debug: None,
             id: None,
             insert_instant: None,

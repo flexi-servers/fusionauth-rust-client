@@ -37,13 +37,13 @@ impl AuditLog {
     /// An audit log.
     pub fn new() -> AuditLog {
         AuditLog {
-            data: None: None,
+            data: None,
             id: None,
             insert_instant: None,
             insert_user: None,
             message: None,
-            new_value: None: None,
-            old_value: None: None,
+            new_value: None,
+            old_value: None,
             reason: None,
         }
     }

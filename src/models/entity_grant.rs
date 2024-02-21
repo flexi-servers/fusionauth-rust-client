@@ -38,7 +38,7 @@ impl EntityGrant {
     /// A grant for an entity to a user or another entity.
     pub fn new() -> EntityGrant {
         EntityGrant {
-            data: None: None,
+            data: None,
             entity: None,
             id: None,
             insert_instant: None,

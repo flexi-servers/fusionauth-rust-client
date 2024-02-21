@@ -94,7 +94,7 @@ impl Tenant {
     /// 
     pub fn new() -> Tenant {
         Tenant {
-            data: None: None,
+            data: None,
             access_control_configuration: None,
             captcha_configuration: None,
             configured: None,

@@ -41,7 +41,7 @@ impl RefreshToken {
     pub fn new() -> RefreshToken {
         RefreshToken {
             application_id: None,
-            data: None: None,
+            data: None,
             id: None,
             insert_instant: None,
             meta_data: None,

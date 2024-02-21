@@ -56,7 +56,7 @@ impl TwitchIdentityProvider {
             client_id: None,
             client_secret: None,
             scope: None,
-            data: None: None,
+            data: None,
             application_configuration: None,
             debug: None,
             id: None,

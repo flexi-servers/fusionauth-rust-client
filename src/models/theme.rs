@@ -41,12 +41,12 @@ impl Theme {
     /// 
     pub fn new() -> Theme {
         Theme {
-            data: None: None,
+            data: None,
             default_messages: None,
             id: None,
             insert_instant: None,
             last_update_instant: None,
-            localized_messages: None: None,
+            localized_messages: None,
             name: None,
             stylesheet: None,
             templates: None,

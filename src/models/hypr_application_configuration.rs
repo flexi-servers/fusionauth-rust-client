@@ -30,7 +30,7 @@ impl HyprApplicationConfiguration {
         HyprApplicationConfiguration {
             relying_party_application_id: None,
             relying_party_url: None,
-            data: None: None,
+            data: None,
             create_registration: None,
         }
     }

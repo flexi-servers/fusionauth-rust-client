@@ -39,12 +39,12 @@ impl Jwt {
     /// JSON Web Token (JWT) as defined by RFC 7519.  <pre>  From RFC 7519 Section 1. Introduction:     The suggested pronunciation of JWT is the same as the English word \"jot\".  <pre>  The JWT is not Thread-Safe and should not be re-used.
     pub fn new() -> Jwt {
         Jwt {
-            aud: None: None,
+            aud: None,
             exp: None,
             iat: None,
             iss: None,
             nbf: None,
-            other_claims: None: None,
+            other_claims: None,
             sub: None,
             jti: None,
         }

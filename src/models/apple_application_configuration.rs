@@ -42,7 +42,7 @@ impl AppleApplicationConfiguration {
             scope: None,
             services_id: None,
             team_id: None,
-            data: None: None,
+            data: None,
             create_registration: None,
         }
     }

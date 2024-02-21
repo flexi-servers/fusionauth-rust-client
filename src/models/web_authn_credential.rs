@@ -62,7 +62,7 @@ impl WebAuthnCredential {
             attestation_type: None,
             authenticator_supports_user_verification: None,
             credential_id: None,
-            data: None: None,
+            data: None,
             discoverable: None,
             display_name: None,
             id: None,

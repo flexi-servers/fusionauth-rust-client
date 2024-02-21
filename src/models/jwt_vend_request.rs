@@ -26,7 +26,7 @@ impl JwtVendRequest {
     /// 
     pub fn new() -> JwtVendRequest {
         JwtVendRequest {
-            claims: None: None,
+            claims: None,
             key_id: None,
             time_to_live_in_seconds: None,
         }

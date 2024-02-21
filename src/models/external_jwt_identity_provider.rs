@@ -62,7 +62,7 @@ impl ExternalJwtIdentityProvider {
             header_key_parameter: None,
             oauth2: None,
             unique_identity_claim: None,
-            data: None: None,
+            data: None,
             application_configuration: None,
             debug: None,
             id: None,

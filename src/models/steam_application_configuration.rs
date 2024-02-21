@@ -39,7 +39,7 @@ impl SteamApplicationConfiguration {
             client_id: None,
             scope: None,
             web_api_key: None,
-            data: None: None,
+            data: None,
             create_registration: None,
         }
     }

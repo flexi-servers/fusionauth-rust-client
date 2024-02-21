@@ -59,7 +59,7 @@ impl OpenIdConnectIdentityProvider {
             button_text: None,
             oauth2: None,
             post_request: None,
-            data: None: None,
+            data: None,
             application_configuration: None,
             debug: None,
             id: None,

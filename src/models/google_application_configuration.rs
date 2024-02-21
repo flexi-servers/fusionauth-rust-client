@@ -42,7 +42,7 @@ impl GoogleApplicationConfiguration {
             login_method: None,
             properties: None,
             scope: None,
-            data: None: None,
+            data: None,
             create_registration: None,
         }
     }

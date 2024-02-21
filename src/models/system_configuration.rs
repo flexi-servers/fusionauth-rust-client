@@ -43,7 +43,7 @@ impl SystemConfiguration {
         SystemConfiguration {
             audit_log_configuration: None,
             cors_configuration: None,
-            data: None: None,
+            data: None,
             event_log_configuration: None,
             insert_instant: None,
             last_update_instant: None,

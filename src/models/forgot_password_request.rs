@@ -40,7 +40,7 @@ impl ForgotPasswordRequest {
             change_password_id: None,
             login_id: None,
             send_forgot_password_email: None,
-            state: None: None,
+            state: None,
             email: None,
             username: None,
             event_info: None,

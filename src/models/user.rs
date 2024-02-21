@@ -109,7 +109,7 @@ impl User {
             active: None,
             birth_date: None,
             clean_speak_id: None,
-            data: None: None,
+            data: None,
             email: None,
             expiry: None,
             first_name: None,

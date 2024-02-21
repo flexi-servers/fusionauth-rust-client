@@ -26,7 +26,7 @@ impl BaseIdentityProviderApplicationConfiguration {
     /// 
     pub fn new() -> BaseIdentityProviderApplicationConfiguration {
         BaseIdentityProviderApplicationConfiguration {
-            data: None: None,
+            data: None,
             create_registration: None,
             enabled: None,
         }

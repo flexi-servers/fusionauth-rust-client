@@ -59,7 +59,7 @@ impl SteamIdentityProvider {
             client_id: None,
             scope: None,
             web_api_key: None,
-            data: None: None,
+            data: None,
             application_configuration: None,
             debug: None,
             id: None,

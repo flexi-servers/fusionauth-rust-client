@@ -28,7 +28,7 @@ impl PasswordlessStartRequest {
         PasswordlessStartRequest {
             application_id: None,
             login_id: None,
-            state: None: None,
+            state: None,
         }
     }
 }

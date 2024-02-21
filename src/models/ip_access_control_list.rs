@@ -34,7 +34,7 @@ impl IpAccessControlList {
     /// 
     pub fn new() -> IpAccessControlList {
         IpAccessControlList {
-            data: None: None,
+            data: None,
             entries: None,
             id: None,
             insert_instant: None,

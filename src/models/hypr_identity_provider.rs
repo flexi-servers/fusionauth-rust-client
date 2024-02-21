@@ -50,7 +50,7 @@ impl HyprIdentityProvider {
         HyprIdentityProvider {
             relying_party_application_id: None,
             relying_party_url: None,
-            data: None: None,
+            data: None,
             application_configuration: None,
             debug: None,
             id: None,

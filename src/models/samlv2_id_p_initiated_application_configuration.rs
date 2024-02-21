@@ -24,7 +24,7 @@ impl Samlv2IdPInitiatedApplicationConfiguration {
     /// 
     pub fn new() -> Samlv2IdPInitiatedApplicationConfiguration {
         Samlv2IdPInitiatedApplicationConfiguration {
-            data: None: None,
+            data: None,
             create_registration: None,
         }
     }

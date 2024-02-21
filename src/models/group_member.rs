@@ -33,7 +33,7 @@ impl GroupMember {
     /// A User's membership into a Group
     pub fn new() -> GroupMember {
         GroupMember {
-            data: None: None,
+            data: None,
             group_id: None,
             id: None,
             insert_instant: None,

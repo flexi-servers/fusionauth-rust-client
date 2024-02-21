@@ -53,7 +53,7 @@ impl TwilioMessengerConfiguration {
             from_phone_number: None,
             messaging_service_sid: None,
             url: None,
-            data: None: None,
+            data: None,
             debug: None,
             id: None,
             insert_instant: None,

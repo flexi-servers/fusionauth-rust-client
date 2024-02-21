@@ -36,7 +36,7 @@ impl BaseConnectorConfiguration {
     /// Do not require a setter for 'type', it is defined by the concrete class and is not mutable
     pub fn new() -> BaseConnectorConfiguration {
         BaseConnectorConfiguration {
-            data: None: None,
+            data: None,
             debug: None,
             id: None,
             insert_instant: None,

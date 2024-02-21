@@ -65,7 +65,7 @@ impl NintendoIdentityProvider {
             scope: None,
             unique_id_claim: None,
             username_claim: None,
-            data: None: None,
+            data: None,
             application_configuration: None,
             debug: None,
             id: None,

@@ -35,7 +35,7 @@ impl TwoFactorStartRequest {
             application_id: None,
             code: None,
             login_id: None,
-            state: None: None,
+            state: None,
             trust_challenge: None,
             user_id: None,
         }

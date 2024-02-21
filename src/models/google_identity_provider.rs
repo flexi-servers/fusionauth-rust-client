@@ -62,7 +62,7 @@ impl GoogleIdentityProvider {
             login_method: None,
             properties: None,
             scope: None,
-            data: None: None,
+            data: None,
             application_configuration: None,
             debug: None,
             id: None,

@@ -38,7 +38,7 @@ impl SendRequest {
             bcc_addresses: None,
             cc_addresses: None,
             preferred_languages: None,
-            request_data: None: None,
+            request_data: None,
             to_addresses: None,
             user_ids: None,
         }

@@ -34,7 +34,7 @@ impl FamilyMember {
     /// Models a single family member.
     pub fn new() -> FamilyMember {
         FamilyMember {
-            data: None: None,
+            data: None,
             insert_instant: None,
             last_update_instant: None,
             owner: None,

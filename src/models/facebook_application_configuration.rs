@@ -42,7 +42,7 @@ impl FacebookApplicationConfiguration {
             fields: None,
             login_method: None,
             permissions: None,
-            data: None: None,
+            data: None,
             create_registration: None,
         }
     }

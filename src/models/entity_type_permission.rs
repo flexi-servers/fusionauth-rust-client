@@ -36,7 +36,7 @@ impl EntityTypePermission {
     /// Models a specific entity type permission. This permission can be granted to users or other entities.
     pub fn new() -> EntityTypePermission {
         EntityTypePermission {
-            data: None: None,
+            data: None,
             description: None,
             id: None,
             insert_instant: None,

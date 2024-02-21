@@ -62,7 +62,7 @@ impl AppleIdentityProvider {
             scope: None,
             services_id: None,
             team_id: None,
-            data: None: None,
+            data: None,
             application_configuration: None,
             debug: None,
             id: None,

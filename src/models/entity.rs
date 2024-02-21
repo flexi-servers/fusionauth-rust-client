@@ -42,7 +42,7 @@ impl Entity {
     /// Models an entity that a user can be granted permissions to. Or an entity that can be granted permissions to another entity.
     pub fn new() -> Entity {
         Entity {
-            data: None: None,
+            data: None,
             client_id: None,
             client_secret: None,
             id: None,

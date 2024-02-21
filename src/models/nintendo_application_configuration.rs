@@ -45,7 +45,7 @@ impl NintendoApplicationConfiguration {
             scope: None,
             unique_id_claim: None,
             username_claim: None,
-            data: None: None,
+            data: None,
             create_registration: None,
         }
     }

@@ -44,7 +44,7 @@ impl IdentityProviderLink {
     /// 
     pub fn new() -> IdentityProviderLink {
         IdentityProviderLink {
-            data: None: None,
+            data: None,
             display_name: None,
             identity_provider_id: None,
             identity_provider_name: None,

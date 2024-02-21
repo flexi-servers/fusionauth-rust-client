@@ -24,7 +24,7 @@ impl ExternalJwtApplicationConfiguration {
     /// 
     pub fn new() -> ExternalJwtApplicationConfiguration {
         ExternalJwtApplicationConfiguration {
-            data: None: None,
+            data: None,
             create_registration: None,
         }
     }

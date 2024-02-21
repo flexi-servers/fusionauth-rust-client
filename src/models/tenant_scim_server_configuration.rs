@@ -29,7 +29,7 @@ impl TenantScimServerConfiguration {
     pub fn new() -> TenantScimServerConfiguration {
         TenantScimServerConfiguration {
             client_entity_type_id: None,
-            schemas: None: None,
+            schemas: None,
             server_entity_type_id: None,
             enabled: None,
         }

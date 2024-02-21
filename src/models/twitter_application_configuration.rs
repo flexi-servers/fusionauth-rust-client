@@ -33,7 +33,7 @@ impl TwitterApplicationConfiguration {
             button_text: None,
             consumer_key: None,
             consumer_secret: None,
-            data: None: None,
+            data: None,
             create_registration: None,
         }
     }

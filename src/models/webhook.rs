@@ -58,11 +58,11 @@ impl Webhook {
     pub fn new() -> Webhook {
         Webhook {
             connect_timeout: None,
-            data: None: None,
+            data: None,
             description: None,
             events_enabled: None,
             global: None,
-            headers: None: None,
+            headers: None,
             http_authentication_password: None,
             http_authentication_username: None,
             id: None,

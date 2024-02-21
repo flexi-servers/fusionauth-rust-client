@@ -53,7 +53,7 @@ impl TwitterIdentityProvider {
             button_text: None,
             consumer_key: None,
             consumer_secret: None,
-            data: None: None,
+            data: None,
             application_configuration: None,
             debug: None,
             id: None,

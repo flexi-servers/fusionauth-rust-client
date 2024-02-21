@@ -67,7 +67,7 @@ impl JsonWebKey {
             kid: None,
             kty: None,
             n: None,
-            other: None: None,
+            other: None,
             p: None,
             q: None,
             qi: None,

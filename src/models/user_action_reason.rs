@@ -39,7 +39,7 @@ impl UserActionReason {
             id: None,
             insert_instant: None,
             last_update_instant: None,
-            localized_texts: None: None,
+            localized_texts: None,
             text: None,
         }
     }
