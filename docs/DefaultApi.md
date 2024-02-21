@@ -330,7 +330,7 @@ Name | Type | Description  | Required | Notes
 > activate_reactor_with_id(reactor_request)
 
 
-Activates the FusionAuth Reactor using a license id and optionally a license text (for air-gapped deployments)
+Activates the FusionAuth Reactor using a license Id and optionally a license text (for air-gapped deployments)
 
 ### Parameters
 
@@ -360,14 +360,14 @@ Name | Type | Description  | Required | Notes
 > crate::models::FamilyResponse add_user_to_family_with_id(family_id, x_fusion_auth_tenant_id, family_request)
 
 
-Adds a user to an existing family. The family id must be specified.
+Adds a user to an existing family. The family Id must be specified.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**family_id** | **String** | The id of the family. | [required] |
+**family_id** | **String** | The Id of the family. | [required] |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 **family_request** | Option<[**FamilyRequest**](FamilyRequest.md)> |  |  |
 
@@ -426,7 +426,7 @@ Cancels the user action.
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**action_id** | **String** | The action id of the action to cancel. | [required] |
+**action_id** | **String** | The action Id of the action to cancel. | [required] |
 **action_request** | Option<[**ActionRequest**](ActionRequest.md)> |  |  |
 
 ### Return type
@@ -450,7 +450,7 @@ Name | Type | Description  | Required | Notes
 > change_password_by_identity_with_id(change_password_request)
 
 
-Changes a user's password using their identity (login id and password). Using a loginId instead of the changePasswordId bypasses the email verification and allows a password to be changed directly without first calling the #forgotPassword method.
+Changes a user's password using their identity (loginId and password). Using a loginId instead of the changePasswordId bypasses the email verification and allows a password to be changed directly without first calling the #forgotPassword method.
 
 ### Parameters
 
@@ -496,7 +496,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -526,7 +526,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -587,7 +587,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -617,7 +617,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -754,7 +754,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::ApplicationResponse create_application_role(application_id, x_fusion_auth_tenant_id, application_request)
 
 
-Creates a new role for an application. You must specify the id of the application you are creating the role for. You can optionally specify an Id for the role inside the ApplicationRole object itself, if not provided one will be generated.
+Creates a new role for an application. You must specify the Id of the application you are creating the role for. You can optionally specify an Id for the role inside the ApplicationRole object itself, if not provided one will be generated.
 
 ### Parameters
 
@@ -786,7 +786,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::ApplicationResponse create_application_role_with_id(application_id, role_id, x_fusion_auth_tenant_id, application_request)
 
 
-Creates a new role for an application. You must specify the id of the application you are creating the role for. You can optionally specify an Id for the role inside the ApplicationRole object itself, if not provided one will be generated.
+Creates a new role for an application. You must specify the Id of the application you are creating the role for. You can optionally specify an Id for the role inside the ApplicationRole object itself, if not provided one will be generated.
 
 ### Parameters
 
@@ -1129,7 +1129,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::EntityTypeResponse create_entity_type_permission(entity_type_id, entity_type_request)
 
 
-Creates a new permission for an entity type. You must specify the id of the entity type you are creating the permission for. You can optionally specify an Id for the permission inside the EntityTypePermission object itself, if not provided one will be generated.
+Creates a new permission for an entity type. You must specify the Id of the entity type you are creating the permission for. You can optionally specify an Id for the permission inside the EntityTypePermission object itself, if not provided one will be generated.
 
 ### Parameters
 
@@ -1160,7 +1160,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::EntityTypeResponse create_entity_type_permission_with_id(entity_type_id, permission_id, entity_type_request)
 
 
-Creates a new permission for an entity type. You must specify the id of the entity type you are creating the permission for. You can optionally specify an Id for the permission inside the EntityTypePermission object itself, if not provided one will be generated.
+Creates a new permission for an entity type. You must specify the Id of the entity type you are creating the permission for. You can optionally specify an Id for the permission inside the EntityTypePermission object itself, if not provided one will be generated.
 
 ### Parameters
 
@@ -1255,7 +1255,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::FamilyResponse create_family(x_fusion_auth_tenant_id, family_request)
 
 
-Creates a family with the user id in the request as the owner and sole member of the family. You can optionally specify an id for the family, if not provided one will be generated.
+Creates a family with the user Id in the request as the owner and sole member of the family. You can optionally specify an Id for the family, if not provided one will be generated.
 
 ### Parameters
 
@@ -1286,14 +1286,14 @@ Name | Type | Description  | Required | Notes
 > crate::models::FamilyResponse create_family_with_id(family_id, x_fusion_auth_tenant_id, family_request)
 
 
-Creates a family with the user id in the request as the owner and sole member of the family. You can optionally specify an id for the family, if not provided one will be generated.
+Creates a family with the user Id in the request as the owner and sole member of the family. You can optionally specify an Id for the family, if not provided one will be generated.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**family_id** | **String** | The id for the family. If not provided a secure random UUID will be generated. | [required] |
+**family_id** | **String** | The Id for the family. If not provided a secure random UUID will be generated. | [required] |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 **family_request** | Option<[**FamilyRequest**](FamilyRequest.md)> |  |  |
 
@@ -1594,7 +1594,7 @@ Name | Type | Description  | Required | Notes
 > serde_json::Value create_introspect()
 
 
-Inspect an access token issued as the result of the User based grant such as the Authorization Code Grant, Implicit Grant, the User Credentials Grant or the Refresh Grant. OR Inspect an access token issued as the result of the Client Credentials Grant.
+Inspect an access token issued as the result of the Client Credentials Grant. OR Inspect an access token issued as the result of the User based grant such as the Authorization Code Grant, Implicit Grant, the User Credentials Grant or the Refresh Grant.
 
 ### Parameters
 
@@ -1606,7 +1606,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -1760,7 +1760,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -2021,7 +2021,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::AccessToken create_token()
 
 
-Exchanges an OAuth authorization code and code_verifier for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint and a code_verifier for an access token. OR Make a Client Credentials grant request to obtain an access token. OR Exchange a Refresh Token for an Access Token. If you will be using the Refresh Token Grant, you will make a request to the Token endpoint to exchange the user’s refresh token for an access token. OR Exchange User Credentials for a Token. If you will be using the Resource Owner Password Credential Grant, you will make a request to the Token endpoint to exchange the user’s email and password for an access token. OR Exchanges an OAuth authorization code for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint for an access token.
+Exchange a Refresh Token for an Access Token. If you will be using the Refresh Token Grant, you will make a request to the Token endpoint to exchange the user’s refresh token for an access token. OR Exchange User Credentials for a Token. If you will be using the Resource Owner Password Credential Grant, you will make a request to the Token endpoint to exchange the user’s email and password for an access token. OR Exchanges an OAuth authorization code and code_verifier for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint and a code_verifier for an access token. OR Exchanges an OAuth authorization code for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint for an access token. OR Make a Client Credentials grant request to obtain an access token.
 
 ### Parameters
 
@@ -2033,7 +2033,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -2906,18 +2906,18 @@ Name | Type | Description  | Required | Notes
 
 ## delete_jwt_refresh
 
-> delete_jwt_refresh(user_id, application_id, token, refresh_token_revoke_request)
+> delete_jwt_refresh(application_id, user_id, token, refresh_token_revoke_request)
 
 
-Revoke all refresh tokens that belong to a user by user Id. OR Revoke all refresh tokens that belong to a user by user Id for a specific application by applicationId. OR Revoke all refresh tokens that belong to an application by applicationId. OR Revokes refresh tokens using the information in the JSON body. The handling for this method is the same as the revokeRefreshToken method and is based on the information you provide in the RefreshDeleteRequest object. See that method for additional information. OR Revokes a single refresh token by using the actual refresh token value. This refresh token value is sensitive, so  be careful with this API request. OR Revokes refresh tokens.  Usage examples:   - Delete a single refresh token, pass in only the token.       revokeRefreshToken(token)    - Delete all refresh tokens for a user, pass in only the userId.       revokeRefreshToken(null, userId)    - Delete all refresh tokens for a user for a specific application, pass in both the userId and the applicationId.       revokeRefreshToken(null, userId, applicationId)    - Delete all refresh tokens for an application       revokeRefreshToken(null, null, applicationId)  Note: <code>null</code> may be handled differently depending upon the programming language.  See also: (method names may vary by language... but you'll figure it out)   - revokeRefreshTokenById  - revokeRefreshTokenByToken  - revokeRefreshTokensByUserId  - revokeRefreshTokensByApplicationId  - revokeRefreshTokensByUserIdForApplication
+Revokes refresh tokens using the information in the JSON body. The handling for this method is the same as the revokeRefreshToken method and is based on the information you provide in the RefreshDeleteRequest object. See that method for additional information. OR Revoke all refresh tokens that belong to an application by applicationId. OR Revoke all refresh tokens that belong to a user by user Id. OR Revokes a single refresh token by using the actual refresh token value. This refresh token value is sensitive, so  be careful with this API request. OR Revoke all refresh tokens that belong to a user by user Id for a specific application by applicationId. OR Revokes refresh tokens.  Usage examples:   - Delete a single refresh token, pass in only the token.       revokeRefreshToken(token)    - Delete all refresh tokens for a user, pass in only the userId.       revokeRefreshToken(null, userId)    - Delete all refresh tokens for a user for a specific application, pass in both the userId and the applicationId.       revokeRefreshToken(null, userId, applicationId)    - Delete all refresh tokens for an application       revokeRefreshToken(null, null, applicationId)  Note: <code>null</code> may be handled differently depending upon the programming language.  See also: (method names may vary by language... but you'll figure it out)   - revokeRefreshTokenById  - revokeRefreshTokenByToken  - revokeRefreshTokensByUserId  - revokeRefreshTokensByApplicationId  - revokeRefreshTokensByUserIdForApplication
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**application_id** | Option<**String**> | The unique Id of the application that you want to delete all refresh tokens for. |  |
 **user_id** | Option<**String**> | The unique Id of the user that you want to delete all refresh tokens for. |  |
-**application_id** | Option<**String**> | The unique Id of the application that you want to delete refresh tokens for. |  |
 **token** | Option<**String**> | The refresh token to delete. |  |
 **refresh_token_revoke_request** | Option<[**RefreshTokenRevokeRequest**](RefreshTokenRevokeRequest.md)> |  |  |
 
@@ -3059,10 +3059,10 @@ Name | Type | Description  | Required | Notes
 
 ## delete_tenant_with_id
 
-> delete_tenant_with_id(tenant_id, x_fusion_auth_tenant_id, r#async, tenant_delete_request)
+> delete_tenant_with_id(tenant_id, r#async, x_fusion_auth_tenant_id, tenant_delete_request)
 
 
-Deletes the tenant based on the given Id on the URL. This permanently deletes all information, metrics, reports and data associated with the tenant and everything under the tenant (applications, users, etc). OR Deletes the tenant for the given Id asynchronously. This method is helpful if you do not want to wait for the delete operation to complete. OR Deletes the tenant based on the given request (sent to the API as JSON). This permanently deletes all information, metrics, reports and data associated with the tenant and everything under the tenant (applications, users, etc).
+Deletes the tenant for the given Id asynchronously. This method is helpful if you do not want to wait for the delete operation to complete. OR Deletes the tenant based on the given request (sent to the API as JSON). This permanently deletes all information, metrics, reports and data associated with the tenant and everything under the tenant (applications, users, etc). OR Deletes the tenant based on the given Id on the URL. This permanently deletes all information, metrics, reports and data associated with the tenant and everything under the tenant (applications, users, etc).
 
 ### Parameters
 
@@ -3070,8 +3070,8 @@ Deletes the tenant based on the given Id on the URL. This permanently deletes al
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **tenant_id** | **String** | The Id of the tenant to delete. | [required] |
-**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 **r#async** | Option<**String**> |  |  |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 **tenant_delete_request** | Option<[**TenantDeleteRequest**](TenantDeleteRequest.md)> |  |  |
 
 ### Return type
@@ -3252,7 +3252,7 @@ Name | Type | Description  | Required | Notes
 > delete_user_registration_with_id(user_id, application_id, x_fusion_auth_tenant_id, registration_delete_request)
 
 
-Deletes the user registration for the given user and application. OR Deletes the user registration for the given user and application along with the given JSON body that contains the event information.
+Deletes the user registration for the given user and application along with the given JSON body that contains the event information. OR Deletes the user registration for the given user and application.
 
 ### Parameters
 
@@ -3318,14 +3318,14 @@ Name | Type | Description  | Required | Notes
 > delete_user_with_id(user_id, x_fusion_auth_tenant_id, hard_delete, user_delete_single_request)
 
 
-Deletes the user based on the given request (sent to the API as JSON). This permanently deletes all information, metrics, reports and data associated with the user. OR Deletes the user for the given Id. This permanently deletes all information, metrics, reports and data associated with the user. OR Deactivates the user with the given Id.
+Deactivates the user with the given Id. OR Deletes the user for the given Id. This permanently deletes all information, metrics, reports and data associated with the user. OR Deletes the user based on the given request (sent to the API as JSON). This permanently deletes all information, metrics, reports and data associated with the user.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**user_id** | **String** | The Id of the user to delete (required). | [required] |
+**user_id** | **String** | The Id of the user to deactivate. | [required] |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 **hard_delete** | Option<**String**> |  |  |
 **user_delete_single_request** | Option<[**UserDeleteSingleRequest**](UserDeleteSingleRequest.md)> |  |  |
@@ -3457,7 +3457,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -3605,7 +3605,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 
@@ -3636,7 +3636,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -3818,7 +3818,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 
@@ -4004,7 +4004,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -4019,7 +4019,7 @@ No authorization required
 > crate::models::ApplicationResponse patch_application_role_with_id(application_id, role_id, x_fusion_auth_tenant_id, application_request)
 
 
-Updates, via PATCH, the application role with the given id for the application.
+Updates, via PATCH, the application role with the given Id for the application.
 
 ### Parameters
 
@@ -4396,7 +4396,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::RegistrationResponse patch_registration_with_id(user_id, x_fusion_auth_tenant_id, registration_request)
 
 
-Updates, via PATCH, the registration for the user with the given id and the application defined in the request.
+Updates, via PATCH, the registration for the user with the given Id and the application defined in the request.
 
 ### Parameters
 
@@ -4662,7 +4662,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -4677,7 +4677,7 @@ No authorization required
 > crate::models::RegistrationResponse register(x_fusion_auth_tenant_id, registration_request)
 
 
-Registers a user for an application. If you provide the User and the UserRegistration object on this request, it will create the user as well as register them for the application. This is called a Full Registration. However, if you only provide the UserRegistration object, then the user must already exist and they will be registered for the application. The user id can also be provided and it will either be used to look up an existing user or it will be used for the newly created User.
+Registers a user for an application. If you provide the User and the UserRegistration object on this request, it will create the user as well as register them for the application. This is called a Full Registration. However, if you only provide the UserRegistration object, then the user must already exist and they will be registered for the application. The user Id can also be provided and it will either be used to look up an existing user or it will be used for the newly created User.
 
 ### Parameters
 
@@ -4708,7 +4708,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::RegistrationResponse register_with_id(user_id, x_fusion_auth_tenant_id, registration_request)
 
 
-Registers a user for an application. If you provide the User and the UserRegistration object on this request, it will create the user as well as register them for the application. This is called a Full Registration. However, if you only provide the UserRegistration object, then the user must already exist and they will be registered for the application. The user id can also be provided and it will either be used to look up an existing user or it will be used for the newly created User.
+Registers a user for an application. If you provide the User and the UserRegistration object on this request, it will create the user as well as register them for the application. This is called a Full Registration. However, if you only provide the UserRegistration object, then the user must already exist and they will be registered for the application. The user Id can also be provided and it will either be used to look up an existing user or it will be used for the newly created User.
 
 ### Parameters
 
@@ -4777,8 +4777,8 @@ Removes a user from the family with the given id.
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**family_id** | **String** | The id of the family to remove the user from. | [required] |
-**user_id** | **String** | The id of the user to remove from the family. | [required] |
+**family_id** | **String** | The Id of the family to remove the user from. | [required] |
+**user_id** | **String** | The Id of the user to remove from the family. | [required] |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 
 ### Return type
@@ -4859,18 +4859,18 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_application
 
-> crate::models::ApplicationResponse retrieve_application(x_fusion_auth_tenant_id, inactive)
+> crate::models::ApplicationResponse retrieve_application(inactive, x_fusion_auth_tenant_id)
 
 
-Retrieves the application for the given id or all the applications if the id is null. OR Retrieves all the applications that are currently inactive.
+Retrieves all the applications that are currently inactive. OR Retrieves the application for the given Id or all the applications if the Id is null.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 **inactive** | Option<**String**> |  |  |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 
 ### Return type
 
@@ -4893,7 +4893,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::ApplicationResponse retrieve_application_with_id(application_id, x_fusion_auth_tenant_id)
 
 
-Retrieves the application for the given id or all the applications if the id is null.
+Retrieves the application for the given Id or all the applications if the Id is null.
 
 ### Parameters
 
@@ -5469,19 +5469,19 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_identity_provider_link
 
-> crate::models::IdentityProviderLinkResponse retrieve_identity_provider_link(identity_provider_id, identity_provider_user_id, user_id)
+> crate::models::IdentityProviderLinkResponse retrieve_identity_provider_link(identity_provider_id, user_id, identity_provider_user_id)
 
 
-Retrieve a single Identity Provider user (link). OR Retrieve all Identity Provider users (links) for the user. Specify the optional identityProviderId to retrieve links for a particular IdP.
+Retrieve all Identity Provider users (links) for the user. Specify the optional identityProviderId to retrieve links for a particular IdP. OR Retrieve a single Identity Provider user (link).
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**identity_provider_id** | Option<**String**> | The unique Id of the identity provider. |  |
+**identity_provider_id** | Option<**String**> | The unique Id of the identity provider. Specify this value to reduce the links returned to those for a particular IdP. |  |
+**user_id** | Option<**String**> | The unique Id of the user. |  |
 **identity_provider_user_id** | Option<**String**> | The unique Id of the user in the 3rd party identity provider. |  |
-**user_id** | Option<**String**> | The unique Id of the FusionAuth user. |  |
 
 ### Return type
 
@@ -5504,7 +5504,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::IdentityProviderResponse retrieve_identity_provider_with_id(identity_provider_id)
 
 
-Retrieves the identity provider for the given id or all the identity providers if the id is null.
+Retrieves the identity provider for the given Id or all the identity providers if the Id is null.
 
 ### Parameters
 
@@ -5576,7 +5576,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -5607,7 +5607,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -5931,7 +5931,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -5958,7 +5958,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -5988,7 +5988,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -6183,7 +6183,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::RegistrationResponse retrieve_registration_with_id(user_id, application_id, x_fusion_auth_tenant_id)
 
 
-Retrieves the user registration for the user with the given id and the given application id.
+Retrieves the user registration for the user with the given Id and the given application id.
 
 ### Parameters
 
@@ -6212,10 +6212,10 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_report_login
 
-> crate::models::LoginReportResponse retrieve_report_login(application_id, start, end, user_id, login_id)
+> crate::models::LoginReportResponse retrieve_report_login(application_id, login_id, start, end, user_id)
 
 
-Retrieves the login report between the two instants. If you specify an application id, it will only return the login counts for that application. OR Retrieves the login report between the two instants for a particular user by Id. If you specify an application id, it will only return the login counts for that application. OR Retrieves the login report between the two instants for a particular user by login Id. If you specify an application id, it will only return the login counts for that application.
+Retrieves the login report between the two instants for a particular user by login Id. If you specify an application id, it will only return the login counts for that application. OR Retrieves the login report between the two instants for a particular user by Id. If you specify an application id, it will only return the login counts for that application. OR Retrieves the login report between the two instants. If you specify an application id, it will only return the login counts for that application.
 
 ### Parameters
 
@@ -6223,10 +6223,10 @@ Retrieves the login report between the two instants. If you specify an applicati
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **application_id** | Option<**String**> | The application id. |  |
+**login_id** | Option<**String**> | The userId id. |  |
 **start** | Option<**String**> | The start instant as UTC milliseconds since Epoch. |  |
 **end** | Option<**String**> | The end instant as UTC milliseconds since Epoch. |  |
 **user_id** | Option<**String**> | The userId id. |  |
-**login_id** | Option<**String**> | The userId id. |  |
 
 ### Return type
 
@@ -6396,20 +6396,20 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_user
 
-> crate::models::UserResponse retrieve_user(username, x_fusion_auth_tenant_id, verification_id, change_password_id, email, login_id)
+> crate::models::UserResponse retrieve_user(x_fusion_auth_tenant_id, change_password_id, verification_id, username, email, login_id)
 
 
-Retrieves the user for the given username. OR Retrieves the user by a verificationId. The intended use of this API is to retrieve a user after the forgot password workflow has been initiated and you may not know the user's email or username. OR Retrieves the user by a change password Id. The intended use of this API is to retrieve a user after the forgot password workflow has been initiated and you may not know the user's email or username. OR Retrieves the user for the given Id. This method does not use an API key, instead it uses a JSON Web Token (JWT) for authentication. OR Retrieves the user for the given email. OR Retrieves the user for the loginId. The loginId can be either the username or the email.
+Retrieves the user for the given Id. This method does not use an API key, instead it uses a JSON Web Token (JWT) for authentication. OR Retrieves the user by a change password Id. The intended use of this API is to retrieve a user after the forgot password workflow has been initiated and you may not know the user's email or username. OR Retrieves the user by a verificationId. The intended use of this API is to retrieve a user after the forgot password workflow has been initiated and you may not know the user's email or username. OR Retrieves the user for the given username. OR Retrieves the user for the given email. OR Retrieves the user for the loginId. The loginId can be either the username or the email.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**username** | Option<**String**> | The username of the user. |  |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
-**verification_id** | Option<**String**> | The unique verification Id that has been set on the user object. |  |
 **change_password_id** | Option<**String**> | The unique change password Id that was sent via email or returned by the Forgot Password API. |  |
+**verification_id** | Option<**String**> | The unique verification Id that has been set on the user object. |  |
+**username** | Option<**String**> | The username of the user. |  |
 **email** | Option<**String**> | The email of the user. |  |
 **login_id** | Option<**String**> | The email or username of the user. |  |
 
@@ -6419,7 +6419,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth)
+[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 
@@ -6550,10 +6550,10 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_user_actioning
 
-> crate::models::ActionResponse retrieve_user_actioning(user_id, preventing_login, active)
+> crate::models::ActionResponse retrieve_user_actioning(user_id, active, preventing_login)
 
 
-Retrieves all the actions for the user with the given Id that are currently preventing the User from logging in. OR Retrieves all the actions for the user with the given Id. This will return all time based actions that are active, and inactive as well as non-time based actions. OR Retrieves all the actions for the user with the given Id that are currently active. An active action means one that is time based and has not been canceled, and has not ended. OR Retrieves all the actions for the user with the given Id that are currently inactive. An inactive action means one that is time based and has been canceled or has expired, or is not time based.
+Retrieves all the actions for the user with the given Id. This will return all time based actions that are active, and inactive as well as non-time based actions. OR Retrieves all the actions for the user with the given Id that are currently inactive. An inactive action means one that is time based and has been canceled or has expired, or is not time based. OR Retrieves all the actions for the user with the given Id that are currently active. An active action means one that is time based and has not been canceled, and has not ended. OR Retrieves all the actions for the user with the given Id that are currently preventing the User from logging in.
 
 ### Parameters
 
@@ -6561,8 +6561,8 @@ Retrieves all the actions for the user with the given Id that are currently prev
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **user_id** | Option<**String**> | The Id of the user to fetch the actions for. |  |
-**preventing_login** | Option<**String**> |  |  |
 **active** | Option<**String**> |  |  |
+**preventing_login** | Option<**String**> |  |  |
 
 ### Return type
 
@@ -6585,7 +6585,7 @@ Name | Type | Description  | Required | Notes
 > retrieve_user_change_password(login_id)
 
 
-Check to see if the user must obtain a Trust Request Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Request Id by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API. OR Check to see if the user must obtain a Trust Token Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Token by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API.
+Check to see if the user must obtain a Trust Token Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Token by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API. OR Check to see if the user must obtain a Trust Request Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Request Id by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API.
 
 ### Parameters
 
@@ -6600,7 +6600,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-[ApiKeyAuth](../README.md#ApiKeyAuth)
+[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 
@@ -6718,7 +6718,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 
@@ -7120,7 +7120,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::EntitySearchResponse search_entities_by_ids_with_id(ids)
 
 
-Retrieves the entities for the given ids. If any id is invalid, it is ignored.
+Retrieves the entities for the given ids. If any Id is invalid, it is ignored.
 
 ### Parameters
 
@@ -7570,7 +7570,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::SearchResponse search_users_by_ids_with_id(ids)
 
 
-Retrieves the users for the given ids. If any id is invalid, it is ignored.
+Retrieves the users for the given ids. If any Id is invalid, it is ignored.
 
 ### Parameters
 
@@ -7667,7 +7667,7 @@ Send an email using an email template id. You can optionally provide <code>reque
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**email_template_id** | **String** | The id for the template. | [required] |
+**email_template_id** | **String** | The Id for the template. | [required] |
 **send_request** | Option<[**SendRequest**](SendRequest.md)> |  |  |
 
 ### Return type
@@ -7736,7 +7736,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -7797,7 +7797,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -7977,7 +7977,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -8023,7 +8023,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::ApplicationResponse update_application_role_with_id(application_id, role_id, x_fusion_auth_tenant_id, application_request)
 
 
-Updates the application role with the given id for the application.
+Updates the application role with the given Id for the application.
 
 ### Parameters
 
@@ -8053,19 +8053,19 @@ Name | Type | Description  | Required | Notes
 
 ## update_application_with_id
 
-> crate::models::ApplicationResponse update_application_with_id(application_id, x_fusion_auth_tenant_id, reactivate, application_request)
+> crate::models::ApplicationResponse update_application_with_id(application_id, reactivate, x_fusion_auth_tenant_id, application_request)
 
 
-Updates the application with the given Id. OR Reactivates the application with the given Id.
+Reactivates the application with the given Id. OR Updates the application with the given Id.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**application_id** | **String** | The Id of the application to update. | [required] |
-**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**application_id** | **String** | The Id of the application to reactivate. | [required] |
 **reactivate** | Option<**String**> |  |  |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 **application_request** | Option<[**ApplicationRequest**](ApplicationRequest.md)> |  |  |
 
 ### Return type
@@ -8184,7 +8184,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::EntityTypeResponse update_entity_type_permission_with_id(entity_type_id, permission_id, entity_type_request)
 
 
-Updates the permission with the given id for the entity type.
+Updates the permission with the given Id for the entity type.
 
 ### Parameters
 
@@ -8619,7 +8619,7 @@ Name | Type | Description  | Required | Notes
 > crate::models::RegistrationResponse update_registration_with_id(user_id, x_fusion_auth_tenant_id, registration_request)
 
 
-Updates the registration for the user with the given id and the application defined in the request.
+Updates the registration for the user with the given Id and the application defined in the request.
 
 ### Parameters
 
@@ -8836,10 +8836,10 @@ Name | Type | Description  | Required | Notes
 
 ## update_user_verify_email
 
-> crate::models::VerifyEmailResponse update_user_verify_email(email, application_id, send_verify_email)
+> crate::models::VerifyEmailResponse update_user_verify_email(email, send_verify_email, application_id)
 
 
-Re-sends the verification email to the user. OR Re-sends the verification email to the user. If the Application has configured a specific email template this will be used instead of the tenant configuration. OR Generate a new Email Verification Id to be used with the Verify Email API. This API will not attempt to send an email to the User. This API may be used to collect the verificationId for use with a third party system.
+Generate a new Email Verification Id to be used with the Verify Email API. This API will not attempt to send an email to the User. This API may be used to collect the verificationId for use with a third party system. OR Re-sends the verification email to the user. If the Application has configured a specific email template this will be used instead of the tenant configuration. OR Re-sends the verification email to the user.
 
 ### Parameters
 
@@ -8847,8 +8847,8 @@ Re-sends the verification email to the user. OR Re-sends the verification email 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **email** | Option<**String**> | The email address of the user that needs a new verification email. |  |
-**application_id** | Option<**String**> | The unique Application Id to used to resolve an application specific email template. |  |
 **send_verify_email** | Option<**String**> |  |  |
+**application_id** | Option<**String**> | The unique Application Id to used to resolve an application specific email template. |  |
 
 ### Return type
 
@@ -8900,19 +8900,19 @@ Name | Type | Description  | Required | Notes
 
 ## update_user_with_id
 
-> crate::models::UserResponse update_user_with_id(user_id, reactivate, x_fusion_auth_tenant_id, user_request)
+> crate::models::UserResponse update_user_with_id(user_id, x_fusion_auth_tenant_id, reactivate, user_request)
 
 
-Reactivates the user with the given Id. OR Updates the user with the given Id.
+Updates the user with the given Id. OR Reactivates the user with the given Id.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**user_id** | **String** | The Id of the user to reactivate. | [required] |
-**reactivate** | Option<**String**> |  |  |
+**user_id** | **String** | The Id of the user to update. | [required] |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**reactivate** | Option<**String**> |  |  |
 **user_request** | Option<[**UserRequest**](UserRequest.md)> |  |  |
 
 ### Return type
@@ -9015,7 +9015,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -9042,7 +9042,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BearerAuth](../README.md#BearerAuth)
 
 ### HTTP request headers
 
@@ -9102,7 +9102,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-No authorization required
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 

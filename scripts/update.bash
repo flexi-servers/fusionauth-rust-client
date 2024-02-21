@@ -1,26 +1,25 @@
 #!/bin/bash
 
-
-url=https://raw.githubusercontent.com/FusionAuth/fusionauth-openapi/master/openapi.yaml
-echo "Fetching swagger from $url"
-
-curl "$url" --max-time 5 > api.yaml
-
-
-API_VERSION=$(grep 'version:' "api.yaml" | awk '{print $2}')
-CARGO_VERSION=$(grep -m 1 '^version =' "Cargo.toml" | sed -E 's/version = "(.*)"/\1/')
-
-
-if [ "$API_VERSION" != "$CARGO_VERSION" ]; then
-    echo "The versions match."
-    exit 0
+# check if $PWD ends with scritps
+if [[ $PWD != *scripts ]]; then
+    echo "This script should be executed from the scripts directory."
+    exit 1
 fi
+
+# Input, if the version should be released
+read -p "Update api.yaml? (y/n) " -n 1 -r update_api
+
+if [[ $update_api =~ ^[Yy]$ ]]; then
+    ./get_openapi.bash
+fi
+
+cd ..
 
 if [ -d "fusionauth" ]; then rm -r fusionauth; fi
 
 mkdir fusionauth
 
-docker run --rm -v "${PWD}:/client" openapitools/openapi-generator-cli:v7.1.0 \
+docker run --rm -v "${PWD}:/client" openapitools/openapi-generator-cli:latest \
     generate \
     -i /client/api.yaml \
     -g rust \
@@ -54,6 +53,25 @@ if [ -z "$version" ]; then
     echo "Unable to extract the version from Cargo.toml."
     exit 1
 fi
+
+# Inuput override version
+read -p "Override version $version? (y/n) " -n 1 -r override_version
+
+if [[ $override_version =~ ^[Yy]$ ]]; then
+    read -p "Enter version: " version
+    # Update version in Cargo.toml
+    sed -i '' "s/^version = .*/version = \"$version\"/" "Cargo.toml"
+fi
+
+# Input, if the version should be released
+read -p "Release version $version? (y/n) " -n 1 -r release_version
+
+if [[ $release_version =~ ^[Yy]$ ]]; then
+    echo "Releasing version $version."
+else
+    exit 0
+fi
+
 
 if git rev-parse "v$version" >/dev/null 2>&1; then
     echo "Git tag v$version already exists."

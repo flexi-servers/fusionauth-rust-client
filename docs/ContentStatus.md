@@ -1,9 +1,13 @@
 # ContentStatus
 
-## Properties
+## Enum Variants
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+| Name | Value |
+|---- | -----|
+| Active | ACTIVE |
+| Pending | PENDING |
+| Rejected | REJECTED |
+
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

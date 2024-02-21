@@ -11,7 +11,7 @@ echo "Fetching swagger from $url"
 curl "$url" --max-time 5 > api.yaml
 
 API_VERSION=$(grep 'version:' "api.yaml" | awk '{print $2}')
-CARGO_VERSION=$(grep -m 1 '^version =' "Cargo.toml" | sed -E 's/version = "(.*)"/\1/')
+CARGO_VERSION=$(grep 'version:' "api_version.yaml" | awk '{print $2}')
 
 
 if [ "$API_VERSION" != "$CARGO_VERSION" ]; then
