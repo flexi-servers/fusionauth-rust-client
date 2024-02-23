@@ -18,4 +18,4 @@ jobs:
       - name: Run Script to Check Version and Create Issue
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: bash ./notify.bash
+        run: bash scripts/notify.bash
