@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **next_results** | Option<**String**> |  | [optional]
 **query** | Option<**String**> |  | [optional]
 **query_string** | Option<**String**> |  | [optional]
-**sort_fields** | Option<[**Vec<crate::models::SortField>**](SortField.md)> |  | [optional]
+**sort_fields** | Option<[**Vec<models::SortField>**](SortField.md)> |  | [optional]
 **number_of_results** | Option<**i32**> |  | [optional]
 **order_by** | Option<**String**> |  | [optional]
 **start_row** | Option<**i32**> |  | [optional]

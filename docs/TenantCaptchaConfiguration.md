@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**captcha_method** | Option<[**crate::models::CaptchaMethod**](CaptchaMethod.md)> |  | [optional]
+**captcha_method** | Option<[**models::CaptchaMethod**](CaptchaMethod.md)> |  | [optional]
 **secret_key** | Option<**String**> |  | [optional]
 **site_key** | Option<**String**> |  | [optional]
 **threshold** | Option<**f64**> |  | [optional]

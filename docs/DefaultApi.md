@@ -297,7 +297,7 @@ Method | HTTP request | Description
 
 ## action_user_with_id
 
-> crate::models::ActionResponse action_user_with_id(action_request)
+> models::ActionResponse action_user_with_id(action_request)
 
 
 Takes an action on a user. The user being actioned is called the \"actionee\" and the user taking the action is called the \"actioner\". Both user ids are required in the request object.
@@ -311,7 +311,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ActionResponse**](ActionResponse.md)
+[**models::ActionResponse**](ActionResponse.md)
 
 ### Authorization
 
@@ -357,7 +357,7 @@ Name | Type | Description  | Required | Notes
 
 ## add_user_to_family_with_id
 
-> crate::models::FamilyResponse add_user_to_family_with_id(family_id, x_fusion_auth_tenant_id, family_request)
+> models::FamilyResponse add_user_to_family_with_id(family_id, x_fusion_auth_tenant_id, family_request)
 
 
 Adds a user to an existing family. The family Id must be specified.
@@ -373,7 +373,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::FamilyResponse**](FamilyResponse.md)
+[**models::FamilyResponse**](FamilyResponse.md)
 
 ### Authorization
 
@@ -389,7 +389,7 @@ Name | Type | Description  | Required | Notes
 
 ## approve_device_with_id
 
-> crate::models::DeviceApprovalResponse approve_device_with_id()
+> models::DeviceApprovalResponse approve_device_with_id()
 
 
 Approve a device grant.
@@ -400,7 +400,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::DeviceApprovalResponse**](DeviceApprovalResponse.md)
+[**models::DeviceApprovalResponse**](DeviceApprovalResponse.md)
 
 ### Authorization
 
@@ -416,7 +416,7 @@ This endpoint does not need any parameter.
 
 ## cancel_action_with_id
 
-> crate::models::ActionResponse cancel_action_with_id(action_id, action_request)
+> models::ActionResponse cancel_action_with_id(action_id, action_request)
 
 
 Cancels the user action.
@@ -431,7 +431,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ActionResponse**](ActionResponse.md)
+[**models::ActionResponse**](ActionResponse.md)
 
 ### Authorization
 
@@ -477,7 +477,7 @@ Name | Type | Description  | Required | Notes
 
 ## change_password_with_id
 
-> crate::models::ChangePasswordResponse change_password_with_id(change_password_id, change_password_request)
+> models::ChangePasswordResponse change_password_with_id(change_password_id, change_password_request)
 
 
 Changes a user's password using the change password Id. This usually occurs after an email has been sent to the user and they clicked on a link to reset their password.  As of version 1.32.2, prefer sending the changePasswordId in the request body. To do this, omit the first parameter, and set the value in the request body.
@@ -492,7 +492,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ChangePasswordResponse**](ChangePasswordResponse.md)
+[**models::ChangePasswordResponse**](ChangePasswordResponse.md)
 
 ### Authorization
 
@@ -569,7 +569,7 @@ Name | Type | Description  | Required | Notes
 
 ## complete_web_authn_assertion_with_id
 
-> crate::models::WebAuthnAssertResponse complete_web_authn_assertion_with_id(web_authn_login_request)
+> models::WebAuthnAssertResponse complete_web_authn_assertion_with_id(web_authn_login_request)
 
 
 Complete a WebAuthn authentication ceremony by validating the signature against the previously generated challenge without logging the user in
@@ -583,7 +583,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::WebAuthnAssertResponse**](WebAuthnAssertResponse.md)
+[**models::WebAuthnAssertResponse**](WebAuthnAssertResponse.md)
 
 ### Authorization
 
@@ -599,7 +599,7 @@ Name | Type | Description  | Required | Notes
 
 ## complete_web_authn_login_with_id
 
-> crate::models::LoginResponse complete_web_authn_login_with_id(web_authn_login_request)
+> models::LoginResponse complete_web_authn_login_with_id(web_authn_login_request)
 
 
 Complete a WebAuthn authentication ceremony by validating the signature against the previously generated challenge and then login the user in
@@ -613,7 +613,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LoginResponse**](LoginResponse.md)
+[**models::LoginResponse**](LoginResponse.md)
 
 ### Authorization
 
@@ -629,7 +629,7 @@ Name | Type | Description  | Required | Notes
 
 ## complete_web_authn_registration_with_id
 
-> crate::models::WebAuthnRegisterCompleteResponse complete_web_authn_registration_with_id(web_authn_register_complete_request)
+> models::WebAuthnRegisterCompleteResponse complete_web_authn_registration_with_id(web_authn_register_complete_request)
 
 
 Complete a WebAuthn registration ceremony by validating the client request and saving the new credential
@@ -643,7 +643,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::WebAuthnRegisterCompleteResponse**](WebAuthnRegisterCompleteResponse.md)
+[**models::WebAuthnRegisterCompleteResponse**](WebAuthnRegisterCompleteResponse.md)
 
 ### Authorization
 
@@ -659,7 +659,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_api_key
 
-> crate::models::ApiKeyResponse create_api_key(api_key_request)
+> models::ApiKeyResponse create_api_key(api_key_request)
 
 
 Creates an API key. You can optionally specify a unique Id for the key, if not provided one will be generated. an API key can only be created with equal or lesser authority. An API key cannot create another API key unless it is granted  to that API key.  If an API key is locked to a tenant, it can only create API Keys for that same tenant.
@@ -673,7 +673,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApiKeyResponse**](APIKeyResponse.md)
+[**models::ApiKeyResponse**](APIKeyResponse.md)
 
 ### Authorization
 
@@ -689,7 +689,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_api_key_with_id
 
-> crate::models::ApiKeyResponse create_api_key_with_id(key_id, api_key_request)
+> models::ApiKeyResponse create_api_key_with_id(key_id, api_key_request)
 
 
 Creates an API key. You can optionally specify a unique Id for the key, if not provided one will be generated. an API key can only be created with equal or lesser authority. An API key cannot create another API key unless it is granted  to that API key.  If an API key is locked to a tenant, it can only create API Keys for that same tenant. OR Updates an authentication API key by given id
@@ -704,7 +704,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApiKeyResponse**](APIKeyResponse.md)
+[**models::ApiKeyResponse**](APIKeyResponse.md)
 
 ### Authorization
 
@@ -720,7 +720,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_application
 
-> crate::models::ApplicationResponse create_application(x_fusion_auth_tenant_id, application_request)
+> models::ApplicationResponse create_application(x_fusion_auth_tenant_id, application_request)
 
 
 Creates an application. You can optionally specify an Id for the application, if not provided one will be generated.
@@ -735,7 +735,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApplicationResponse**](ApplicationResponse.md)
+[**models::ApplicationResponse**](ApplicationResponse.md)
 
 ### Authorization
 
@@ -751,7 +751,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_application_role
 
-> crate::models::ApplicationResponse create_application_role(application_id, x_fusion_auth_tenant_id, application_request)
+> models::ApplicationResponse create_application_role(application_id, x_fusion_auth_tenant_id, application_request)
 
 
 Creates a new role for an application. You must specify the Id of the application you are creating the role for. You can optionally specify an Id for the role inside the ApplicationRole object itself, if not provided one will be generated.
@@ -767,7 +767,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApplicationResponse**](ApplicationResponse.md)
+[**models::ApplicationResponse**](ApplicationResponse.md)
 
 ### Authorization
 
@@ -783,7 +783,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_application_role_with_id
 
-> crate::models::ApplicationResponse create_application_role_with_id(application_id, role_id, x_fusion_auth_tenant_id, application_request)
+> models::ApplicationResponse create_application_role_with_id(application_id, role_id, x_fusion_auth_tenant_id, application_request)
 
 
 Creates a new role for an application. You must specify the Id of the application you are creating the role for. You can optionally specify an Id for the role inside the ApplicationRole object itself, if not provided one will be generated.
@@ -800,7 +800,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApplicationResponse**](ApplicationResponse.md)
+[**models::ApplicationResponse**](ApplicationResponse.md)
 
 ### Authorization
 
@@ -816,7 +816,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_application_with_id
 
-> crate::models::ApplicationResponse create_application_with_id(application_id, x_fusion_auth_tenant_id, application_request)
+> models::ApplicationResponse create_application_with_id(application_id, x_fusion_auth_tenant_id, application_request)
 
 
 Creates an application. You can optionally specify an Id for the application, if not provided one will be generated.
@@ -832,7 +832,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApplicationResponse**](ApplicationResponse.md)
+[**models::ApplicationResponse**](ApplicationResponse.md)
 
 ### Authorization
 
@@ -848,7 +848,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_audit_log_with_id
 
-> crate::models::AuditLogResponse create_audit_log_with_id(audit_log_request)
+> models::AuditLogResponse create_audit_log_with_id(audit_log_request)
 
 
 Creates an audit log with the message and user name (usually an email). Audit logs should be written anytime you make changes to the FusionAuth database. When using the FusionAuth App web interface, any changes are automatically written to the audit log. However, if you are accessing the API, you must write the audit logs yourself.
@@ -862,7 +862,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::AuditLogResponse**](AuditLogResponse.md)
+[**models::AuditLogResponse**](AuditLogResponse.md)
 
 ### Authorization
 
@@ -878,7 +878,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_connector
 
-> crate::models::ConnectorResponse create_connector(connector_request)
+> models::ConnectorResponse create_connector(connector_request)
 
 
 Creates a connector.  You can optionally specify an Id for the connector, if not provided one will be generated.
@@ -892,7 +892,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ConnectorResponse**](ConnectorResponse.md)
+[**models::ConnectorResponse**](ConnectorResponse.md)
 
 ### Authorization
 
@@ -908,7 +908,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_connector_with_id
 
-> crate::models::ConnectorResponse create_connector_with_id(connector_id, connector_request)
+> models::ConnectorResponse create_connector_with_id(connector_id, connector_request)
 
 
 Creates a connector.  You can optionally specify an Id for the connector, if not provided one will be generated.
@@ -923,7 +923,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ConnectorResponse**](ConnectorResponse.md)
+[**models::ConnectorResponse**](ConnectorResponse.md)
 
 ### Authorization
 
@@ -939,7 +939,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_consent
 
-> crate::models::ConsentResponse create_consent(x_fusion_auth_tenant_id, consent_request)
+> models::ConsentResponse create_consent(x_fusion_auth_tenant_id, consent_request)
 
 
 Creates a user consent type. You can optionally specify an Id for the consent type, if not provided one will be generated.
@@ -954,7 +954,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ConsentResponse**](ConsentResponse.md)
+[**models::ConsentResponse**](ConsentResponse.md)
 
 ### Authorization
 
@@ -970,7 +970,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_consent_with_id
 
-> crate::models::ConsentResponse create_consent_with_id(consent_id, x_fusion_auth_tenant_id, consent_request)
+> models::ConsentResponse create_consent_with_id(consent_id, x_fusion_auth_tenant_id, consent_request)
 
 
 Creates a user consent type. You can optionally specify an Id for the consent type, if not provided one will be generated.
@@ -986,7 +986,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ConsentResponse**](ConsentResponse.md)
+[**models::ConsentResponse**](ConsentResponse.md)
 
 ### Authorization
 
@@ -1002,7 +1002,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_email_template
 
-> crate::models::EmailTemplateResponse create_email_template(x_fusion_auth_tenant_id, email_template_request)
+> models::EmailTemplateResponse create_email_template(x_fusion_auth_tenant_id, email_template_request)
 
 
 Creates an email template. You can optionally specify an Id for the template, if not provided one will be generated.
@@ -1017,7 +1017,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EmailTemplateResponse**](EmailTemplateResponse.md)
+[**models::EmailTemplateResponse**](EmailTemplateResponse.md)
 
 ### Authorization
 
@@ -1033,7 +1033,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_email_template_with_id
 
-> crate::models::EmailTemplateResponse create_email_template_with_id(email_template_id, x_fusion_auth_tenant_id, email_template_request)
+> models::EmailTemplateResponse create_email_template_with_id(email_template_id, x_fusion_auth_tenant_id, email_template_request)
 
 
 Creates an email template. You can optionally specify an Id for the template, if not provided one will be generated.
@@ -1049,7 +1049,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EmailTemplateResponse**](EmailTemplateResponse.md)
+[**models::EmailTemplateResponse**](EmailTemplateResponse.md)
 
 ### Authorization
 
@@ -1065,7 +1065,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_entity
 
-> crate::models::EntityResponse create_entity(x_fusion_auth_tenant_id, entity_request)
+> models::EntityResponse create_entity(x_fusion_auth_tenant_id, entity_request)
 
 
 Creates an Entity. You can optionally specify an Id for the Entity. If not provided one will be generated.
@@ -1080,7 +1080,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityResponse**](EntityResponse.md)
+[**models::EntityResponse**](EntityResponse.md)
 
 ### Authorization
 
@@ -1096,7 +1096,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_entity_type
 
-> crate::models::EntityTypeResponse create_entity_type(entity_type_request)
+> models::EntityTypeResponse create_entity_type(entity_type_request)
 
 
 Creates a Entity Type. You can optionally specify an Id for the Entity Type, if not provided one will be generated.
@@ -1110,7 +1110,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityTypeResponse**](EntityTypeResponse.md)
+[**models::EntityTypeResponse**](EntityTypeResponse.md)
 
 ### Authorization
 
@@ -1126,7 +1126,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_entity_type_permission
 
-> crate::models::EntityTypeResponse create_entity_type_permission(entity_type_id, entity_type_request)
+> models::EntityTypeResponse create_entity_type_permission(entity_type_id, entity_type_request)
 
 
 Creates a new permission for an entity type. You must specify the Id of the entity type you are creating the permission for. You can optionally specify an Id for the permission inside the EntityTypePermission object itself, if not provided one will be generated.
@@ -1141,7 +1141,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityTypeResponse**](EntityTypeResponse.md)
+[**models::EntityTypeResponse**](EntityTypeResponse.md)
 
 ### Authorization
 
@@ -1157,7 +1157,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_entity_type_permission_with_id
 
-> crate::models::EntityTypeResponse create_entity_type_permission_with_id(entity_type_id, permission_id, entity_type_request)
+> models::EntityTypeResponse create_entity_type_permission_with_id(entity_type_id, permission_id, entity_type_request)
 
 
 Creates a new permission for an entity type. You must specify the Id of the entity type you are creating the permission for. You can optionally specify an Id for the permission inside the EntityTypePermission object itself, if not provided one will be generated.
@@ -1173,7 +1173,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityTypeResponse**](EntityTypeResponse.md)
+[**models::EntityTypeResponse**](EntityTypeResponse.md)
 
 ### Authorization
 
@@ -1189,7 +1189,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_entity_type_with_id
 
-> crate::models::EntityTypeResponse create_entity_type_with_id(entity_type_id, entity_type_request)
+> models::EntityTypeResponse create_entity_type_with_id(entity_type_id, entity_type_request)
 
 
 Creates a Entity Type. You can optionally specify an Id for the Entity Type, if not provided one will be generated.
@@ -1204,7 +1204,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityTypeResponse**](EntityTypeResponse.md)
+[**models::EntityTypeResponse**](EntityTypeResponse.md)
 
 ### Authorization
 
@@ -1220,7 +1220,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_entity_with_id
 
-> crate::models::EntityResponse create_entity_with_id(entity_id, x_fusion_auth_tenant_id, entity_request)
+> models::EntityResponse create_entity_with_id(entity_id, x_fusion_auth_tenant_id, entity_request)
 
 
 Creates an Entity. You can optionally specify an Id for the Entity. If not provided one will be generated.
@@ -1236,7 +1236,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityResponse**](EntityResponse.md)
+[**models::EntityResponse**](EntityResponse.md)
 
 ### Authorization
 
@@ -1252,7 +1252,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_family
 
-> crate::models::FamilyResponse create_family(x_fusion_auth_tenant_id, family_request)
+> models::FamilyResponse create_family(x_fusion_auth_tenant_id, family_request)
 
 
 Creates a family with the user Id in the request as the owner and sole member of the family. You can optionally specify an Id for the family, if not provided one will be generated.
@@ -1267,7 +1267,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::FamilyResponse**](FamilyResponse.md)
+[**models::FamilyResponse**](FamilyResponse.md)
 
 ### Authorization
 
@@ -1283,7 +1283,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_family_with_id
 
-> crate::models::FamilyResponse create_family_with_id(family_id, x_fusion_auth_tenant_id, family_request)
+> models::FamilyResponse create_family_with_id(family_id, x_fusion_auth_tenant_id, family_request)
 
 
 Creates a family with the user Id in the request as the owner and sole member of the family. You can optionally specify an Id for the family, if not provided one will be generated.
@@ -1299,7 +1299,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::FamilyResponse**](FamilyResponse.md)
+[**models::FamilyResponse**](FamilyResponse.md)
 
 ### Authorization
 
@@ -1315,7 +1315,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_form
 
-> crate::models::FormResponse create_form(form_request)
+> models::FormResponse create_form(form_request)
 
 
 Creates a form.  You can optionally specify an Id for the form, if not provided one will be generated.
@@ -1329,7 +1329,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::FormResponse**](FormResponse.md)
+[**models::FormResponse**](FormResponse.md)
 
 ### Authorization
 
@@ -1345,7 +1345,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_form_field
 
-> crate::models::FormFieldResponse create_form_field(form_field_request)
+> models::FormFieldResponse create_form_field(form_field_request)
 
 
 Creates a form field.  You can optionally specify an Id for the form, if not provided one will be generated.
@@ -1359,7 +1359,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::FormFieldResponse**](FormFieldResponse.md)
+[**models::FormFieldResponse**](FormFieldResponse.md)
 
 ### Authorization
 
@@ -1375,7 +1375,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_form_field_with_id
 
-> crate::models::FormFieldResponse create_form_field_with_id(field_id, form_field_request)
+> models::FormFieldResponse create_form_field_with_id(field_id, form_field_request)
 
 
 Creates a form field.  You can optionally specify an Id for the form, if not provided one will be generated.
@@ -1390,7 +1390,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::FormFieldResponse**](FormFieldResponse.md)
+[**models::FormFieldResponse**](FormFieldResponse.md)
 
 ### Authorization
 
@@ -1406,7 +1406,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_form_with_id
 
-> crate::models::FormResponse create_form_with_id(form_id, form_request)
+> models::FormResponse create_form_with_id(form_id, form_request)
 
 
 Creates a form.  You can optionally specify an Id for the form, if not provided one will be generated.
@@ -1421,7 +1421,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::FormResponse**](FormResponse.md)
+[**models::FormResponse**](FormResponse.md)
 
 ### Authorization
 
@@ -1437,7 +1437,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_group
 
-> crate::models::GroupResponse create_group(x_fusion_auth_tenant_id, group_request)
+> models::GroupResponse create_group(x_fusion_auth_tenant_id, group_request)
 
 
 Creates a group. You can optionally specify an Id for the group, if not provided one will be generated.
@@ -1452,7 +1452,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GroupResponse**](GroupResponse.md)
+[**models::GroupResponse**](GroupResponse.md)
 
 ### Authorization
 
@@ -1468,7 +1468,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_group_members_with_id
 
-> crate::models::MemberResponse create_group_members_with_id(member_request)
+> models::MemberResponse create_group_members_with_id(member_request)
 
 
 Creates a member in a group.
@@ -1482,7 +1482,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MemberResponse**](MemberResponse.md)
+[**models::MemberResponse**](MemberResponse.md)
 
 ### Authorization
 
@@ -1498,7 +1498,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_group_with_id
 
-> crate::models::GroupResponse create_group_with_id(group_id, x_fusion_auth_tenant_id, group_request)
+> models::GroupResponse create_group_with_id(group_id, x_fusion_auth_tenant_id, group_request)
 
 
 Creates a group. You can optionally specify an Id for the group, if not provided one will be generated.
@@ -1514,7 +1514,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GroupResponse**](GroupResponse.md)
+[**models::GroupResponse**](GroupResponse.md)
 
 ### Authorization
 
@@ -1530,7 +1530,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_identity_provider
 
-> crate::models::IdentityProviderResponse create_identity_provider(identity_provider_request)
+> models::IdentityProviderResponse create_identity_provider(identity_provider_request)
 
 
 Creates an identity provider. You can optionally specify an Id for the identity provider, if not provided one will be generated.
@@ -1544,7 +1544,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IdentityProviderResponse**](IdentityProviderResponse.md)
+[**models::IdentityProviderResponse**](IdentityProviderResponse.md)
 
 ### Authorization
 
@@ -1560,7 +1560,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_identity_provider_with_id
 
-> crate::models::IdentityProviderResponse create_identity_provider_with_id(identity_provider_id, identity_provider_request)
+> models::IdentityProviderResponse create_identity_provider_with_id(identity_provider_id, identity_provider_request)
 
 
 Creates an identity provider. You can optionally specify an Id for the identity provider, if not provided one will be generated.
@@ -1575,7 +1575,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IdentityProviderResponse**](IdentityProviderResponse.md)
+[**models::IdentityProviderResponse**](IdentityProviderResponse.md)
 
 ### Authorization
 
@@ -1594,7 +1594,7 @@ Name | Type | Description  | Required | Notes
 > serde_json::Value create_introspect()
 
 
-Inspect an access token issued as the result of the Client Credentials Grant. OR Inspect an access token issued as the result of the User based grant such as the Authorization Code Grant, Implicit Grant, the User Credentials Grant or the Refresh Grant.
+Inspect an access token issued as the result of the User based grant such as the Authorization Code Grant, Implicit Grant, the User Credentials Grant or the Refresh Grant. OR Inspect an access token issued as the result of the Client Credentials Grant.
 
 ### Parameters
 
@@ -1618,7 +1618,7 @@ This endpoint does not need any parameter.
 
 ## create_ip_access_control_list
 
-> crate::models::IpAccessControlListResponse create_ip_access_control_list(ip_access_control_list_request)
+> models::IpAccessControlListResponse create_ip_access_control_list(ip_access_control_list_request)
 
 
 Creates an IP Access Control List. You can optionally specify an Id on this create request, if one is not provided one will be generated.
@@ -1632,7 +1632,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IpAccessControlListResponse**](IPAccessControlListResponse.md)
+[**models::IpAccessControlListResponse**](IPAccessControlListResponse.md)
 
 ### Authorization
 
@@ -1648,7 +1648,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_ip_access_control_list_with_id
 
-> crate::models::IpAccessControlListResponse create_ip_access_control_list_with_id(access_control_list_id, ip_access_control_list_request)
+> models::IpAccessControlListResponse create_ip_access_control_list_with_id(access_control_list_id, ip_access_control_list_request)
 
 
 Creates an IP Access Control List. You can optionally specify an Id on this create request, if one is not provided one will be generated.
@@ -1663,7 +1663,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IpAccessControlListResponse**](IPAccessControlListResponse.md)
+[**models::IpAccessControlListResponse**](IPAccessControlListResponse.md)
 
 ### Authorization
 
@@ -1679,7 +1679,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_lambda
 
-> crate::models::LambdaResponse create_lambda(lambda_request)
+> models::LambdaResponse create_lambda(lambda_request)
 
 
 Creates a Lambda. You can optionally specify an Id for the lambda, if not provided one will be generated.
@@ -1693,7 +1693,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LambdaResponse**](LambdaResponse.md)
+[**models::LambdaResponse**](LambdaResponse.md)
 
 ### Authorization
 
@@ -1709,7 +1709,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_lambda_with_id
 
-> crate::models::LambdaResponse create_lambda_with_id(lambda_id, lambda_request)
+> models::LambdaResponse create_lambda_with_id(lambda_id, lambda_request)
 
 
 Creates a Lambda. You can optionally specify an Id for the lambda, if not provided one will be generated.
@@ -1724,7 +1724,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LambdaResponse**](LambdaResponse.md)
+[**models::LambdaResponse**](LambdaResponse.md)
 
 ### Authorization
 
@@ -1772,7 +1772,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_message_template
 
-> crate::models::MessageTemplateResponse create_message_template(message_template_request)
+> models::MessageTemplateResponse create_message_template(message_template_request)
 
 
 Creates an message template. You can optionally specify an Id for the template, if not provided one will be generated.
@@ -1786,7 +1786,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MessageTemplateResponse**](MessageTemplateResponse.md)
+[**models::MessageTemplateResponse**](MessageTemplateResponse.md)
 
 ### Authorization
 
@@ -1802,7 +1802,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_message_template_with_id
 
-> crate::models::MessageTemplateResponse create_message_template_with_id(message_template_id, message_template_request)
+> models::MessageTemplateResponse create_message_template_with_id(message_template_id, message_template_request)
 
 
 Creates an message template. You can optionally specify an Id for the template, if not provided one will be generated.
@@ -1817,7 +1817,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MessageTemplateResponse**](MessageTemplateResponse.md)
+[**models::MessageTemplateResponse**](MessageTemplateResponse.md)
 
 ### Authorization
 
@@ -1833,7 +1833,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_messenger
 
-> crate::models::MessengerResponse create_messenger(messenger_request)
+> models::MessengerResponse create_messenger(messenger_request)
 
 
 Creates a messenger.  You can optionally specify an Id for the messenger, if not provided one will be generated.
@@ -1847,7 +1847,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MessengerResponse**](MessengerResponse.md)
+[**models::MessengerResponse**](MessengerResponse.md)
 
 ### Authorization
 
@@ -1863,7 +1863,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_messenger_with_id
 
-> crate::models::MessengerResponse create_messenger_with_id(messenger_id, messenger_request)
+> models::MessengerResponse create_messenger_with_id(messenger_id, messenger_request)
 
 
 Creates a messenger.  You can optionally specify an Id for the messenger, if not provided one will be generated.
@@ -1878,7 +1878,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MessengerResponse**](MessengerResponse.md)
+[**models::MessengerResponse**](MessengerResponse.md)
 
 ### Authorization
 
@@ -1894,7 +1894,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_tenant
 
-> crate::models::TenantResponse create_tenant(x_fusion_auth_tenant_id, tenant_request)
+> models::TenantResponse create_tenant(x_fusion_auth_tenant_id, tenant_request)
 
 
 Creates a tenant. You can optionally specify an Id for the tenant, if not provided one will be generated.
@@ -1909,7 +1909,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TenantResponse**](TenantResponse.md)
+[**models::TenantResponse**](TenantResponse.md)
 
 ### Authorization
 
@@ -1925,7 +1925,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_tenant_with_id
 
-> crate::models::TenantResponse create_tenant_with_id(tenant_id, x_fusion_auth_tenant_id, tenant_request)
+> models::TenantResponse create_tenant_with_id(tenant_id, x_fusion_auth_tenant_id, tenant_request)
 
 
 Creates a tenant. You can optionally specify an Id for the tenant, if not provided one will be generated.
@@ -1941,7 +1941,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TenantResponse**](TenantResponse.md)
+[**models::TenantResponse**](TenantResponse.md)
 
 ### Authorization
 
@@ -1957,7 +1957,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_theme
 
-> crate::models::ThemeResponse create_theme(theme_request)
+> models::ThemeResponse create_theme(theme_request)
 
 
 Creates a Theme. You can optionally specify an Id for the theme, if not provided one will be generated.
@@ -1971,7 +1971,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ThemeResponse**](ThemeResponse.md)
+[**models::ThemeResponse**](ThemeResponse.md)
 
 ### Authorization
 
@@ -1987,7 +1987,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_theme_with_id
 
-> crate::models::ThemeResponse create_theme_with_id(theme_id, theme_request)
+> models::ThemeResponse create_theme_with_id(theme_id, theme_request)
 
 
 Creates a Theme. You can optionally specify an Id for the theme, if not provided one will be generated.
@@ -2002,7 +2002,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ThemeResponse**](ThemeResponse.md)
+[**models::ThemeResponse**](ThemeResponse.md)
 
 ### Authorization
 
@@ -2018,10 +2018,10 @@ Name | Type | Description  | Required | Notes
 
 ## create_token
 
-> crate::models::AccessToken create_token()
+> models::AccessToken create_token()
 
 
-Exchange a Refresh Token for an Access Token. If you will be using the Refresh Token Grant, you will make a request to the Token endpoint to exchange the user’s refresh token for an access token. OR Exchange User Credentials for a Token. If you will be using the Resource Owner Password Credential Grant, you will make a request to the Token endpoint to exchange the user’s email and password for an access token. OR Exchanges an OAuth authorization code and code_verifier for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint and a code_verifier for an access token. OR Exchanges an OAuth authorization code for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint for an access token. OR Make a Client Credentials grant request to obtain an access token.
+Exchanges an OAuth authorization code and code_verifier for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint and a code_verifier for an access token. OR Make a Client Credentials grant request to obtain an access token. OR Exchange a Refresh Token for an Access Token. If you will be using the Refresh Token Grant, you will make a request to the Token endpoint to exchange the user’s refresh token for an access token. OR Exchange User Credentials for a Token. If you will be using the Resource Owner Password Credential Grant, you will make a request to the Token endpoint to exchange the user’s email and password for an access token. OR Exchanges an OAuth authorization code for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint for an access token.
 
 ### Parameters
 
@@ -2029,7 +2029,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::AccessToken**](AccessToken.md)
+[**models::AccessToken**](AccessToken.md)
 
 ### Authorization
 
@@ -2045,7 +2045,7 @@ This endpoint does not need any parameter.
 
 ## create_user
 
-> crate::models::UserResponse create_user(x_fusion_auth_tenant_id, user_request)
+> models::UserResponse create_user(x_fusion_auth_tenant_id, user_request)
 
 
 Creates a user. You can optionally specify an Id for the user, if not provided one will be generated.
@@ -2060,7 +2060,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserResponse**](UserResponse.md)
+[**models::UserResponse**](UserResponse.md)
 
 ### Authorization
 
@@ -2076,7 +2076,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_user_action
 
-> crate::models::UserActionResponse create_user_action(x_fusion_auth_tenant_id, user_action_request)
+> models::UserActionResponse create_user_action(x_fusion_auth_tenant_id, user_action_request)
 
 
 Creates a user action. This action cannot be taken on a user until this call successfully returns. Anytime after that the user action can be applied to any user.
@@ -2091,7 +2091,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserActionResponse**](UserActionResponse.md)
+[**models::UserActionResponse**](UserActionResponse.md)
 
 ### Authorization
 
@@ -2107,7 +2107,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_user_action_reason
 
-> crate::models::UserActionReasonResponse create_user_action_reason(user_action_reason_request)
+> models::UserActionReasonResponse create_user_action_reason(user_action_reason_request)
 
 
 Creates a user reason. This user action reason cannot be used when actioning a user until this call completes successfully. Anytime after that the user action reason can be used.
@@ -2121,7 +2121,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserActionReasonResponse**](UserActionReasonResponse.md)
+[**models::UserActionReasonResponse**](UserActionReasonResponse.md)
 
 ### Authorization
 
@@ -2137,7 +2137,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_user_action_reason_with_id
 
-> crate::models::UserActionReasonResponse create_user_action_reason_with_id(user_action_reason_id, user_action_reason_request)
+> models::UserActionReasonResponse create_user_action_reason_with_id(user_action_reason_id, user_action_reason_request)
 
 
 Creates a user reason. This user action reason cannot be used when actioning a user until this call completes successfully. Anytime after that the user action reason can be used.
@@ -2152,7 +2152,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserActionReasonResponse**](UserActionReasonResponse.md)
+[**models::UserActionReasonResponse**](UserActionReasonResponse.md)
 
 ### Authorization
 
@@ -2168,7 +2168,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_user_action_with_id
 
-> crate::models::UserActionResponse create_user_action_with_id(user_action_id, x_fusion_auth_tenant_id, user_action_request)
+> models::UserActionResponse create_user_action_with_id(user_action_id, x_fusion_auth_tenant_id, user_action_request)
 
 
 Creates a user action. This action cannot be taken on a user until this call successfully returns. Anytime after that the user action can be applied to any user.
@@ -2184,7 +2184,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserActionResponse**](UserActionResponse.md)
+[**models::UserActionResponse**](UserActionResponse.md)
 
 ### Authorization
 
@@ -2200,7 +2200,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_user_consent
 
-> crate::models::UserConsentResponse create_user_consent(user_consent_request)
+> models::UserConsentResponse create_user_consent(user_consent_request)
 
 
 Creates a single User consent.
@@ -2214,7 +2214,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserConsentResponse**](UserConsentResponse.md)
+[**models::UserConsentResponse**](UserConsentResponse.md)
 
 ### Authorization
 
@@ -2230,7 +2230,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_user_consent_with_id
 
-> crate::models::UserConsentResponse create_user_consent_with_id(user_consent_id, user_consent_request)
+> models::UserConsentResponse create_user_consent_with_id(user_consent_id, user_consent_request)
 
 
 Creates a single User consent.
@@ -2245,7 +2245,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserConsentResponse**](UserConsentResponse.md)
+[**models::UserConsentResponse**](UserConsentResponse.md)
 
 ### Authorization
 
@@ -2261,7 +2261,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_user_link_with_id
 
-> crate::models::IdentityProviderLinkResponse create_user_link_with_id(identity_provider_link_request)
+> models::IdentityProviderLinkResponse create_user_link_with_id(identity_provider_link_request)
 
 
 Link an external user from a 3rd party identity provider to a FusionAuth user.
@@ -2275,7 +2275,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IdentityProviderLinkResponse**](IdentityProviderLinkResponse.md)
+[**models::IdentityProviderLinkResponse**](IdentityProviderLinkResponse.md)
 
 ### Authorization
 
@@ -2321,7 +2321,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_user_with_id
 
-> crate::models::UserResponse create_user_with_id(user_id, x_fusion_auth_tenant_id, user_request)
+> models::UserResponse create_user_with_id(user_id, x_fusion_auth_tenant_id, user_request)
 
 
 Creates a user. You can optionally specify an Id for the user, if not provided one will be generated.
@@ -2337,7 +2337,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserResponse**](UserResponse.md)
+[**models::UserResponse**](UserResponse.md)
 
 ### Authorization
 
@@ -2353,7 +2353,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_webhook
 
-> crate::models::WebhookResponse create_webhook(webhook_request)
+> models::WebhookResponse create_webhook(webhook_request)
 
 
 Creates a webhook. You can optionally specify an Id for the webhook, if not provided one will be generated.
@@ -2367,7 +2367,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::WebhookResponse**](WebhookResponse.md)
+[**models::WebhookResponse**](WebhookResponse.md)
 
 ### Authorization
 
@@ -2383,7 +2383,7 @@ Name | Type | Description  | Required | Notes
 
 ## create_webhook_with_id
 
-> crate::models::WebhookResponse create_webhook_with_id(webhook_id, webhook_request)
+> models::WebhookResponse create_webhook_with_id(webhook_id, webhook_request)
 
 
 Creates a webhook. You can optionally specify an Id for the webhook, if not provided one will be generated.
@@ -2398,7 +2398,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::WebhookResponse**](WebhookResponse.md)
+[**models::WebhookResponse**](WebhookResponse.md)
 
 ### Authorization
 
@@ -2906,18 +2906,18 @@ Name | Type | Description  | Required | Notes
 
 ## delete_jwt_refresh
 
-> delete_jwt_refresh(application_id, user_id, token, refresh_token_revoke_request)
+> delete_jwt_refresh(user_id, application_id, token, refresh_token_revoke_request)
 
 
-Revokes refresh tokens using the information in the JSON body. The handling for this method is the same as the revokeRefreshToken method and is based on the information you provide in the RefreshDeleteRequest object. See that method for additional information. OR Revoke all refresh tokens that belong to an application by applicationId. OR Revoke all refresh tokens that belong to a user by user Id. OR Revokes a single refresh token by using the actual refresh token value. This refresh token value is sensitive, so  be careful with this API request. OR Revoke all refresh tokens that belong to a user by user Id for a specific application by applicationId. OR Revokes refresh tokens.  Usage examples:   - Delete a single refresh token, pass in only the token.       revokeRefreshToken(token)    - Delete all refresh tokens for a user, pass in only the userId.       revokeRefreshToken(null, userId)    - Delete all refresh tokens for a user for a specific application, pass in both the userId and the applicationId.       revokeRefreshToken(null, userId, applicationId)    - Delete all refresh tokens for an application       revokeRefreshToken(null, null, applicationId)  Note: <code>null</code> may be handled differently depending upon the programming language.  See also: (method names may vary by language... but you'll figure it out)   - revokeRefreshTokenById  - revokeRefreshTokenByToken  - revokeRefreshTokensByUserId  - revokeRefreshTokensByApplicationId  - revokeRefreshTokensByUserIdForApplication
+Revoke all refresh tokens that belong to a user by user Id. OR Revoke all refresh tokens that belong to a user by user Id for a specific application by applicationId. OR Revoke all refresh tokens that belong to an application by applicationId. OR Revokes refresh tokens using the information in the JSON body. The handling for this method is the same as the revokeRefreshToken method and is based on the information you provide in the RefreshDeleteRequest object. See that method for additional information. OR Revokes a single refresh token by using the actual refresh token value. This refresh token value is sensitive, so  be careful with this API request. OR Revokes refresh tokens.  Usage examples:   - Delete a single refresh token, pass in only the token.       revokeRefreshToken(token)    - Delete all refresh tokens for a user, pass in only the userId.       revokeRefreshToken(null, userId)    - Delete all refresh tokens for a user for a specific application, pass in both the userId and the applicationId.       revokeRefreshToken(null, userId, applicationId)    - Delete all refresh tokens for an application       revokeRefreshToken(null, null, applicationId)  Note: <code>null</code> may be handled differently depending upon the programming language.  See also: (method names may vary by language... but you'll figure it out)   - revokeRefreshTokenById  - revokeRefreshTokenByToken  - revokeRefreshTokensByUserId  - revokeRefreshTokensByApplicationId  - revokeRefreshTokensByUserIdForApplication
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**application_id** | Option<**String**> | The unique Id of the application that you want to delete all refresh tokens for. |  |
 **user_id** | Option<**String**> | The unique Id of the user that you want to delete all refresh tokens for. |  |
+**application_id** | Option<**String**> | The unique Id of the application that you want to delete refresh tokens for. |  |
 **token** | Option<**String**> | The refresh token to delete. |  |
 **refresh_token_revoke_request** | Option<[**RefreshTokenRevokeRequest**](RefreshTokenRevokeRequest.md)> |  |  |
 
@@ -3059,10 +3059,10 @@ Name | Type | Description  | Required | Notes
 
 ## delete_tenant_with_id
 
-> delete_tenant_with_id(tenant_id, r#async, x_fusion_auth_tenant_id, tenant_delete_request)
+> delete_tenant_with_id(tenant_id, x_fusion_auth_tenant_id, r#async, tenant_delete_request)
 
 
-Deletes the tenant for the given Id asynchronously. This method is helpful if you do not want to wait for the delete operation to complete. OR Deletes the tenant based on the given request (sent to the API as JSON). This permanently deletes all information, metrics, reports and data associated with the tenant and everything under the tenant (applications, users, etc). OR Deletes the tenant based on the given Id on the URL. This permanently deletes all information, metrics, reports and data associated with the tenant and everything under the tenant (applications, users, etc).
+Deletes the tenant based on the given Id on the URL. This permanently deletes all information, metrics, reports and data associated with the tenant and everything under the tenant (applications, users, etc). OR Deletes the tenant for the given Id asynchronously. This method is helpful if you do not want to wait for the delete operation to complete. OR Deletes the tenant based on the given request (sent to the API as JSON). This permanently deletes all information, metrics, reports and data associated with the tenant and everything under the tenant (applications, users, etc).
 
 ### Parameters
 
@@ -3070,8 +3070,8 @@ Deletes the tenant for the given Id asynchronously. This method is helpful if yo
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **tenant_id** | **String** | The Id of the tenant to delete. | [required] |
-**r#async** | Option<**String**> |  |  |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**r#async** | Option<**String**> |  |  |
 **tenant_delete_request** | Option<[**TenantDeleteRequest**](TenantDeleteRequest.md)> |  |  |
 
 ### Return type
@@ -3184,7 +3184,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_user_bulk
 
-> crate::models::UserDeleteResponse delete_user_bulk(user_ids, dry_run, hard_delete, user_delete_request)
+> models::UserDeleteResponse delete_user_bulk(user_ids, dry_run, hard_delete, user_delete_request)
 
 
 Deactivates the users with the given ids. OR Deletes the users with the given ids, or users matching the provided JSON query or queryString. The order of preference is ids, query and then queryString, it is recommended to only provide one of the three for the request.  This method can be used to deactivate or permanently delete (hard-delete) users based upon the hardDelete boolean in the request body. Using the dryRun parameter you may also request the result of the action without actually deleting or deactivating any users.
@@ -3201,7 +3201,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserDeleteResponse**](UserDeleteResponse.md)
+[**models::UserDeleteResponse**](UserDeleteResponse.md)
 
 ### Authorization
 
@@ -3217,7 +3217,7 @@ Name | Type | Description  | Required | Notes
 
 ## delete_user_link_with_id
 
-> crate::models::IdentityProviderLinkResponse delete_user_link_with_id(identity_provider_id, identity_provider_user_id, user_id)
+> models::IdentityProviderLinkResponse delete_user_link_with_id(identity_provider_id, identity_provider_user_id, user_id)
 
 
 Remove an existing link that has been made from a 3rd party identity provider to a FusionAuth user.
@@ -3233,7 +3233,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IdentityProviderLinkResponse**](IdentityProviderLinkResponse.md)
+[**models::IdentityProviderLinkResponse**](IdentityProviderLinkResponse.md)
 
 ### Authorization
 
@@ -3252,7 +3252,7 @@ Name | Type | Description  | Required | Notes
 > delete_user_registration_with_id(user_id, application_id, x_fusion_auth_tenant_id, registration_delete_request)
 
 
-Deletes the user registration for the given user and application along with the given JSON body that contains the event information. OR Deletes the user registration for the given user and application.
+Deletes the user registration for the given user and application. OR Deletes the user registration for the given user and application along with the given JSON body that contains the event information.
 
 ### Parameters
 
@@ -3318,14 +3318,14 @@ Name | Type | Description  | Required | Notes
 > delete_user_with_id(user_id, x_fusion_auth_tenant_id, hard_delete, user_delete_single_request)
 
 
-Deactivates the user with the given Id. OR Deletes the user for the given Id. This permanently deletes all information, metrics, reports and data associated with the user. OR Deletes the user based on the given request (sent to the API as JSON). This permanently deletes all information, metrics, reports and data associated with the user.
+Deletes the user based on the given request (sent to the API as JSON). This permanently deletes all information, metrics, reports and data associated with the user. OR Deletes the user for the given Id. This permanently deletes all information, metrics, reports and data associated with the user. OR Deactivates the user with the given Id.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**user_id** | **String** | The Id of the user to deactivate. | [required] |
+**user_id** | **String** | The Id of the user to delete (required). | [required] |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 **hard_delete** | Option<**String**> |  |  |
 **user_delete_single_request** | Option<[**UserDeleteSingleRequest**](UserDeleteSingleRequest.md)> |  |  |
@@ -3408,7 +3408,7 @@ Name | Type | Description  | Required | Notes
 
 ## enable_two_factor_with_id
 
-> crate::models::TwoFactorResponse enable_two_factor_with_id(user_id, two_factor_request)
+> models::TwoFactorResponse enable_two_factor_with_id(user_id, two_factor_request)
 
 
 Enable two-factor authentication for a user.
@@ -3423,7 +3423,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TwoFactorResponse**](TwoFactorResponse.md)
+[**models::TwoFactorResponse**](TwoFactorResponse.md)
 
 ### Authorization
 
@@ -3439,7 +3439,7 @@ Name | Type | Description  | Required | Notes
 
 ## exchange_refresh_token_for_jwt_with_id
 
-> crate::models::JwtRefreshResponse exchange_refresh_token_for_jwt_with_id(refresh_request)
+> models::JwtRefreshResponse exchange_refresh_token_for_jwt_with_id(refresh_request)
 
 
 Exchange a refresh token for a new JWT.
@@ -3453,7 +3453,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::JwtRefreshResponse**](JWTRefreshResponse.md)
+[**models::JwtRefreshResponse**](JWTRefreshResponse.md)
 
 ### Authorization
 
@@ -3469,7 +3469,7 @@ Name | Type | Description  | Required | Notes
 
 ## forgot_password_with_id
 
-> crate::models::ForgotPasswordResponse forgot_password_with_id(forgot_password_request)
+> models::ForgotPasswordResponse forgot_password_with_id(forgot_password_request)
 
 
 Begins the forgot password sequence, which kicks off an email to the user so that they can reset their password.
@@ -3483,7 +3483,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ForgotPasswordResponse**](ForgotPasswordResponse.md)
+[**models::ForgotPasswordResponse**](ForgotPasswordResponse.md)
 
 ### Authorization
 
@@ -3499,7 +3499,7 @@ Name | Type | Description  | Required | Notes
 
 ## generate_key
 
-> crate::models::KeyResponse generate_key(key_request)
+> models::KeyResponse generate_key(key_request)
 
 
 Generate a new RSA or EC key pair or an HMAC secret.
@@ -3513,7 +3513,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::KeyResponse**](KeyResponse.md)
+[**models::KeyResponse**](KeyResponse.md)
 
 ### Authorization
 
@@ -3529,7 +3529,7 @@ Name | Type | Description  | Required | Notes
 
 ## generate_key_with_id
 
-> crate::models::KeyResponse generate_key_with_id(key_id, key_request)
+> models::KeyResponse generate_key_with_id(key_id, key_request)
 
 
 Generate a new RSA or EC key pair or an HMAC secret.
@@ -3544,7 +3544,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::KeyResponse**](KeyResponse.md)
+[**models::KeyResponse**](KeyResponse.md)
 
 ### Authorization
 
@@ -3560,7 +3560,7 @@ Name | Type | Description  | Required | Notes
 
 ## generate_two_factor_recovery_codes_with_id
 
-> crate::models::TwoFactorRecoveryCodeResponse generate_two_factor_recovery_codes_with_id(user_id)
+> models::TwoFactorRecoveryCodeResponse generate_two_factor_recovery_codes_with_id(user_id)
 
 
 Generate two-factor recovery codes for a user. Generating two-factor recovery codes will invalidate any existing recovery codes.
@@ -3574,7 +3574,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TwoFactorRecoveryCodeResponse**](TwoFactorRecoveryCodeResponse.md)
+[**models::TwoFactorRecoveryCodeResponse**](TwoFactorRecoveryCodeResponse.md)
 
 ### Authorization
 
@@ -3590,7 +3590,7 @@ Name | Type | Description  | Required | Notes
 
 ## generate_two_factor_secret_using_jwt_with_id
 
-> crate::models::SecretResponse generate_two_factor_secret_using_jwt_with_id()
+> models::SecretResponse generate_two_factor_secret_using_jwt_with_id()
 
 
 Generate a Two Factor secret that can be used to enable Two Factor authentication for a User. The response will contain both the secret and a Base32 encoded form of the secret which can be shown to a User when using a 2 Step Authentication application such as Google Authenticator.
@@ -3601,7 +3601,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::SecretResponse**](SecretResponse.md)
+[**models::SecretResponse**](SecretResponse.md)
 
 ### Authorization
 
@@ -3617,7 +3617,7 @@ This endpoint does not need any parameter.
 
 ## identity_provider_login_with_id
 
-> crate::models::LoginResponse identity_provider_login_with_id(x_fusion_auth_tenant_id, identity_provider_login_request)
+> models::LoginResponse identity_provider_login_with_id(x_fusion_auth_tenant_id, identity_provider_login_request)
 
 
 Handles login via third-parties including Social login, external OAuth and OpenID Connect, and other login systems.
@@ -3632,7 +3632,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LoginResponse**](LoginResponse.md)
+[**models::LoginResponse**](LoginResponse.md)
 
 ### Authorization
 
@@ -3648,7 +3648,7 @@ Name | Type | Description  | Required | Notes
 
 ## import_key
 
-> crate::models::KeyResponse import_key(key_request)
+> models::KeyResponse import_key(key_request)
 
 
 Import an existing RSA or EC key pair or an HMAC secret.
@@ -3662,7 +3662,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::KeyResponse**](KeyResponse.md)
+[**models::KeyResponse**](KeyResponse.md)
 
 ### Authorization
 
@@ -3678,7 +3678,7 @@ Name | Type | Description  | Required | Notes
 
 ## import_key_with_id
 
-> crate::models::KeyResponse import_key_with_id(key_id, key_request)
+> models::KeyResponse import_key_with_id(key_id, key_request)
 
 
 Import an existing RSA or EC key pair or an HMAC secret.
@@ -3693,7 +3693,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::KeyResponse**](KeyResponse.md)
+[**models::KeyResponse**](KeyResponse.md)
 
 ### Authorization
 
@@ -3799,7 +3799,7 @@ Name | Type | Description  | Required | Notes
 
 ## issue_jwt_with_id
 
-> crate::models::IssueResponse issue_jwt_with_id(application_id, refresh_token)
+> models::IssueResponse issue_jwt_with_id(application_id, refresh_token)
 
 
 Issue a new access token (JWT) for the requested Application after ensuring the provided JWT is valid. A valid access token is properly signed and not expired. <p> This API may be used in an SSO configuration to issue new tokens for another application after the user has obtained a valid token from authentication.
@@ -3814,7 +3814,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IssueResponse**](IssueResponse.md)
+[**models::IssueResponse**](IssueResponse.md)
 
 ### Authorization
 
@@ -3830,7 +3830,7 @@ Name | Type | Description  | Required | Notes
 
 ## login_ping_with_id
 
-> crate::models::LoginResponse login_ping_with_id(user_id, application_id, caller_ip_address, x_fusion_auth_tenant_id)
+> models::LoginResponse login_ping_with_id(user_id, application_id, caller_ip_address, x_fusion_auth_tenant_id)
 
 
 Sends a ping to FusionAuth indicating that the user was automatically logged into an application. When using FusionAuth's SSO or your own, you should call this if the user is already logged in centrally, but accesses an application where they no longer have a session. This helps correctly track login counts, times and helps with reporting.
@@ -3847,7 +3847,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LoginResponse**](LoginResponse.md)
+[**models::LoginResponse**](LoginResponse.md)
 
 ### Authorization
 
@@ -3863,7 +3863,7 @@ Name | Type | Description  | Required | Notes
 
 ## login_ping_with_request_with_id
 
-> crate::models::LoginResponse login_ping_with_request_with_id(x_fusion_auth_tenant_id, login_ping_request)
+> models::LoginResponse login_ping_with_request_with_id(x_fusion_auth_tenant_id, login_ping_request)
 
 
 Sends a ping to FusionAuth indicating that the user was automatically logged into an application. When using FusionAuth's SSO or your own, you should call this if the user is already logged in centrally, but accesses an application where they no longer have a session. This helps correctly track login counts, times and helps with reporting.
@@ -3878,7 +3878,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LoginResponse**](LoginResponse.md)
+[**models::LoginResponse**](LoginResponse.md)
 
 ### Authorization
 
@@ -3894,7 +3894,7 @@ Name | Type | Description  | Required | Notes
 
 ## login_with_id
 
-> crate::models::LoginResponse login_with_id(x_fusion_auth_tenant_id, login_request)
+> models::LoginResponse login_with_id(x_fusion_auth_tenant_id, login_request)
 
 
 Authenticates a user to FusionAuth.   This API optionally requires an API key. See <code>Application.loginConfiguration.requireAuthentication</code>.
@@ -3909,7 +3909,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LoginResponse**](LoginResponse.md)
+[**models::LoginResponse**](LoginResponse.md)
 
 ### Authorization
 
@@ -3925,7 +3925,7 @@ Name | Type | Description  | Required | Notes
 
 ## lookup_identity_provider_with_id
 
-> crate::models::LookupResponse lookup_identity_provider_with_id(domain)
+> models::LookupResponse lookup_identity_provider_with_id(domain)
 
 
 Retrieves the identity provider for the given domain. A 200 response code indicates the domain is managed by a registered identity provider. A 404 indicates the domain is not managed.
@@ -3939,7 +3939,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LookupResponse**](LookupResponse.md)
+[**models::LookupResponse**](LookupResponse.md)
 
 ### Authorization
 
@@ -3955,7 +3955,7 @@ Name | Type | Description  | Required | Notes
 
 ## modify_action_with_id
 
-> crate::models::ActionResponse modify_action_with_id(action_id, action_request)
+> models::ActionResponse modify_action_with_id(action_id, action_request)
 
 
 Modifies a temporal user action by changing the expiration of the action and optionally adding a comment to the action.
@@ -3970,7 +3970,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ActionResponse**](ActionResponse.md)
+[**models::ActionResponse**](ActionResponse.md)
 
 ### Authorization
 
@@ -3986,7 +3986,7 @@ Name | Type | Description  | Required | Notes
 
 ## passwordless_login_with_id
 
-> crate::models::LoginResponse passwordless_login_with_id(passwordless_login_request)
+> models::LoginResponse passwordless_login_with_id(passwordless_login_request)
 
 
 Complete a login request using a passwordless code
@@ -4000,7 +4000,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LoginResponse**](LoginResponse.md)
+[**models::LoginResponse**](LoginResponse.md)
 
 ### Authorization
 
@@ -4016,7 +4016,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_application_role_with_id
 
-> crate::models::ApplicationResponse patch_application_role_with_id(application_id, role_id, x_fusion_auth_tenant_id, application_request)
+> models::ApplicationResponse patch_application_role_with_id(application_id, role_id, x_fusion_auth_tenant_id, application_request)
 
 
 Updates, via PATCH, the application role with the given Id for the application.
@@ -4033,7 +4033,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApplicationResponse**](ApplicationResponse.md)
+[**models::ApplicationResponse**](ApplicationResponse.md)
 
 ### Authorization
 
@@ -4049,7 +4049,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_application_with_id
 
-> crate::models::ApplicationResponse patch_application_with_id(application_id, x_fusion_auth_tenant_id, application_request)
+> models::ApplicationResponse patch_application_with_id(application_id, x_fusion_auth_tenant_id, application_request)
 
 
 Updates, via PATCH, the application with the given Id.
@@ -4065,7 +4065,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApplicationResponse**](ApplicationResponse.md)
+[**models::ApplicationResponse**](ApplicationResponse.md)
 
 ### Authorization
 
@@ -4081,7 +4081,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_connector_with_id
 
-> crate::models::ConnectorResponse patch_connector_with_id(connector_id, connector_request)
+> models::ConnectorResponse patch_connector_with_id(connector_id, connector_request)
 
 
 Updates, via PATCH, the connector with the given Id.
@@ -4096,7 +4096,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ConnectorResponse**](ConnectorResponse.md)
+[**models::ConnectorResponse**](ConnectorResponse.md)
 
 ### Authorization
 
@@ -4112,7 +4112,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_consent_with_id
 
-> crate::models::ConsentResponse patch_consent_with_id(consent_id, x_fusion_auth_tenant_id, consent_request)
+> models::ConsentResponse patch_consent_with_id(consent_id, x_fusion_auth_tenant_id, consent_request)
 
 
 Updates, via PATCH, the consent with the given Id.
@@ -4128,7 +4128,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ConsentResponse**](ConsentResponse.md)
+[**models::ConsentResponse**](ConsentResponse.md)
 
 ### Authorization
 
@@ -4144,7 +4144,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_email_template_with_id
 
-> crate::models::EmailTemplateResponse patch_email_template_with_id(email_template_id, x_fusion_auth_tenant_id, email_template_request)
+> models::EmailTemplateResponse patch_email_template_with_id(email_template_id, x_fusion_auth_tenant_id, email_template_request)
 
 
 Updates, via PATCH, the email template with the given Id.
@@ -4160,7 +4160,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EmailTemplateResponse**](EmailTemplateResponse.md)
+[**models::EmailTemplateResponse**](EmailTemplateResponse.md)
 
 ### Authorization
 
@@ -4176,7 +4176,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_entity_type_with_id
 
-> crate::models::EntityTypeResponse patch_entity_type_with_id(entity_type_id, entity_type_request)
+> models::EntityTypeResponse patch_entity_type_with_id(entity_type_id, entity_type_request)
 
 
 Updates, via PATCH, the Entity Type with the given Id.
@@ -4191,7 +4191,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityTypeResponse**](EntityTypeResponse.md)
+[**models::EntityTypeResponse**](EntityTypeResponse.md)
 
 ### Authorization
 
@@ -4207,7 +4207,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_group_with_id
 
-> crate::models::GroupResponse patch_group_with_id(group_id, x_fusion_auth_tenant_id, group_request)
+> models::GroupResponse patch_group_with_id(group_id, x_fusion_auth_tenant_id, group_request)
 
 
 Updates, via PATCH, the group with the given Id.
@@ -4223,7 +4223,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GroupResponse**](GroupResponse.md)
+[**models::GroupResponse**](GroupResponse.md)
 
 ### Authorization
 
@@ -4239,7 +4239,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_identity_provider_with_id
 
-> crate::models::IdentityProviderResponse patch_identity_provider_with_id(identity_provider_id, identity_provider_request)
+> models::IdentityProviderResponse patch_identity_provider_with_id(identity_provider_id, identity_provider_request)
 
 
 Updates, via PATCH, the identity provider with the given Id.
@@ -4254,7 +4254,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IdentityProviderResponse**](IdentityProviderResponse.md)
+[**models::IdentityProviderResponse**](IdentityProviderResponse.md)
 
 ### Authorization
 
@@ -4270,7 +4270,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_integrations_with_id
 
-> crate::models::IntegrationResponse patch_integrations_with_id(integration_request)
+> models::IntegrationResponse patch_integrations_with_id(integration_request)
 
 
 Updates, via PATCH, the available integrations.
@@ -4284,7 +4284,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IntegrationResponse**](IntegrationResponse.md)
+[**models::IntegrationResponse**](IntegrationResponse.md)
 
 ### Authorization
 
@@ -4300,7 +4300,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_lambda_with_id
 
-> crate::models::LambdaResponse patch_lambda_with_id(lambda_id, lambda_request)
+> models::LambdaResponse patch_lambda_with_id(lambda_id, lambda_request)
 
 
 Updates, via PATCH, the lambda with the given Id.
@@ -4315,7 +4315,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LambdaResponse**](LambdaResponse.md)
+[**models::LambdaResponse**](LambdaResponse.md)
 
 ### Authorization
 
@@ -4331,7 +4331,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_message_template_with_id
 
-> crate::models::MessageTemplateResponse patch_message_template_with_id(message_template_id, message_template_request)
+> models::MessageTemplateResponse patch_message_template_with_id(message_template_id, message_template_request)
 
 
 Updates, via PATCH, the message template with the given Id.
@@ -4346,7 +4346,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MessageTemplateResponse**](MessageTemplateResponse.md)
+[**models::MessageTemplateResponse**](MessageTemplateResponse.md)
 
 ### Authorization
 
@@ -4362,7 +4362,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_messenger_with_id
 
-> crate::models::MessengerResponse patch_messenger_with_id(messenger_id, messenger_request)
+> models::MessengerResponse patch_messenger_with_id(messenger_id, messenger_request)
 
 
 Updates, via PATCH, the messenger with the given Id.
@@ -4377,7 +4377,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MessengerResponse**](MessengerResponse.md)
+[**models::MessengerResponse**](MessengerResponse.md)
 
 ### Authorization
 
@@ -4393,7 +4393,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_registration_with_id
 
-> crate::models::RegistrationResponse patch_registration_with_id(user_id, x_fusion_auth_tenant_id, registration_request)
+> models::RegistrationResponse patch_registration_with_id(user_id, x_fusion_auth_tenant_id, registration_request)
 
 
 Updates, via PATCH, the registration for the user with the given Id and the application defined in the request.
@@ -4409,7 +4409,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RegistrationResponse**](RegistrationResponse.md)
+[**models::RegistrationResponse**](RegistrationResponse.md)
 
 ### Authorization
 
@@ -4425,7 +4425,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_system_configuration_with_id
 
-> crate::models::SystemConfigurationResponse patch_system_configuration_with_id(system_configuration_request)
+> models::SystemConfigurationResponse patch_system_configuration_with_id(system_configuration_request)
 
 
 Updates, via PATCH, the system configuration.
@@ -4439,7 +4439,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::SystemConfigurationResponse**](SystemConfigurationResponse.md)
+[**models::SystemConfigurationResponse**](SystemConfigurationResponse.md)
 
 ### Authorization
 
@@ -4455,7 +4455,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_tenant_with_id
 
-> crate::models::TenantResponse patch_tenant_with_id(tenant_id, x_fusion_auth_tenant_id, tenant_request)
+> models::TenantResponse patch_tenant_with_id(tenant_id, x_fusion_auth_tenant_id, tenant_request)
 
 
 Updates, via PATCH, the tenant with the given Id.
@@ -4471,7 +4471,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TenantResponse**](TenantResponse.md)
+[**models::TenantResponse**](TenantResponse.md)
 
 ### Authorization
 
@@ -4487,7 +4487,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_theme_with_id
 
-> crate::models::ThemeResponse patch_theme_with_id(theme_id, theme_request)
+> models::ThemeResponse patch_theme_with_id(theme_id, theme_request)
 
 
 Updates, via PATCH, the theme with the given Id.
@@ -4502,7 +4502,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ThemeResponse**](ThemeResponse.md)
+[**models::ThemeResponse**](ThemeResponse.md)
 
 ### Authorization
 
@@ -4518,7 +4518,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_user_action_reason_with_id
 
-> crate::models::UserActionReasonResponse patch_user_action_reason_with_id(user_action_reason_id, user_action_reason_request)
+> models::UserActionReasonResponse patch_user_action_reason_with_id(user_action_reason_id, user_action_reason_request)
 
 
 Updates, via PATCH, the user action reason with the given Id.
@@ -4533,7 +4533,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserActionReasonResponse**](UserActionReasonResponse.md)
+[**models::UserActionReasonResponse**](UserActionReasonResponse.md)
 
 ### Authorization
 
@@ -4549,7 +4549,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_user_action_with_id
 
-> crate::models::UserActionResponse patch_user_action_with_id(user_action_id, x_fusion_auth_tenant_id, user_action_request)
+> models::UserActionResponse patch_user_action_with_id(user_action_id, x_fusion_auth_tenant_id, user_action_request)
 
 
 Updates, via PATCH, the user action with the given Id.
@@ -4565,7 +4565,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserActionResponse**](UserActionResponse.md)
+[**models::UserActionResponse**](UserActionResponse.md)
 
 ### Authorization
 
@@ -4581,7 +4581,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_user_consent_with_id
 
-> crate::models::UserConsentResponse patch_user_consent_with_id(user_consent_id, user_consent_request)
+> models::UserConsentResponse patch_user_consent_with_id(user_consent_id, user_consent_request)
 
 
 Updates, via PATCH, a single User consent by Id.
@@ -4596,7 +4596,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserConsentResponse**](UserConsentResponse.md)
+[**models::UserConsentResponse**](UserConsentResponse.md)
 
 ### Authorization
 
@@ -4612,7 +4612,7 @@ Name | Type | Description  | Required | Notes
 
 ## patch_user_with_id
 
-> crate::models::UserResponse patch_user_with_id(user_id, x_fusion_auth_tenant_id, user_request)
+> models::UserResponse patch_user_with_id(user_id, x_fusion_auth_tenant_id, user_request)
 
 
 Updates, via PATCH, the user with the given Id.
@@ -4628,7 +4628,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserResponse**](UserResponse.md)
+[**models::UserResponse**](UserResponse.md)
 
 ### Authorization
 
@@ -4644,7 +4644,7 @@ Name | Type | Description  | Required | Notes
 
 ## reconcile_jwt_with_id
 
-> crate::models::LoginResponse reconcile_jwt_with_id(identity_provider_login_request)
+> models::LoginResponse reconcile_jwt_with_id(identity_provider_login_request)
 
 
 Reconcile a User to FusionAuth using JWT issued from another Identity Provider.
@@ -4658,7 +4658,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LoginResponse**](LoginResponse.md)
+[**models::LoginResponse**](LoginResponse.md)
 
 ### Authorization
 
@@ -4674,7 +4674,7 @@ Name | Type | Description  | Required | Notes
 
 ## register
 
-> crate::models::RegistrationResponse register(x_fusion_auth_tenant_id, registration_request)
+> models::RegistrationResponse register(x_fusion_auth_tenant_id, registration_request)
 
 
 Registers a user for an application. If you provide the User and the UserRegistration object on this request, it will create the user as well as register them for the application. This is called a Full Registration. However, if you only provide the UserRegistration object, then the user must already exist and they will be registered for the application. The user Id can also be provided and it will either be used to look up an existing user or it will be used for the newly created User.
@@ -4689,7 +4689,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RegistrationResponse**](RegistrationResponse.md)
+[**models::RegistrationResponse**](RegistrationResponse.md)
 
 ### Authorization
 
@@ -4705,7 +4705,7 @@ Name | Type | Description  | Required | Notes
 
 ## register_with_id
 
-> crate::models::RegistrationResponse register_with_id(user_id, x_fusion_auth_tenant_id, registration_request)
+> models::RegistrationResponse register_with_id(user_id, x_fusion_auth_tenant_id, registration_request)
 
 
 Registers a user for an application. If you provide the User and the UserRegistration object on this request, it will create the user as well as register them for the application. This is called a Full Registration. However, if you only provide the UserRegistration object, then the user must already exist and they will be registered for the application. The user Id can also be provided and it will either be used to look up an existing user or it will be used for the newly created User.
@@ -4721,7 +4721,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RegistrationResponse**](RegistrationResponse.md)
+[**models::RegistrationResponse**](RegistrationResponse.md)
 
 ### Authorization
 
@@ -4799,7 +4799,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_action_with_id
 
-> crate::models::ActionResponse retrieve_action_with_id(action_id)
+> models::ActionResponse retrieve_action_with_id(action_id)
 
 
 Retrieves a single action log (the log of a user action that was taken on a user previously) for the given Id.
@@ -4813,7 +4813,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ActionResponse**](ActionResponse.md)
+[**models::ActionResponse**](ActionResponse.md)
 
 ### Authorization
 
@@ -4829,7 +4829,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_api_key_with_id
 
-> crate::models::ApiKeyResponse retrieve_api_key_with_id(key_id)
+> models::ApiKeyResponse retrieve_api_key_with_id(key_id)
 
 
 Retrieves an authentication API key for the given id
@@ -4843,7 +4843,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApiKeyResponse**](APIKeyResponse.md)
+[**models::ApiKeyResponse**](APIKeyResponse.md)
 
 ### Authorization
 
@@ -4859,22 +4859,22 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_application
 
-> crate::models::ApplicationResponse retrieve_application(inactive, x_fusion_auth_tenant_id)
+> models::ApplicationResponse retrieve_application(x_fusion_auth_tenant_id, inactive)
 
 
-Retrieves all the applications that are currently inactive. OR Retrieves the application for the given Id or all the applications if the Id is null.
+Retrieves the application for the given Id or all the applications if the Id is null. OR Retrieves all the applications that are currently inactive.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**inactive** | Option<**String**> |  |  |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**inactive** | Option<**String**> |  |  |
 
 ### Return type
 
-[**crate::models::ApplicationResponse**](ApplicationResponse.md)
+[**models::ApplicationResponse**](ApplicationResponse.md)
 
 ### Authorization
 
@@ -4890,7 +4890,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_application_with_id
 
-> crate::models::ApplicationResponse retrieve_application_with_id(application_id, x_fusion_auth_tenant_id)
+> models::ApplicationResponse retrieve_application_with_id(application_id, x_fusion_auth_tenant_id)
 
 
 Retrieves the application for the given Id or all the applications if the Id is null.
@@ -4905,7 +4905,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApplicationResponse**](ApplicationResponse.md)
+[**models::ApplicationResponse**](ApplicationResponse.md)
 
 ### Authorization
 
@@ -4921,7 +4921,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_audit_log_with_id
 
-> crate::models::AuditLogResponse retrieve_audit_log_with_id(audit_log_id)
+> models::AuditLogResponse retrieve_audit_log_with_id(audit_log_id)
 
 
 Retrieves a single audit log for the given Id.
@@ -4935,7 +4935,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::AuditLogResponse**](AuditLogResponse.md)
+[**models::AuditLogResponse**](AuditLogResponse.md)
 
 ### Authorization
 
@@ -4951,7 +4951,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_connector_with_id
 
-> crate::models::ConnectorResponse retrieve_connector_with_id(connector_id)
+> models::ConnectorResponse retrieve_connector_with_id(connector_id)
 
 
 Retrieves the connector with the given Id.
@@ -4965,7 +4965,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ConnectorResponse**](ConnectorResponse.md)
+[**models::ConnectorResponse**](ConnectorResponse.md)
 
 ### Authorization
 
@@ -4981,7 +4981,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_consent_with_id
 
-> crate::models::ConsentResponse retrieve_consent_with_id(consent_id, x_fusion_auth_tenant_id)
+> models::ConsentResponse retrieve_consent_with_id(consent_id, x_fusion_auth_tenant_id)
 
 
 Retrieves the Consent for the given Id.
@@ -4996,7 +4996,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ConsentResponse**](ConsentResponse.md)
+[**models::ConsentResponse**](ConsentResponse.md)
 
 ### Authorization
 
@@ -5012,7 +5012,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_daily_active_report_with_id
 
-> crate::models::DailyActiveUserReportResponse retrieve_daily_active_report_with_id(application_id, start, end)
+> models::DailyActiveUserReportResponse retrieve_daily_active_report_with_id(application_id, start, end)
 
 
 Retrieves the daily active user report between the two instants. If you specify an application id, it will only return the daily active counts for that application.
@@ -5028,7 +5028,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::DailyActiveUserReportResponse**](DailyActiveUserReportResponse.md)
+[**models::DailyActiveUserReportResponse**](DailyActiveUserReportResponse.md)
 
 ### Authorization
 
@@ -5071,7 +5071,7 @@ This endpoint does not need any parameter.
 
 ## retrieve_email_template
 
-> crate::models::EmailTemplateResponse retrieve_email_template(x_fusion_auth_tenant_id)
+> models::EmailTemplateResponse retrieve_email_template(x_fusion_auth_tenant_id)
 
 
 Retrieves the email template for the given Id. If you don't specify the id, this will return all the email templates.
@@ -5085,7 +5085,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EmailTemplateResponse**](EmailTemplateResponse.md)
+[**models::EmailTemplateResponse**](EmailTemplateResponse.md)
 
 ### Authorization
 
@@ -5101,7 +5101,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_email_template_preview_with_id
 
-> crate::models::PreviewResponse retrieve_email_template_preview_with_id(preview_request)
+> models::PreviewResponse retrieve_email_template_preview_with_id(preview_request)
 
 
 Creates a preview of the email template provided in the request. This allows you to preview an email template that hasn't been saved to the database yet. The entire email template does not need to be provided on the request. This will create the preview based on whatever is given.
@@ -5115,7 +5115,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::PreviewResponse**](PreviewResponse.md)
+[**models::PreviewResponse**](PreviewResponse.md)
 
 ### Authorization
 
@@ -5131,7 +5131,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_email_template_with_id
 
-> crate::models::EmailTemplateResponse retrieve_email_template_with_id(email_template_id, x_fusion_auth_tenant_id)
+> models::EmailTemplateResponse retrieve_email_template_with_id(email_template_id, x_fusion_auth_tenant_id)
 
 
 Retrieves the email template for the given Id. If you don't specify the id, this will return all the email templates.
@@ -5146,7 +5146,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EmailTemplateResponse**](EmailTemplateResponse.md)
+[**models::EmailTemplateResponse**](EmailTemplateResponse.md)
 
 ### Authorization
 
@@ -5162,7 +5162,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_entity_grant_with_id
 
-> crate::models::EntityGrantResponse retrieve_entity_grant_with_id(entity_id, recipient_entity_id, user_id, x_fusion_auth_tenant_id)
+> models::EntityGrantResponse retrieve_entity_grant_with_id(entity_id, recipient_entity_id, user_id, x_fusion_auth_tenant_id)
 
 
 Retrieves an Entity Grant for the given Entity and User/Entity.
@@ -5179,7 +5179,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityGrantResponse**](EntityGrantResponse.md)
+[**models::EntityGrantResponse**](EntityGrantResponse.md)
 
 ### Authorization
 
@@ -5195,7 +5195,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_entity_type_with_id
 
-> crate::models::EntityTypeResponse retrieve_entity_type_with_id(entity_type_id)
+> models::EntityTypeResponse retrieve_entity_type_with_id(entity_type_id)
 
 
 Retrieves the Entity Type for the given Id.
@@ -5209,7 +5209,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityTypeResponse**](EntityTypeResponse.md)
+[**models::EntityTypeResponse**](EntityTypeResponse.md)
 
 ### Authorization
 
@@ -5225,7 +5225,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_entity_with_id
 
-> crate::models::EntityResponse retrieve_entity_with_id(entity_id, x_fusion_auth_tenant_id)
+> models::EntityResponse retrieve_entity_with_id(entity_id, x_fusion_auth_tenant_id)
 
 
 Retrieves the Entity for the given Id.
@@ -5240,7 +5240,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityResponse**](EntityResponse.md)
+[**models::EntityResponse**](EntityResponse.md)
 
 ### Authorization
 
@@ -5256,7 +5256,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_event_log_with_id
 
-> crate::models::EventLogResponse retrieve_event_log_with_id(event_log_id)
+> models::EventLogResponse retrieve_event_log_with_id(event_log_id)
 
 
 Retrieves a single event log for the given Id.
@@ -5270,7 +5270,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EventLogResponse**](EventLogResponse.md)
+[**models::EventLogResponse**](EventLogResponse.md)
 
 ### Authorization
 
@@ -5286,7 +5286,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_families_with_id
 
-> crate::models::FamilyResponse retrieve_families_with_id(user_id, x_fusion_auth_tenant_id)
+> models::FamilyResponse retrieve_families_with_id(user_id, x_fusion_auth_tenant_id)
 
 
 Retrieves all the families that a user belongs to.
@@ -5301,7 +5301,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::FamilyResponse**](FamilyResponse.md)
+[**models::FamilyResponse**](FamilyResponse.md)
 
 ### Authorization
 
@@ -5317,7 +5317,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_family_members_by_family_id_with_id
 
-> crate::models::FamilyResponse retrieve_family_members_by_family_id_with_id(family_id, x_fusion_auth_tenant_id)
+> models::FamilyResponse retrieve_family_members_by_family_id_with_id(family_id, x_fusion_auth_tenant_id)
 
 
 Retrieves all the members of a family by the unique Family Id.
@@ -5332,7 +5332,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::FamilyResponse**](FamilyResponse.md)
+[**models::FamilyResponse**](FamilyResponse.md)
 
 ### Authorization
 
@@ -5348,7 +5348,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_form_field_with_id
 
-> crate::models::FormFieldResponse retrieve_form_field_with_id(field_id)
+> models::FormFieldResponse retrieve_form_field_with_id(field_id)
 
 
 Retrieves the form field with the given Id.
@@ -5362,7 +5362,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::FormFieldResponse**](FormFieldResponse.md)
+[**models::FormFieldResponse**](FormFieldResponse.md)
 
 ### Authorization
 
@@ -5378,7 +5378,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_form_with_id
 
-> crate::models::FormResponse retrieve_form_with_id(form_id)
+> models::FormResponse retrieve_form_with_id(form_id)
 
 
 Retrieves the form with the given Id.
@@ -5392,7 +5392,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::FormResponse**](FormResponse.md)
+[**models::FormResponse**](FormResponse.md)
 
 ### Authorization
 
@@ -5408,7 +5408,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_group_with_id
 
-> crate::models::GroupResponse retrieve_group_with_id(group_id, x_fusion_auth_tenant_id)
+> models::GroupResponse retrieve_group_with_id(group_id, x_fusion_auth_tenant_id)
 
 
 Retrieves the group for the given Id.
@@ -5423,7 +5423,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GroupResponse**](GroupResponse.md)
+[**models::GroupResponse**](GroupResponse.md)
 
 ### Authorization
 
@@ -5439,7 +5439,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_identity_provider_by_type_with_id
 
-> crate::models::IdentityProviderResponse retrieve_identity_provider_by_type_with_id(r#type)
+> models::IdentityProviderResponse retrieve_identity_provider_by_type_with_id(r#type)
 
 
 Retrieves one or more identity provider for the given type. For types such as Google, Facebook, Twitter and LinkedIn, only a single  identity provider can exist. For types such as OpenID Connect and SAMLv2 more than one identity provider can be configured so this request  may return multiple identity providers.
@@ -5453,7 +5453,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IdentityProviderResponse**](IdentityProviderResponse.md)
+[**models::IdentityProviderResponse**](IdentityProviderResponse.md)
 
 ### Authorization
 
@@ -5469,23 +5469,23 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_identity_provider_link
 
-> crate::models::IdentityProviderLinkResponse retrieve_identity_provider_link(identity_provider_id, user_id, identity_provider_user_id)
+> models::IdentityProviderLinkResponse retrieve_identity_provider_link(identity_provider_id, identity_provider_user_id, user_id)
 
 
-Retrieve all Identity Provider users (links) for the user. Specify the optional identityProviderId to retrieve links for a particular IdP. OR Retrieve a single Identity Provider user (link).
+Retrieve a single Identity Provider user (link). OR Retrieve all Identity Provider users (links) for the user. Specify the optional identityProviderId to retrieve links for a particular IdP.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**identity_provider_id** | Option<**String**> | The unique Id of the identity provider. Specify this value to reduce the links returned to those for a particular IdP. |  |
-**user_id** | Option<**String**> | The unique Id of the user. |  |
+**identity_provider_id** | Option<**String**> | The unique Id of the identity provider. |  |
 **identity_provider_user_id** | Option<**String**> | The unique Id of the user in the 3rd party identity provider. |  |
+**user_id** | Option<**String**> | The unique Id of the FusionAuth user. |  |
 
 ### Return type
 
-[**crate::models::IdentityProviderLinkResponse**](IdentityProviderLinkResponse.md)
+[**models::IdentityProviderLinkResponse**](IdentityProviderLinkResponse.md)
 
 ### Authorization
 
@@ -5501,7 +5501,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_identity_provider_with_id
 
-> crate::models::IdentityProviderResponse retrieve_identity_provider_with_id(identity_provider_id)
+> models::IdentityProviderResponse retrieve_identity_provider_with_id(identity_provider_id)
 
 
 Retrieves the identity provider for the given Id or all the identity providers if the Id is null.
@@ -5515,7 +5515,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IdentityProviderResponse**](IdentityProviderResponse.md)
+[**models::IdentityProviderResponse**](IdentityProviderResponse.md)
 
 ### Authorization
 
@@ -5531,7 +5531,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_ip_access_control_list_with_id
 
-> crate::models::IpAccessControlListResponse retrieve_ip_access_control_list_with_id(ip_access_control_list_id)
+> models::IpAccessControlListResponse retrieve_ip_access_control_list_with_id(ip_access_control_list_id)
 
 
 Retrieves the IP Access Control List with the given Id.
@@ -5545,7 +5545,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IpAccessControlListResponse**](IPAccessControlListResponse.md)
+[**models::IpAccessControlListResponse**](IPAccessControlListResponse.md)
 
 ### Authorization
 
@@ -5561,7 +5561,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_json_web_key_set_with_id
 
-> crate::models::JwksResponse retrieve_json_web_key_set_with_id()
+> models::JwksResponse retrieve_json_web_key_set_with_id()
 
 
 Returns public keys used by FusionAuth to cryptographically verify JWTs using the JSON Web Key format.
@@ -5572,7 +5572,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::JwksResponse**](JWKSResponse.md)
+[**models::JwksResponse**](JWKSResponse.md)
 
 ### Authorization
 
@@ -5588,7 +5588,7 @@ This endpoint does not need any parameter.
 
 ## retrieve_jwt_public_key
 
-> crate::models::PublicKeyResponse retrieve_jwt_public_key(key_id, application_id)
+> models::PublicKeyResponse retrieve_jwt_public_key(key_id, application_id)
 
 
 Retrieves the Public Key configured for verifying JSON Web Tokens (JWT) by the key Id (kid). OR Retrieves the Public Key configured for verifying the JSON Web Tokens (JWT) issued by the Login API by the Application Id.
@@ -5603,7 +5603,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::PublicKeyResponse**](PublicKeyResponse.md)
+[**models::PublicKeyResponse**](PublicKeyResponse.md)
 
 ### Authorization
 
@@ -5619,7 +5619,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_key_with_id
 
-> crate::models::KeyResponse retrieve_key_with_id(key_id)
+> models::KeyResponse retrieve_key_with_id(key_id)
 
 
 Retrieves the key for the given Id.
@@ -5633,7 +5633,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::KeyResponse**](KeyResponse.md)
+[**models::KeyResponse**](KeyResponse.md)
 
 ### Authorization
 
@@ -5649,7 +5649,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_keys_with_id
 
-> crate::models::KeyResponse retrieve_keys_with_id()
+> models::KeyResponse retrieve_keys_with_id()
 
 
 Retrieves all the keys.
@@ -5660,7 +5660,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::KeyResponse**](KeyResponse.md)
+[**models::KeyResponse**](KeyResponse.md)
 
 ### Authorization
 
@@ -5676,7 +5676,7 @@ This endpoint does not need any parameter.
 
 ## retrieve_lambda_with_id
 
-> crate::models::LambdaResponse retrieve_lambda_with_id(lambda_id)
+> models::LambdaResponse retrieve_lambda_with_id(lambda_id)
 
 
 Retrieves the lambda for the given Id.
@@ -5690,7 +5690,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LambdaResponse**](LambdaResponse.md)
+[**models::LambdaResponse**](LambdaResponse.md)
 
 ### Authorization
 
@@ -5706,7 +5706,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_lambdas_by_type_with_id
 
-> crate::models::LambdaResponse retrieve_lambdas_by_type_with_id(r#type)
+> models::LambdaResponse retrieve_lambdas_by_type_with_id(r#type)
 
 
 Retrieves all the lambdas for the provided type.
@@ -5720,7 +5720,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LambdaResponse**](LambdaResponse.md)
+[**models::LambdaResponse**](LambdaResponse.md)
 
 ### Authorization
 
@@ -5736,7 +5736,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_message_template
 
-> crate::models::MessageTemplateResponse retrieve_message_template()
+> models::MessageTemplateResponse retrieve_message_template()
 
 
 Retrieves the message template for the given Id. If you don't specify the id, this will return all the message templates.
@@ -5747,7 +5747,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::MessageTemplateResponse**](MessageTemplateResponse.md)
+[**models::MessageTemplateResponse**](MessageTemplateResponse.md)
 
 ### Authorization
 
@@ -5763,7 +5763,7 @@ This endpoint does not need any parameter.
 
 ## retrieve_message_template_preview_with_id
 
-> crate::models::PreviewMessageTemplateResponse retrieve_message_template_preview_with_id(preview_message_template_request)
+> models::PreviewMessageTemplateResponse retrieve_message_template_preview_with_id(preview_message_template_request)
 
 
 Creates a preview of the message template provided in the request, normalized to a given locale.
@@ -5777,7 +5777,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::PreviewMessageTemplateResponse**](PreviewMessageTemplateResponse.md)
+[**models::PreviewMessageTemplateResponse**](PreviewMessageTemplateResponse.md)
 
 ### Authorization
 
@@ -5793,7 +5793,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_message_template_with_id
 
-> crate::models::MessageTemplateResponse retrieve_message_template_with_id(message_template_id)
+> models::MessageTemplateResponse retrieve_message_template_with_id(message_template_id)
 
 
 Retrieves the message template for the given Id. If you don't specify the id, this will return all the message templates.
@@ -5807,7 +5807,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MessageTemplateResponse**](MessageTemplateResponse.md)
+[**models::MessageTemplateResponse**](MessageTemplateResponse.md)
 
 ### Authorization
 
@@ -5823,7 +5823,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_messenger_with_id
 
-> crate::models::MessengerResponse retrieve_messenger_with_id(messenger_id)
+> models::MessengerResponse retrieve_messenger_with_id(messenger_id)
 
 
 Retrieves the messenger with the given Id.
@@ -5837,7 +5837,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MessengerResponse**](MessengerResponse.md)
+[**models::MessengerResponse**](MessengerResponse.md)
 
 ### Authorization
 
@@ -5853,7 +5853,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_monthly_active_report_with_id
 
-> crate::models::MonthlyActiveUserReportResponse retrieve_monthly_active_report_with_id(application_id, start, end)
+> models::MonthlyActiveUserReportResponse retrieve_monthly_active_report_with_id(application_id, start, end)
 
 
 Retrieves the monthly active user report between the two instants. If you specify an application id, it will only return the monthly active counts for that application.
@@ -5869,7 +5869,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MonthlyActiveUserReportResponse**](MonthlyActiveUserReportResponse.md)
+[**models::MonthlyActiveUserReportResponse**](MonthlyActiveUserReportResponse.md)
 
 ### Authorization
 
@@ -5885,7 +5885,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_oauth_configuration_with_id
 
-> crate::models::OAuthConfigurationResponse retrieve_oauth_configuration_with_id(application_id, x_fusion_auth_tenant_id)
+> models::OAuthConfigurationResponse retrieve_oauth_configuration_with_id(application_id, x_fusion_auth_tenant_id)
 
 
 Retrieves the Oauth2 configuration for the application for the given Application Id.
@@ -5900,7 +5900,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::OAuthConfigurationResponse**](OAuthConfigurationResponse.md)
+[**models::OAuthConfigurationResponse**](OAuthConfigurationResponse.md)
 
 ### Authorization
 
@@ -5916,7 +5916,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_open_id_configuration_with_id
 
-> crate::models::OpenIdConfiguration retrieve_open_id_configuration_with_id()
+> models::OpenIdConfiguration retrieve_open_id_configuration_with_id()
 
 
 Returns the well known OpenID Configuration JSON document
@@ -5927,7 +5927,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::OpenIdConfiguration**](OpenIdConfiguration.md)
+[**models::OpenIdConfiguration**](OpenIdConfiguration.md)
 
 ### Authorization
 
@@ -5943,7 +5943,7 @@ This endpoint does not need any parameter.
 
 ## retrieve_password_validation_rules_with_id
 
-> crate::models::PasswordValidationRulesResponse retrieve_password_validation_rules_with_id()
+> models::PasswordValidationRulesResponse retrieve_password_validation_rules_with_id()
 
 
 Retrieves the password validation rules for a specific tenant. This method requires a tenantId to be provided  through the use of a Tenant scoped API key or an HTTP header X-FusionAuth-TenantId to specify the Tenant Id.  This API does not require an API key.
@@ -5954,7 +5954,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::PasswordValidationRulesResponse**](PasswordValidationRulesResponse.md)
+[**models::PasswordValidationRulesResponse**](PasswordValidationRulesResponse.md)
 
 ### Authorization
 
@@ -5970,7 +5970,7 @@ This endpoint does not need any parameter.
 
 ## retrieve_password_validation_rules_with_tenant_id_with_id
 
-> crate::models::PasswordValidationRulesResponse retrieve_password_validation_rules_with_tenant_id_with_id(tenant_id)
+> models::PasswordValidationRulesResponse retrieve_password_validation_rules_with_tenant_id_with_id(tenant_id)
 
 
 Retrieves the password validation rules for a specific tenant.  This API does not require an API key.
@@ -5984,7 +5984,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::PasswordValidationRulesResponse**](PasswordValidationRulesResponse.md)
+[**models::PasswordValidationRulesResponse**](PasswordValidationRulesResponse.md)
 
 ### Authorization
 
@@ -6000,7 +6000,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_pending_children_with_id
 
-> crate::models::PendingResponse retrieve_pending_children_with_id(parent_email)
+> models::PendingResponse retrieve_pending_children_with_id(parent_email)
 
 
 Retrieves all the children for the given parent email address.
@@ -6014,7 +6014,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::PendingResponse**](PendingResponse.md)
+[**models::PendingResponse**](PendingResponse.md)
 
 ### Authorization
 
@@ -6030,7 +6030,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_pending_link_with_id
 
-> crate::models::IdentityProviderPendingLinkResponse retrieve_pending_link_with_id(pending_link_id, user_id)
+> models::IdentityProviderPendingLinkResponse retrieve_pending_link_with_id(pending_link_id, user_id)
 
 
 Retrieve a pending identity provider link. This is useful to validate a pending link and retrieve meta-data about the identity provider link.
@@ -6045,7 +6045,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IdentityProviderPendingLinkResponse**](IdentityProviderPendingLinkResponse.md)
+[**models::IdentityProviderPendingLinkResponse**](IdentityProviderPendingLinkResponse.md)
 
 ### Authorization
 
@@ -6061,7 +6061,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_reactor_metrics_with_id
 
-> crate::models::ReactorMetricsResponse retrieve_reactor_metrics_with_id()
+> models::ReactorMetricsResponse retrieve_reactor_metrics_with_id()
 
 
 Retrieves the FusionAuth Reactor metrics.
@@ -6072,7 +6072,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::ReactorMetricsResponse**](ReactorMetricsResponse.md)
+[**models::ReactorMetricsResponse**](ReactorMetricsResponse.md)
 
 ### Authorization
 
@@ -6088,7 +6088,7 @@ This endpoint does not need any parameter.
 
 ## retrieve_refresh_token_by_id_with_id
 
-> crate::models::RefreshTokenResponse retrieve_refresh_token_by_id_with_id(token_id)
+> models::RefreshTokenResponse retrieve_refresh_token_by_id_with_id(token_id)
 
 
 Retrieves a single refresh token by unique Id. This is not the same thing as the string value of the refresh token. If you have that, you already have what you need.
@@ -6102,7 +6102,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RefreshTokenResponse**](RefreshTokenResponse.md)
+[**models::RefreshTokenResponse**](RefreshTokenResponse.md)
 
 ### Authorization
 
@@ -6118,7 +6118,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_refresh_tokens_with_id
 
-> crate::models::RefreshTokenResponse retrieve_refresh_tokens_with_id(user_id)
+> models::RefreshTokenResponse retrieve_refresh_tokens_with_id(user_id)
 
 
 Retrieves the refresh tokens that belong to the user with the given Id.
@@ -6132,7 +6132,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RefreshTokenResponse**](RefreshTokenResponse.md)
+[**models::RefreshTokenResponse**](RefreshTokenResponse.md)
 
 ### Authorization
 
@@ -6148,7 +6148,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_registration_report_with_id
 
-> crate::models::RegistrationReportResponse retrieve_registration_report_with_id(application_id, start, end)
+> models::RegistrationReportResponse retrieve_registration_report_with_id(application_id, start, end)
 
 
 Retrieves the registration report between the two instants. If you specify an application id, it will only return the registration counts for that application.
@@ -6164,7 +6164,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RegistrationReportResponse**](RegistrationReportResponse.md)
+[**models::RegistrationReportResponse**](RegistrationReportResponse.md)
 
 ### Authorization
 
@@ -6180,7 +6180,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_registration_with_id
 
-> crate::models::RegistrationResponse retrieve_registration_with_id(user_id, application_id, x_fusion_auth_tenant_id)
+> models::RegistrationResponse retrieve_registration_with_id(user_id, application_id, x_fusion_auth_tenant_id)
 
 
 Retrieves the user registration for the user with the given Id and the given application id.
@@ -6196,7 +6196,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RegistrationResponse**](RegistrationResponse.md)
+[**models::RegistrationResponse**](RegistrationResponse.md)
 
 ### Authorization
 
@@ -6212,10 +6212,10 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_report_login
 
-> crate::models::LoginReportResponse retrieve_report_login(application_id, login_id, start, end, user_id)
+> models::LoginReportResponse retrieve_report_login(application_id, start, end, user_id, login_id)
 
 
-Retrieves the login report between the two instants for a particular user by login Id. If you specify an application id, it will only return the login counts for that application. OR Retrieves the login report between the two instants for a particular user by Id. If you specify an application id, it will only return the login counts for that application. OR Retrieves the login report between the two instants. If you specify an application id, it will only return the login counts for that application.
+Retrieves the login report between the two instants. If you specify an application id, it will only return the login counts for that application. OR Retrieves the login report between the two instants for a particular user by Id. If you specify an application id, it will only return the login counts for that application. OR Retrieves the login report between the two instants for a particular user by login Id. If you specify an application id, it will only return the login counts for that application.
 
 ### Parameters
 
@@ -6223,14 +6223,14 @@ Retrieves the login report between the two instants for a particular user by log
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **application_id** | Option<**String**> | The application id. |  |
-**login_id** | Option<**String**> | The userId id. |  |
 **start** | Option<**String**> | The start instant as UTC milliseconds since Epoch. |  |
 **end** | Option<**String**> | The end instant as UTC milliseconds since Epoch. |  |
 **user_id** | Option<**String**> | The userId id. |  |
+**login_id** | Option<**String**> | The userId id. |  |
 
 ### Return type
 
-[**crate::models::LoginReportResponse**](LoginReportResponse.md)
+[**models::LoginReportResponse**](LoginReportResponse.md)
 
 ### Authorization
 
@@ -6246,7 +6246,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_tenant_with_id
 
-> crate::models::TenantResponse retrieve_tenant_with_id(tenant_id, x_fusion_auth_tenant_id)
+> models::TenantResponse retrieve_tenant_with_id(tenant_id, x_fusion_auth_tenant_id)
 
 
 Retrieves the tenant for the given Id.
@@ -6261,7 +6261,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TenantResponse**](TenantResponse.md)
+[**models::TenantResponse**](TenantResponse.md)
 
 ### Authorization
 
@@ -6277,7 +6277,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_theme_with_id
 
-> crate::models::ThemeResponse retrieve_theme_with_id(theme_id)
+> models::ThemeResponse retrieve_theme_with_id(theme_id)
 
 
 Retrieves the theme for the given Id.
@@ -6291,7 +6291,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ThemeResponse**](ThemeResponse.md)
+[**models::ThemeResponse**](ThemeResponse.md)
 
 ### Authorization
 
@@ -6307,7 +6307,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_total_report_with_id
 
-> crate::models::TotalsReportResponse retrieve_total_report_with_id()
+> models::TotalsReportResponse retrieve_total_report_with_id()
 
 
 Retrieves the totals report. This contains all the total counts for each application and the global registration count.
@@ -6318,7 +6318,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::TotalsReportResponse**](TotalsReportResponse.md)
+[**models::TotalsReportResponse**](TotalsReportResponse.md)
 
 ### Authorization
 
@@ -6334,7 +6334,7 @@ This endpoint does not need any parameter.
 
 ## retrieve_two_factor_recovery_codes_with_id
 
-> crate::models::TwoFactorRecoveryCodeResponse retrieve_two_factor_recovery_codes_with_id(user_id)
+> models::TwoFactorRecoveryCodeResponse retrieve_two_factor_recovery_codes_with_id(user_id)
 
 
 Retrieve two-factor recovery codes for a user.
@@ -6348,7 +6348,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TwoFactorRecoveryCodeResponse**](TwoFactorRecoveryCodeResponse.md)
+[**models::TwoFactorRecoveryCodeResponse**](TwoFactorRecoveryCodeResponse.md)
 
 ### Authorization
 
@@ -6364,7 +6364,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_two_factor_status_with_id
 
-> crate::models::TwoFactorStatusResponse retrieve_two_factor_status_with_id(two_factor_trust_id, user_id, application_id)
+> models::TwoFactorStatusResponse retrieve_two_factor_status_with_id(two_factor_trust_id, user_id, application_id)
 
 
 Retrieve a user's two-factor status.  This can be used to see if a user will need to complete a two-factor challenge to complete a login, and optionally identify the state of the two-factor trust across various applications.
@@ -6380,7 +6380,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TwoFactorStatusResponse**](TwoFactorStatusResponse.md)
+[**models::TwoFactorStatusResponse**](TwoFactorStatusResponse.md)
 
 ### Authorization
 
@@ -6396,30 +6396,30 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_user
 
-> crate::models::UserResponse retrieve_user(x_fusion_auth_tenant_id, change_password_id, verification_id, username, email, login_id)
+> models::UserResponse retrieve_user(username, x_fusion_auth_tenant_id, verification_id, change_password_id, email, login_id)
 
 
-Retrieves the user for the given Id. This method does not use an API key, instead it uses a JSON Web Token (JWT) for authentication. OR Retrieves the user by a change password Id. The intended use of this API is to retrieve a user after the forgot password workflow has been initiated and you may not know the user's email or username. OR Retrieves the user by a verificationId. The intended use of this API is to retrieve a user after the forgot password workflow has been initiated and you may not know the user's email or username. OR Retrieves the user for the given username. OR Retrieves the user for the given email. OR Retrieves the user for the loginId. The loginId can be either the username or the email.
+Retrieves the user for the given username. OR Retrieves the user by a verificationId. The intended use of this API is to retrieve a user after the forgot password workflow has been initiated and you may not know the user's email or username. OR Retrieves the user by a change password Id. The intended use of this API is to retrieve a user after the forgot password workflow has been initiated and you may not know the user's email or username. OR Retrieves the user for the given Id. This method does not use an API key, instead it uses a JSON Web Token (JWT) for authentication. OR Retrieves the user for the given email. OR Retrieves the user for the loginId. The loginId can be either the username or the email.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
-**change_password_id** | Option<**String**> | The unique change password Id that was sent via email or returned by the Forgot Password API. |  |
-**verification_id** | Option<**String**> | The unique verification Id that has been set on the user object. |  |
 **username** | Option<**String**> | The username of the user. |  |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**verification_id** | Option<**String**> | The unique verification Id that has been set on the user object. |  |
+**change_password_id** | Option<**String**> | The unique change password Id that was sent via email or returned by the Forgot Password API. |  |
 **email** | Option<**String**> | The email of the user. |  |
 **login_id** | Option<**String**> | The email or username of the user. |  |
 
 ### Return type
 
-[**crate::models::UserResponse**](UserResponse.md)
+[**models::UserResponse**](UserResponse.md)
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -6431,7 +6431,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_user_action
 
-> crate::models::UserActionResponse retrieve_user_action(inactive, x_fusion_auth_tenant_id)
+> models::UserActionResponse retrieve_user_action(inactive, x_fusion_auth_tenant_id)
 
 
 Retrieves all the user actions that are currently inactive. OR Retrieves the user action for the given Id. If you pass in null for the id, this will return all the user actions.
@@ -6446,7 +6446,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserActionResponse**](UserActionResponse.md)
+[**models::UserActionResponse**](UserActionResponse.md)
 
 ### Authorization
 
@@ -6462,7 +6462,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_user_action_reason
 
-> crate::models::UserActionReasonResponse retrieve_user_action_reason()
+> models::UserActionReasonResponse retrieve_user_action_reason()
 
 
 Retrieves the user action reason for the given Id. If you pass in null for the id, this will return all the user action reasons.
@@ -6473,7 +6473,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::UserActionReasonResponse**](UserActionReasonResponse.md)
+[**models::UserActionReasonResponse**](UserActionReasonResponse.md)
 
 ### Authorization
 
@@ -6489,7 +6489,7 @@ This endpoint does not need any parameter.
 
 ## retrieve_user_action_reason_with_id
 
-> crate::models::UserActionReasonResponse retrieve_user_action_reason_with_id(user_action_reason_id)
+> models::UserActionReasonResponse retrieve_user_action_reason_with_id(user_action_reason_id)
 
 
 Retrieves the user action reason for the given Id. If you pass in null for the id, this will return all the user action reasons.
@@ -6503,7 +6503,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserActionReasonResponse**](UserActionReasonResponse.md)
+[**models::UserActionReasonResponse**](UserActionReasonResponse.md)
 
 ### Authorization
 
@@ -6519,7 +6519,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_user_action_with_id
 
-> crate::models::UserActionResponse retrieve_user_action_with_id(user_action_id, x_fusion_auth_tenant_id)
+> models::UserActionResponse retrieve_user_action_with_id(user_action_id, x_fusion_auth_tenant_id)
 
 
 Retrieves the user action for the given Id. If you pass in null for the id, this will return all the user actions.
@@ -6534,7 +6534,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserActionResponse**](UserActionResponse.md)
+[**models::UserActionResponse**](UserActionResponse.md)
 
 ### Authorization
 
@@ -6550,10 +6550,10 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_user_actioning
 
-> crate::models::ActionResponse retrieve_user_actioning(user_id, active, preventing_login)
+> models::ActionResponse retrieve_user_actioning(user_id, preventing_login, active)
 
 
-Retrieves all the actions for the user with the given Id. This will return all time based actions that are active, and inactive as well as non-time based actions. OR Retrieves all the actions for the user with the given Id that are currently inactive. An inactive action means one that is time based and has been canceled or has expired, or is not time based. OR Retrieves all the actions for the user with the given Id that are currently active. An active action means one that is time based and has not been canceled, and has not ended. OR Retrieves all the actions for the user with the given Id that are currently preventing the User from logging in.
+Retrieves all the actions for the user with the given Id that are currently preventing the User from logging in. OR Retrieves all the actions for the user with the given Id. This will return all time based actions that are active, and inactive as well as non-time based actions. OR Retrieves all the actions for the user with the given Id that are currently active. An active action means one that is time based and has not been canceled, and has not ended. OR Retrieves all the actions for the user with the given Id that are currently inactive. An inactive action means one that is time based and has been canceled or has expired, or is not time based.
 
 ### Parameters
 
@@ -6561,12 +6561,12 @@ Retrieves all the actions for the user with the given Id. This will return all t
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **user_id** | Option<**String**> | The Id of the user to fetch the actions for. |  |
-**active** | Option<**String**> |  |  |
 **preventing_login** | Option<**String**> |  |  |
+**active** | Option<**String**> |  |  |
 
 ### Return type
 
-[**crate::models::ActionResponse**](ActionResponse.md)
+[**models::ActionResponse**](ActionResponse.md)
 
 ### Authorization
 
@@ -6585,7 +6585,7 @@ Name | Type | Description  | Required | Notes
 > retrieve_user_change_password(login_id)
 
 
-Check to see if the user must obtain a Trust Token Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Token by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API. OR Check to see if the user must obtain a Trust Request Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Request Id by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API.
+Check to see if the user must obtain a Trust Request Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Request Id by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API. OR Check to see if the user must obtain a Trust Token Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Token by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API.
 
 ### Parameters
 
@@ -6600,7 +6600,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -6612,7 +6612,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_user_comments_with_id
 
-> crate::models::UserCommentResponse retrieve_user_comments_with_id(user_id, x_fusion_auth_tenant_id)
+> models::UserCommentResponse retrieve_user_comments_with_id(user_id, x_fusion_auth_tenant_id)
 
 
 Retrieves all the comments for the user with the given Id.
@@ -6627,7 +6627,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserCommentResponse**](UserCommentResponse.md)
+[**models::UserCommentResponse**](UserCommentResponse.md)
 
 ### Authorization
 
@@ -6643,7 +6643,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_user_consent_with_id
 
-> crate::models::UserConsentResponse retrieve_user_consent_with_id(user_consent_id)
+> models::UserConsentResponse retrieve_user_consent_with_id(user_consent_id)
 
 
 Retrieve a single User consent by Id.
@@ -6657,7 +6657,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserConsentResponse**](UserConsentResponse.md)
+[**models::UserConsentResponse**](UserConsentResponse.md)
 
 ### Authorization
 
@@ -6673,7 +6673,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_user_consents_with_id
 
-> crate::models::UserConsentResponse retrieve_user_consents_with_id(user_id)
+> models::UserConsentResponse retrieve_user_consents_with_id(user_id)
 
 
 Retrieves all the consents for a User.
@@ -6687,7 +6687,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserConsentResponse**](UserConsentResponse.md)
+[**models::UserConsentResponse**](UserConsentResponse.md)
 
 ### Authorization
 
@@ -6730,7 +6730,7 @@ This endpoint does not need any parameter.
 
 ## retrieve_user_recent_login
 
-> crate::models::RecentLoginResponse retrieve_user_recent_login(offset, limit, user_id)
+> models::RecentLoginResponse retrieve_user_recent_login(offset, limit, user_id)
 
 
 Retrieves the last number of login records. OR Retrieves the last number of login records for a user.
@@ -6746,7 +6746,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RecentLoginResponse**](RecentLoginResponse.md)
+[**models::RecentLoginResponse**](RecentLoginResponse.md)
 
 ### Authorization
 
@@ -6762,7 +6762,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_user_with_id
 
-> crate::models::UserResponse retrieve_user_with_id(user_id, x_fusion_auth_tenant_id)
+> models::UserResponse retrieve_user_with_id(user_id, x_fusion_auth_tenant_id)
 
 
 Retrieves the user for the given Id.
@@ -6777,7 +6777,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserResponse**](UserResponse.md)
+[**models::UserResponse**](UserResponse.md)
 
 ### Authorization
 
@@ -6793,7 +6793,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_version_with_id
 
-> crate::models::VersionResponse retrieve_version_with_id()
+> models::VersionResponse retrieve_version_with_id()
 
 
 Retrieves the FusionAuth version string.
@@ -6804,7 +6804,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::VersionResponse**](VersionResponse.md)
+[**models::VersionResponse**](VersionResponse.md)
 
 ### Authorization
 
@@ -6820,7 +6820,7 @@ This endpoint does not need any parameter.
 
 ## retrieve_web_authn_credential_with_id
 
-> crate::models::WebAuthnCredentialResponse retrieve_web_authn_credential_with_id(id)
+> models::WebAuthnCredentialResponse retrieve_web_authn_credential_with_id(id)
 
 
 Retrieves the WebAuthn credential for the given Id.
@@ -6834,7 +6834,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::WebAuthnCredentialResponse**](WebAuthnCredentialResponse.md)
+[**models::WebAuthnCredentialResponse**](WebAuthnCredentialResponse.md)
 
 ### Authorization
 
@@ -6850,7 +6850,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_web_authn_credentials_for_user_with_id
 
-> crate::models::WebAuthnCredentialResponse retrieve_web_authn_credentials_for_user_with_id(user_id)
+> models::WebAuthnCredentialResponse retrieve_web_authn_credentials_for_user_with_id(user_id)
 
 
 Retrieves all WebAuthn credentials for the given user.
@@ -6864,7 +6864,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::WebAuthnCredentialResponse**](WebAuthnCredentialResponse.md)
+[**models::WebAuthnCredentialResponse**](WebAuthnCredentialResponse.md)
 
 ### Authorization
 
@@ -6880,7 +6880,7 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_webhook
 
-> crate::models::WebhookResponse retrieve_webhook()
+> models::WebhookResponse retrieve_webhook()
 
 
 Retrieves the webhook for the given Id. If you pass in null for the id, this will return all the webhooks.
@@ -6891,7 +6891,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::WebhookResponse**](WebhookResponse.md)
+[**models::WebhookResponse**](WebhookResponse.md)
 
 ### Authorization
 
@@ -6907,7 +6907,7 @@ This endpoint does not need any parameter.
 
 ## retrieve_webhook_with_id
 
-> crate::models::WebhookResponse retrieve_webhook_with_id(webhook_id)
+> models::WebhookResponse retrieve_webhook_with_id(webhook_id)
 
 
 Retrieves the webhook for the given Id. If you pass in null for the id, this will return all the webhooks.
@@ -6921,7 +6921,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::WebhookResponse**](WebhookResponse.md)
+[**models::WebhookResponse**](WebhookResponse.md)
 
 ### Authorization
 
@@ -6997,7 +6997,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_applications_with_id
 
-> crate::models::ApplicationSearchResponse search_applications_with_id(application_search_request)
+> models::ApplicationSearchResponse search_applications_with_id(application_search_request)
 
 
 Searches applications with the specified criteria and pagination.
@@ -7011,7 +7011,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApplicationSearchResponse**](ApplicationSearchResponse.md)
+[**models::ApplicationSearchResponse**](ApplicationSearchResponse.md)
 
 ### Authorization
 
@@ -7027,7 +7027,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_audit_logs_with_id
 
-> crate::models::AuditLogSearchResponse search_audit_logs_with_id(audit_log_search_request)
+> models::AuditLogSearchResponse search_audit_logs_with_id(audit_log_search_request)
 
 
 Searches the audit logs with the specified criteria and pagination.
@@ -7041,7 +7041,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::AuditLogSearchResponse**](AuditLogSearchResponse.md)
+[**models::AuditLogSearchResponse**](AuditLogSearchResponse.md)
 
 ### Authorization
 
@@ -7057,7 +7057,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_consents_with_id
 
-> crate::models::ConsentSearchResponse search_consents_with_id(consent_search_request)
+> models::ConsentSearchResponse search_consents_with_id(consent_search_request)
 
 
 Searches consents with the specified criteria and pagination.
@@ -7071,7 +7071,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ConsentSearchResponse**](ConsentSearchResponse.md)
+[**models::ConsentSearchResponse**](ConsentSearchResponse.md)
 
 ### Authorization
 
@@ -7087,7 +7087,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_email_templates_with_id
 
-> crate::models::EmailTemplateSearchResponse search_email_templates_with_id(email_template_search_request)
+> models::EmailTemplateSearchResponse search_email_templates_with_id(email_template_search_request)
 
 
 Searches email templates with the specified criteria and pagination.
@@ -7101,7 +7101,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EmailTemplateSearchResponse**](EmailTemplateSearchResponse.md)
+[**models::EmailTemplateSearchResponse**](EmailTemplateSearchResponse.md)
 
 ### Authorization
 
@@ -7117,7 +7117,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_entities_by_ids_with_id
 
-> crate::models::EntitySearchResponse search_entities_by_ids_with_id(ids)
+> models::EntitySearchResponse search_entities_by_ids_with_id(ids)
 
 
 Retrieves the entities for the given ids. If any Id is invalid, it is ignored.
@@ -7131,7 +7131,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntitySearchResponse**](EntitySearchResponse.md)
+[**models::EntitySearchResponse**](EntitySearchResponse.md)
 
 ### Authorization
 
@@ -7147,7 +7147,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_entities_with_id
 
-> crate::models::EntitySearchResponse search_entities_with_id(entity_search_request)
+> models::EntitySearchResponse search_entities_with_id(entity_search_request)
 
 
 Searches entities with the specified criteria and pagination.
@@ -7161,7 +7161,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntitySearchResponse**](EntitySearchResponse.md)
+[**models::EntitySearchResponse**](EntitySearchResponse.md)
 
 ### Authorization
 
@@ -7177,7 +7177,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_entity_grants_with_id
 
-> crate::models::EntityGrantSearchResponse search_entity_grants_with_id(entity_grant_search_request)
+> models::EntityGrantSearchResponse search_entity_grants_with_id(entity_grant_search_request)
 
 
 Searches Entity Grants with the specified criteria and pagination.
@@ -7191,7 +7191,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityGrantSearchResponse**](EntityGrantSearchResponse.md)
+[**models::EntityGrantSearchResponse**](EntityGrantSearchResponse.md)
 
 ### Authorization
 
@@ -7207,7 +7207,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_entity_types_with_id
 
-> crate::models::EntityTypeSearchResponse search_entity_types_with_id(entity_type_search_request)
+> models::EntityTypeSearchResponse search_entity_types_with_id(entity_type_search_request)
 
 
 Searches the entity types with the specified criteria and pagination.
@@ -7221,7 +7221,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityTypeSearchResponse**](EntityTypeSearchResponse.md)
+[**models::EntityTypeSearchResponse**](EntityTypeSearchResponse.md)
 
 ### Authorization
 
@@ -7237,7 +7237,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_event_logs_with_id
 
-> crate::models::EventLogSearchResponse search_event_logs_with_id(event_log_search_request)
+> models::EventLogSearchResponse search_event_logs_with_id(event_log_search_request)
 
 
 Searches the event logs with the specified criteria and pagination.
@@ -7251,7 +7251,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EventLogSearchResponse**](EventLogSearchResponse.md)
+[**models::EventLogSearchResponse**](EventLogSearchResponse.md)
 
 ### Authorization
 
@@ -7267,7 +7267,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_group_members_with_id
 
-> crate::models::GroupMemberSearchResponse search_group_members_with_id(group_member_search_request)
+> models::GroupMemberSearchResponse search_group_members_with_id(group_member_search_request)
 
 
 Searches group members with the specified criteria and pagination.
@@ -7281,7 +7281,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GroupMemberSearchResponse**](GroupMemberSearchResponse.md)
+[**models::GroupMemberSearchResponse**](GroupMemberSearchResponse.md)
 
 ### Authorization
 
@@ -7297,7 +7297,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_groups_with_id
 
-> crate::models::GroupSearchResponse search_groups_with_id(group_search_request)
+> models::GroupSearchResponse search_groups_with_id(group_search_request)
 
 
 Searches groups with the specified criteria and pagination.
@@ -7311,7 +7311,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GroupSearchResponse**](GroupSearchResponse.md)
+[**models::GroupSearchResponse**](GroupSearchResponse.md)
 
 ### Authorization
 
@@ -7327,7 +7327,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_identity_providers_with_id
 
-> crate::models::IdentityProviderSearchResponse search_identity_providers_with_id(identity_provider_search_request)
+> models::IdentityProviderSearchResponse search_identity_providers_with_id(identity_provider_search_request)
 
 
 Searches identity providers with the specified criteria and pagination.
@@ -7341,7 +7341,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IdentityProviderSearchResponse**](IdentityProviderSearchResponse.md)
+[**models::IdentityProviderSearchResponse**](IdentityProviderSearchResponse.md)
 
 ### Authorization
 
@@ -7357,7 +7357,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_ip_access_control_lists_with_id
 
-> crate::models::IpAccessControlListSearchResponse search_ip_access_control_lists_with_id(ip_access_control_list_search_request)
+> models::IpAccessControlListSearchResponse search_ip_access_control_lists_with_id(ip_access_control_list_search_request)
 
 
 Searches the IP Access Control Lists with the specified criteria and pagination.
@@ -7371,7 +7371,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IpAccessControlListSearchResponse**](IPAccessControlListSearchResponse.md)
+[**models::IpAccessControlListSearchResponse**](IPAccessControlListSearchResponse.md)
 
 ### Authorization
 
@@ -7387,7 +7387,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_keys_with_id
 
-> crate::models::KeySearchResponse search_keys_with_id(key_search_request)
+> models::KeySearchResponse search_keys_with_id(key_search_request)
 
 
 Searches keys with the specified criteria and pagination.
@@ -7401,7 +7401,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::KeySearchResponse**](KeySearchResponse.md)
+[**models::KeySearchResponse**](KeySearchResponse.md)
 
 ### Authorization
 
@@ -7417,7 +7417,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_lambdas_with_id
 
-> crate::models::LambdaSearchResponse search_lambdas_with_id(lambda_search_request)
+> models::LambdaSearchResponse search_lambdas_with_id(lambda_search_request)
 
 
 Searches lambdas with the specified criteria and pagination.
@@ -7431,7 +7431,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LambdaSearchResponse**](LambdaSearchResponse.md)
+[**models::LambdaSearchResponse**](LambdaSearchResponse.md)
 
 ### Authorization
 
@@ -7447,7 +7447,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_login_records_with_id
 
-> crate::models::LoginRecordSearchResponse search_login_records_with_id(login_record_search_request)
+> models::LoginRecordSearchResponse search_login_records_with_id(login_record_search_request)
 
 
 Searches the login records with the specified criteria and pagination.
@@ -7461,7 +7461,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LoginRecordSearchResponse**](LoginRecordSearchResponse.md)
+[**models::LoginRecordSearchResponse**](LoginRecordSearchResponse.md)
 
 ### Authorization
 
@@ -7477,7 +7477,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_tenants_with_id
 
-> crate::models::TenantSearchResponse search_tenants_with_id(tenant_search_request)
+> models::TenantSearchResponse search_tenants_with_id(tenant_search_request)
 
 
 Searches tenants with the specified criteria and pagination.
@@ -7491,7 +7491,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TenantSearchResponse**](TenantSearchResponse.md)
+[**models::TenantSearchResponse**](TenantSearchResponse.md)
 
 ### Authorization
 
@@ -7507,7 +7507,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_themes_with_id
 
-> crate::models::ThemeSearchResponse search_themes_with_id(theme_search_request)
+> models::ThemeSearchResponse search_themes_with_id(theme_search_request)
 
 
 Searches themes with the specified criteria and pagination.
@@ -7521,7 +7521,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ThemeSearchResponse**](ThemeSearchResponse.md)
+[**models::ThemeSearchResponse**](ThemeSearchResponse.md)
 
 ### Authorization
 
@@ -7537,7 +7537,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_user_comments_with_id
 
-> crate::models::UserCommentSearchResponse search_user_comments_with_id(user_comment_search_request)
+> models::UserCommentSearchResponse search_user_comments_with_id(user_comment_search_request)
 
 
 Searches user comments with the specified criteria and pagination.
@@ -7551,7 +7551,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserCommentSearchResponse**](UserCommentSearchResponse.md)
+[**models::UserCommentSearchResponse**](UserCommentSearchResponse.md)
 
 ### Authorization
 
@@ -7567,7 +7567,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_users_by_ids_with_id
 
-> crate::models::SearchResponse search_users_by_ids_with_id(ids)
+> models::SearchResponse search_users_by_ids_with_id(ids)
 
 
 Retrieves the users for the given ids. If any Id is invalid, it is ignored.
@@ -7581,7 +7581,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::SearchResponse**](SearchResponse.md)
+[**models::SearchResponse**](SearchResponse.md)
 
 ### Authorization
 
@@ -7597,7 +7597,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_users_by_query_with_id
 
-> crate::models::SearchResponse search_users_by_query_with_id(search_request)
+> models::SearchResponse search_users_by_query_with_id(search_request)
 
 
 Retrieves the users for the given search criteria and pagination.
@@ -7611,7 +7611,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::SearchResponse**](SearchResponse.md)
+[**models::SearchResponse**](SearchResponse.md)
 
 ### Authorization
 
@@ -7627,7 +7627,7 @@ Name | Type | Description  | Required | Notes
 
 ## search_webhooks_with_id
 
-> crate::models::WebhookSearchResponse search_webhooks_with_id(webhook_search_request)
+> models::WebhookSearchResponse search_webhooks_with_id(webhook_search_request)
 
 
 Searches webhooks with the specified criteria and pagination.
@@ -7641,7 +7641,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::WebhookSearchResponse**](WebhookSearchResponse.md)
+[**models::WebhookSearchResponse**](WebhookSearchResponse.md)
 
 ### Authorization
 
@@ -7657,7 +7657,7 @@ Name | Type | Description  | Required | Notes
 
 ## send_email_with_id
 
-> crate::models::SendResponse send_email_with_id(email_template_id, send_request)
+> models::SendResponse send_email_with_id(email_template_id, send_request)
 
 
 Send an email using an email template id. You can optionally provide <code>requestData</code> to access key value pairs in the email template.
@@ -7672,7 +7672,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::SendResponse**](SendResponse.md)
+[**models::SendResponse**](SendResponse.md)
 
 ### Authorization
 
@@ -7809,7 +7809,7 @@ Name | Type | Description  | Required | Notes
 
 ## start_identity_provider_login_with_id
 
-> crate::models::IdentityProviderStartLoginResponse start_identity_provider_login_with_id(identity_provider_start_login_request)
+> models::IdentityProviderStartLoginResponse start_identity_provider_login_with_id(identity_provider_start_login_request)
 
 
 Begins a login request for a 3rd party login that requires user interaction such as HYPR.
@@ -7823,7 +7823,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IdentityProviderStartLoginResponse**](IdentityProviderStartLoginResponse.md)
+[**models::IdentityProviderStartLoginResponse**](IdentityProviderStartLoginResponse.md)
 
 ### Authorization
 
@@ -7839,7 +7839,7 @@ Name | Type | Description  | Required | Notes
 
 ## start_passwordless_login_with_id
 
-> crate::models::PasswordlessStartResponse start_passwordless_login_with_id(passwordless_start_request)
+> models::PasswordlessStartResponse start_passwordless_login_with_id(passwordless_start_request)
 
 
 Start a passwordless login request by generating a passwordless code. This code can be sent to the User using the Send Passwordless Code API or using a mechanism outside of FusionAuth. The passwordless login is completed by using the Passwordless Login API with this code.
@@ -7853,7 +7853,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::PasswordlessStartResponse**](PasswordlessStartResponse.md)
+[**models::PasswordlessStartResponse**](PasswordlessStartResponse.md)
 
 ### Authorization
 
@@ -7869,7 +7869,7 @@ Name | Type | Description  | Required | Notes
 
 ## start_two_factor_login_with_id
 
-> crate::models::TwoFactorStartResponse start_two_factor_login_with_id(two_factor_start_request)
+> models::TwoFactorStartResponse start_two_factor_login_with_id(two_factor_start_request)
 
 
 Start a Two-Factor login request by generating a two-factor identifier. This code can then be sent to the Two Factor Send  API (/api/two-factor/send)in order to send a one-time use code to a user. You can also use one-time use code returned  to send the code out-of-band. The Two-Factor login is completed by making a request to the Two-Factor Login  API (/api/two-factor/login). with the two-factor identifier and the one-time use code.  This API is intended to allow you to begin a Two-Factor login outside a normal login that originated from the Login API (/api/login).
@@ -7883,7 +7883,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TwoFactorStartResponse**](TwoFactorStartResponse.md)
+[**models::TwoFactorStartResponse**](TwoFactorStartResponse.md)
 
 ### Authorization
 
@@ -7899,7 +7899,7 @@ Name | Type | Description  | Required | Notes
 
 ## start_web_authn_login_with_id
 
-> crate::models::WebAuthnStartResponse start_web_authn_login_with_id(web_authn_start_request)
+> models::WebAuthnStartResponse start_web_authn_login_with_id(web_authn_start_request)
 
 
 Start a WebAuthn authentication ceremony by generating a new challenge for the user
@@ -7913,7 +7913,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::WebAuthnStartResponse**](WebAuthnStartResponse.md)
+[**models::WebAuthnStartResponse**](WebAuthnStartResponse.md)
 
 ### Authorization
 
@@ -7929,7 +7929,7 @@ Name | Type | Description  | Required | Notes
 
 ## start_web_authn_registration_with_id
 
-> crate::models::WebAuthnRegisterStartResponse start_web_authn_registration_with_id(web_authn_register_start_request)
+> models::WebAuthnRegisterStartResponse start_web_authn_registration_with_id(web_authn_register_start_request)
 
 
 Start a WebAuthn registration ceremony by generating a new challenge for the user
@@ -7943,7 +7943,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::WebAuthnRegisterStartResponse**](WebAuthnRegisterStartResponse.md)
+[**models::WebAuthnRegisterStartResponse**](WebAuthnRegisterStartResponse.md)
 
 ### Authorization
 
@@ -7959,7 +7959,7 @@ Name | Type | Description  | Required | Notes
 
 ## two_factor_login_with_id
 
-> crate::models::LoginResponse two_factor_login_with_id(two_factor_login_request)
+> models::LoginResponse two_factor_login_with_id(two_factor_login_request)
 
 
 Complete login using a 2FA challenge
@@ -7973,7 +7973,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LoginResponse**](LoginResponse.md)
+[**models::LoginResponse**](LoginResponse.md)
 
 ### Authorization
 
@@ -7989,7 +7989,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_api_key_with_id
 
-> crate::models::ApiKeyResponse update_api_key_with_id(api_key_id, api_key_request)
+> models::ApiKeyResponse update_api_key_with_id(api_key_id, api_key_request)
 
 
 Updates an API key by given id
@@ -8004,7 +8004,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApiKeyResponse**](APIKeyResponse.md)
+[**models::ApiKeyResponse**](APIKeyResponse.md)
 
 ### Authorization
 
@@ -8020,7 +8020,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_application_role_with_id
 
-> crate::models::ApplicationResponse update_application_role_with_id(application_id, role_id, x_fusion_auth_tenant_id, application_request)
+> models::ApplicationResponse update_application_role_with_id(application_id, role_id, x_fusion_auth_tenant_id, application_request)
 
 
 Updates the application role with the given Id for the application.
@@ -8037,7 +8037,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ApplicationResponse**](ApplicationResponse.md)
+[**models::ApplicationResponse**](ApplicationResponse.md)
 
 ### Authorization
 
@@ -8053,24 +8053,24 @@ Name | Type | Description  | Required | Notes
 
 ## update_application_with_id
 
-> crate::models::ApplicationResponse update_application_with_id(application_id, reactivate, x_fusion_auth_tenant_id, application_request)
+> models::ApplicationResponse update_application_with_id(application_id, x_fusion_auth_tenant_id, reactivate, application_request)
 
 
-Reactivates the application with the given Id. OR Updates the application with the given Id.
+Updates the application with the given Id. OR Reactivates the application with the given Id.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**application_id** | **String** | The Id of the application to reactivate. | [required] |
-**reactivate** | Option<**String**> |  |  |
+**application_id** | **String** | The Id of the application to update. | [required] |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**reactivate** | Option<**String**> |  |  |
 **application_request** | Option<[**ApplicationRequest**](ApplicationRequest.md)> |  |  |
 
 ### Return type
 
-[**crate::models::ApplicationResponse**](ApplicationResponse.md)
+[**models::ApplicationResponse**](ApplicationResponse.md)
 
 ### Authorization
 
@@ -8086,7 +8086,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_connector_with_id
 
-> crate::models::ConnectorResponse update_connector_with_id(connector_id, connector_request)
+> models::ConnectorResponse update_connector_with_id(connector_id, connector_request)
 
 
 Updates the connector with the given Id.
@@ -8101,7 +8101,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ConnectorResponse**](ConnectorResponse.md)
+[**models::ConnectorResponse**](ConnectorResponse.md)
 
 ### Authorization
 
@@ -8117,7 +8117,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_consent_with_id
 
-> crate::models::ConsentResponse update_consent_with_id(consent_id, x_fusion_auth_tenant_id, consent_request)
+> models::ConsentResponse update_consent_with_id(consent_id, x_fusion_auth_tenant_id, consent_request)
 
 
 Updates the consent with the given Id.
@@ -8133,7 +8133,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ConsentResponse**](ConsentResponse.md)
+[**models::ConsentResponse**](ConsentResponse.md)
 
 ### Authorization
 
@@ -8149,7 +8149,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_email_template_with_id
 
-> crate::models::EmailTemplateResponse update_email_template_with_id(email_template_id, x_fusion_auth_tenant_id, email_template_request)
+> models::EmailTemplateResponse update_email_template_with_id(email_template_id, x_fusion_auth_tenant_id, email_template_request)
 
 
 Updates the email template with the given Id.
@@ -8165,7 +8165,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EmailTemplateResponse**](EmailTemplateResponse.md)
+[**models::EmailTemplateResponse**](EmailTemplateResponse.md)
 
 ### Authorization
 
@@ -8181,7 +8181,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_entity_type_permission_with_id
 
-> crate::models::EntityTypeResponse update_entity_type_permission_with_id(entity_type_id, permission_id, entity_type_request)
+> models::EntityTypeResponse update_entity_type_permission_with_id(entity_type_id, permission_id, entity_type_request)
 
 
 Updates the permission with the given Id for the entity type.
@@ -8197,7 +8197,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityTypeResponse**](EntityTypeResponse.md)
+[**models::EntityTypeResponse**](EntityTypeResponse.md)
 
 ### Authorization
 
@@ -8213,7 +8213,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_entity_type_with_id
 
-> crate::models::EntityTypeResponse update_entity_type_with_id(entity_type_id, entity_type_request)
+> models::EntityTypeResponse update_entity_type_with_id(entity_type_id, entity_type_request)
 
 
 Updates the Entity Type with the given Id.
@@ -8228,7 +8228,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityTypeResponse**](EntityTypeResponse.md)
+[**models::EntityTypeResponse**](EntityTypeResponse.md)
 
 ### Authorization
 
@@ -8244,7 +8244,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_entity_with_id
 
-> crate::models::EntityResponse update_entity_with_id(entity_id, x_fusion_auth_tenant_id, entity_request)
+> models::EntityResponse update_entity_with_id(entity_id, x_fusion_auth_tenant_id, entity_request)
 
 
 Updates the Entity with the given Id.
@@ -8260,7 +8260,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::EntityResponse**](EntityResponse.md)
+[**models::EntityResponse**](EntityResponse.md)
 
 ### Authorization
 
@@ -8276,7 +8276,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_form_field_with_id
 
-> crate::models::FormFieldResponse update_form_field_with_id(field_id, form_field_request)
+> models::FormFieldResponse update_form_field_with_id(field_id, form_field_request)
 
 
 Updates the form field with the given Id.
@@ -8291,7 +8291,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::FormFieldResponse**](FormFieldResponse.md)
+[**models::FormFieldResponse**](FormFieldResponse.md)
 
 ### Authorization
 
@@ -8307,7 +8307,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_form_with_id
 
-> crate::models::FormResponse update_form_with_id(form_id, form_request)
+> models::FormResponse update_form_with_id(form_id, form_request)
 
 
 Updates the form with the given Id.
@@ -8322,7 +8322,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::FormResponse**](FormResponse.md)
+[**models::FormResponse**](FormResponse.md)
 
 ### Authorization
 
@@ -8338,7 +8338,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_group_members_with_id
 
-> crate::models::MemberResponse update_group_members_with_id(member_request)
+> models::MemberResponse update_group_members_with_id(member_request)
 
 
 Creates a member in a group.
@@ -8352,7 +8352,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MemberResponse**](MemberResponse.md)
+[**models::MemberResponse**](MemberResponse.md)
 
 ### Authorization
 
@@ -8368,7 +8368,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_group_with_id
 
-> crate::models::GroupResponse update_group_with_id(group_id, x_fusion_auth_tenant_id, group_request)
+> models::GroupResponse update_group_with_id(group_id, x_fusion_auth_tenant_id, group_request)
 
 
 Updates the group with the given Id.
@@ -8384,7 +8384,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::GroupResponse**](GroupResponse.md)
+[**models::GroupResponse**](GroupResponse.md)
 
 ### Authorization
 
@@ -8400,7 +8400,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_identity_provider_with_id
 
-> crate::models::IdentityProviderResponse update_identity_provider_with_id(identity_provider_id, identity_provider_request)
+> models::IdentityProviderResponse update_identity_provider_with_id(identity_provider_id, identity_provider_request)
 
 
 Updates the identity provider with the given Id.
@@ -8415,7 +8415,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IdentityProviderResponse**](IdentityProviderResponse.md)
+[**models::IdentityProviderResponse**](IdentityProviderResponse.md)
 
 ### Authorization
 
@@ -8431,7 +8431,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_integrations_with_id
 
-> crate::models::IntegrationResponse update_integrations_with_id(integration_request)
+> models::IntegrationResponse update_integrations_with_id(integration_request)
 
 
 Updates the available integrations.
@@ -8445,7 +8445,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IntegrationResponse**](IntegrationResponse.md)
+[**models::IntegrationResponse**](IntegrationResponse.md)
 
 ### Authorization
 
@@ -8461,7 +8461,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_ip_access_control_list_with_id
 
-> crate::models::IpAccessControlListResponse update_ip_access_control_list_with_id(access_control_list_id, ip_access_control_list_request)
+> models::IpAccessControlListResponse update_ip_access_control_list_with_id(access_control_list_id, ip_access_control_list_request)
 
 
 Updates the IP Access Control List with the given Id.
@@ -8476,7 +8476,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::IpAccessControlListResponse**](IPAccessControlListResponse.md)
+[**models::IpAccessControlListResponse**](IPAccessControlListResponse.md)
 
 ### Authorization
 
@@ -8492,7 +8492,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_key_with_id
 
-> crate::models::KeyResponse update_key_with_id(key_id, key_request)
+> models::KeyResponse update_key_with_id(key_id, key_request)
 
 
 Updates the key with the given Id.
@@ -8507,7 +8507,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::KeyResponse**](KeyResponse.md)
+[**models::KeyResponse**](KeyResponse.md)
 
 ### Authorization
 
@@ -8523,7 +8523,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_lambda_with_id
 
-> crate::models::LambdaResponse update_lambda_with_id(lambda_id, lambda_request)
+> models::LambdaResponse update_lambda_with_id(lambda_id, lambda_request)
 
 
 Updates the lambda with the given Id.
@@ -8538,7 +8538,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::LambdaResponse**](LambdaResponse.md)
+[**models::LambdaResponse**](LambdaResponse.md)
 
 ### Authorization
 
@@ -8554,7 +8554,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_message_template_with_id
 
-> crate::models::MessageTemplateResponse update_message_template_with_id(message_template_id, message_template_request)
+> models::MessageTemplateResponse update_message_template_with_id(message_template_id, message_template_request)
 
 
 Updates the message template with the given Id.
@@ -8569,7 +8569,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MessageTemplateResponse**](MessageTemplateResponse.md)
+[**models::MessageTemplateResponse**](MessageTemplateResponse.md)
 
 ### Authorization
 
@@ -8585,7 +8585,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_messenger_with_id
 
-> crate::models::MessengerResponse update_messenger_with_id(messenger_id, messenger_request)
+> models::MessengerResponse update_messenger_with_id(messenger_id, messenger_request)
 
 
 Updates the messenger with the given Id.
@@ -8600,7 +8600,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::MessengerResponse**](MessengerResponse.md)
+[**models::MessengerResponse**](MessengerResponse.md)
 
 ### Authorization
 
@@ -8616,7 +8616,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_registration_with_id
 
-> crate::models::RegistrationResponse update_registration_with_id(user_id, x_fusion_auth_tenant_id, registration_request)
+> models::RegistrationResponse update_registration_with_id(user_id, x_fusion_auth_tenant_id, registration_request)
 
 
 Updates the registration for the user with the given Id and the application defined in the request.
@@ -8632,7 +8632,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::RegistrationResponse**](RegistrationResponse.md)
+[**models::RegistrationResponse**](RegistrationResponse.md)
 
 ### Authorization
 
@@ -8648,7 +8648,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_system_configuration_with_id
 
-> crate::models::SystemConfigurationResponse update_system_configuration_with_id(system_configuration_request)
+> models::SystemConfigurationResponse update_system_configuration_with_id(system_configuration_request)
 
 
 Updates the system configuration.
@@ -8662,7 +8662,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::SystemConfigurationResponse**](SystemConfigurationResponse.md)
+[**models::SystemConfigurationResponse**](SystemConfigurationResponse.md)
 
 ### Authorization
 
@@ -8678,7 +8678,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_tenant_with_id
 
-> crate::models::TenantResponse update_tenant_with_id(tenant_id, x_fusion_auth_tenant_id, tenant_request)
+> models::TenantResponse update_tenant_with_id(tenant_id, x_fusion_auth_tenant_id, tenant_request)
 
 
 Updates the tenant with the given Id.
@@ -8694,7 +8694,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::TenantResponse**](TenantResponse.md)
+[**models::TenantResponse**](TenantResponse.md)
 
 ### Authorization
 
@@ -8710,7 +8710,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_theme_with_id
 
-> crate::models::ThemeResponse update_theme_with_id(theme_id, theme_request)
+> models::ThemeResponse update_theme_with_id(theme_id, theme_request)
 
 
 Updates the theme with the given Id.
@@ -8725,7 +8725,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::ThemeResponse**](ThemeResponse.md)
+[**models::ThemeResponse**](ThemeResponse.md)
 
 ### Authorization
 
@@ -8741,7 +8741,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_user_action_reason_with_id
 
-> crate::models::UserActionReasonResponse update_user_action_reason_with_id(user_action_reason_id, user_action_reason_request)
+> models::UserActionReasonResponse update_user_action_reason_with_id(user_action_reason_id, user_action_reason_request)
 
 
 Updates the user action reason with the given Id.
@@ -8756,7 +8756,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserActionReasonResponse**](UserActionReasonResponse.md)
+[**models::UserActionReasonResponse**](UserActionReasonResponse.md)
 
 ### Authorization
 
@@ -8772,7 +8772,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_user_action_with_id
 
-> crate::models::UserActionResponse update_user_action_with_id(user_action_id, reactivate, x_fusion_auth_tenant_id, user_action_request)
+> models::UserActionResponse update_user_action_with_id(user_action_id, reactivate, x_fusion_auth_tenant_id, user_action_request)
 
 
 Reactivates the user action with the given Id. OR Updates the user action with the given Id.
@@ -8789,7 +8789,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserActionResponse**](UserActionResponse.md)
+[**models::UserActionResponse**](UserActionResponse.md)
 
 ### Authorization
 
@@ -8805,7 +8805,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_user_consent_with_id
 
-> crate::models::UserConsentResponse update_user_consent_with_id(user_consent_id, user_consent_request)
+> models::UserConsentResponse update_user_consent_with_id(user_consent_id, user_consent_request)
 
 
 Updates a single User consent by Id.
@@ -8820,7 +8820,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::UserConsentResponse**](UserConsentResponse.md)
+[**models::UserConsentResponse**](UserConsentResponse.md)
 
 ### Authorization
 
@@ -8836,10 +8836,10 @@ Name | Type | Description  | Required | Notes
 
 ## update_user_verify_email
 
-> crate::models::VerifyEmailResponse update_user_verify_email(email, send_verify_email, application_id)
+> models::VerifyEmailResponse update_user_verify_email(email, application_id, send_verify_email)
 
 
-Generate a new Email Verification Id to be used with the Verify Email API. This API will not attempt to send an email to the User. This API may be used to collect the verificationId for use with a third party system. OR Re-sends the verification email to the user. If the Application has configured a specific email template this will be used instead of the tenant configuration. OR Re-sends the verification email to the user.
+Re-sends the verification email to the user. OR Re-sends the verification email to the user. If the Application has configured a specific email template this will be used instead of the tenant configuration. OR Generate a new Email Verification Id to be used with the Verify Email API. This API will not attempt to send an email to the User. This API may be used to collect the verificationId for use with a third party system.
 
 ### Parameters
 
@@ -8847,12 +8847,12 @@ Generate a new Email Verification Id to be used with the Verify Email API. This 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **email** | Option<**String**> | The email address of the user that needs a new verification email. |  |
-**send_verify_email** | Option<**String**> |  |  |
 **application_id** | Option<**String**> | The unique Application Id to used to resolve an application specific email template. |  |
+**send_verify_email** | Option<**String**> |  |  |
 
 ### Return type
 
-[**crate::models::VerifyEmailResponse**](VerifyEmailResponse.md)
+[**models::VerifyEmailResponse**](VerifyEmailResponse.md)
 
 ### Authorization
 
@@ -8868,7 +8868,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_user_verify_registration
 
-> crate::models::VerifyRegistrationResponse update_user_verify_registration(email, send_verify_password_email, application_id)
+> models::VerifyRegistrationResponse update_user_verify_registration(email, send_verify_password_email, application_id)
 
 
 Generate a new Application Registration Verification Id to be used with the Verify Registration API. This API will not attempt to send an email to the User. This API may be used to collect the verificationId for use with a third party system. OR Re-sends the application registration verification email to the user.
@@ -8884,7 +8884,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::VerifyRegistrationResponse**](VerifyRegistrationResponse.md)
+[**models::VerifyRegistrationResponse**](VerifyRegistrationResponse.md)
 
 ### Authorization
 
@@ -8900,24 +8900,24 @@ Name | Type | Description  | Required | Notes
 
 ## update_user_with_id
 
-> crate::models::UserResponse update_user_with_id(user_id, x_fusion_auth_tenant_id, reactivate, user_request)
+> models::UserResponse update_user_with_id(user_id, reactivate, x_fusion_auth_tenant_id, user_request)
 
 
-Updates the user with the given Id. OR Reactivates the user with the given Id.
+Reactivates the user with the given Id. OR Updates the user with the given Id.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**user_id** | **String** | The Id of the user to update. | [required] |
-**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**user_id** | **String** | The Id of the user to reactivate. | [required] |
 **reactivate** | Option<**String**> |  |  |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 **user_request** | Option<[**UserRequest**](UserRequest.md)> |  |  |
 
 ### Return type
 
-[**crate::models::UserResponse**](UserResponse.md)
+[**models::UserResponse**](UserResponse.md)
 
 ### Authorization
 
@@ -8933,7 +8933,7 @@ Name | Type | Description  | Required | Notes
 
 ## update_webhook_with_id
 
-> crate::models::WebhookResponse update_webhook_with_id(webhook_id, webhook_request)
+> models::WebhookResponse update_webhook_with_id(webhook_id, webhook_request)
 
 
 Updates the webhook with the given Id.
@@ -8948,7 +8948,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::WebhookResponse**](WebhookResponse.md)
+[**models::WebhookResponse**](WebhookResponse.md)
 
 ### Authorization
 
@@ -9027,7 +9027,7 @@ Name | Type | Description  | Required | Notes
 
 ## validate_jwt_with_id
 
-> crate::models::ValidateResponse validate_jwt_with_id()
+> models::ValidateResponse validate_jwt_with_id()
 
 
 Validates the provided JWT (encoded JWT string) to ensure the token is valid. A valid access token is properly signed and not expired. <p> This API may be used to verify the JWT as well as decode the encoded JWT into human readable identity claims.
@@ -9038,7 +9038,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**crate::models::ValidateResponse**](ValidateResponse.md)
+[**models::ValidateResponse**](ValidateResponse.md)
 
 ### Authorization
 
@@ -9054,7 +9054,7 @@ This endpoint does not need any parameter.
 
 ## vend_jwt_with_id
 
-> crate::models::JwtVendResponse vend_jwt_with_id(jwt_vend_request)
+> models::JwtVendResponse vend_jwt_with_id(jwt_vend_request)
 
 
 It's a JWT vending machine!  Issue a new access token (JWT) with the provided claims in the request. This JWT is not scoped to a tenant or user, it is a free form  token that will contain what claims you provide. <p> The iat, exp and jti claims will be added by FusionAuth, all other claims must be provided by the caller.  If a TTL is not provided in the request, the TTL will be retrieved from the default Tenant or the Tenant specified on the request either  by way of the X-FusionAuth-TenantId request header, or a tenant scoped API key.
@@ -9068,7 +9068,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
-[**crate::models::JwtVendResponse**](JWTVendResponse.md)
+[**models::JwtVendResponse**](JWTVendResponse.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**action** | Option<[**crate::models::IpAccessControlEntryAction**](IPAccessControlEntryAction.md)> |  | [optional]
+**action** | Option<[**models::IpAccessControlEntryAction**](IPAccessControlEntryAction.md)> |  | [optional]
 **end_ip_address** | Option<**String**> |  | [optional]
 **start_ip_address** | Option<**String**> |  | [optional]
 

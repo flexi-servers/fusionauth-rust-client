@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**authenticator** | Option<[**crate::models::AuthenticatorConfiguration**](AuthenticatorConfiguration.md)> |  | [optional]
+**authenticator** | Option<[**models::AuthenticatorConfiguration**](AuthenticatorConfiguration.md)> |  | [optional]
 **email** | Option<**String**> |  | [optional]
 **id** | Option<**String**> |  | [optional]
 **last_used** | Option<**bool**> |  | [optional]

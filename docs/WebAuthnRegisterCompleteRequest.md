@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**credential** | Option<[**crate::models::WebAuthnPublicKeyRegistrationRequest**](WebAuthnPublicKeyRegistrationRequest.md)> |  | [optional]
+**credential** | Option<[**models::WebAuthnPublicKeyRegistrationRequest**](WebAuthnPublicKeyRegistrationRequest.md)> |  | [optional]
 **origin** | Option<**String**> |  | [optional]
 **rp_id** | Option<**String**> |  | [optional]
 **user_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]

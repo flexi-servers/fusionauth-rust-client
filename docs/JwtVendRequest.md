@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**claims** | Option<[**::std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
+**claims** | Option<[**std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
 **key_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **time_to_live_in_seconds** | Option<**i32**> |  | [optional]
 

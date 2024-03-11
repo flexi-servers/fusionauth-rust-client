@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**entities** | Option<[**Vec<crate::models::Entity>**](Entity.md)> |  | [optional]
+**entities** | Option<[**Vec<models::Entity>**](Entity.md)> |  | [optional]
 **next_results** | Option<**String**> |  | [optional]
 **total** | Option<**i64**> |  | [optional]
 

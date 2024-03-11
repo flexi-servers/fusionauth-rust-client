@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **email_user_on_end** | Option<**bool**> |  | [optional]
 **end_event_sent** | Option<**bool**> |  | [optional]
 **expiry** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
-**history** | Option<[**crate::models::LogHistory**](LogHistory.md)> |  | [optional]
+**history** | Option<[**models::LogHistory**](LogHistory.md)> |  | [optional]
 **id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **insert_instant** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
 **localized_name** | Option<**String**> |  | [optional]

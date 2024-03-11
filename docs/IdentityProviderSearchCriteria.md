@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **name** | Option<**String**> |  | [optional]
-**r#type** | Option<[**crate::models::IdentityProviderType**](IdentityProviderType.md)> |  | [optional]
+**r#type** | Option<[**models::IdentityProviderType**](IdentityProviderType.md)> |  | [optional]
 **number_of_results** | Option<**i32**> |  | [optional]
 **order_by** | Option<**String**> |  | [optional]
 **start_row** | Option<**i32**> |  | [optional]

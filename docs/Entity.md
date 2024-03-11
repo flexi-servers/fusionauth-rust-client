@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | Option<[**::std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
+**data** | Option<[**std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
 **client_id** | Option<**String**> |  | [optional]
 **client_secret** | Option<**String**> |  | [optional]
 **id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **name** | Option<**String**> |  | [optional]
 **parent_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **tenant_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
-**r#type** | Option<[**crate::models::EntityType**](EntityType.md)> |  | [optional]
+**r#type** | Option<[**models::EntityType**](EntityType.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

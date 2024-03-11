@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**entity_types** | Option<[**Vec<crate::models::EntityType>**](EntityType.md)> |  | [optional]
+**entity_types** | Option<[**Vec<models::EntityType>**](EntityType.md)> |  | [optional]
 **total** | Option<**i64**> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

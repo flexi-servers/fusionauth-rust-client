@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**integrations** | Option<[**crate::models::Integrations**](Integrations.md)> |  | [optional]
+**integrations** | Option<[**models::Integrations**](Integrations.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

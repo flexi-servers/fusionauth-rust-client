@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **account_web_authn_add** | Option<**String**> |  | [optional]
 **account_web_authn_delete** | Option<**String**> |  | [optional]
 **account_web_authn_index** | Option<**String**> |  | [optional]
+**confirmation_required** | Option<**String**> |  | [optional]
 **email_complete** | Option<**String**> |  | [optional]
 **email_sent** | Option<**String**> |  | [optional]
 **email_verification_required** | Option<**String**> |  | [optional]

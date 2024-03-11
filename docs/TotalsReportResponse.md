@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**application_totals** | Option<[**::std::collections::HashMap<String, crate::models::Totals>**](Totals.md)> |  | [optional]
+**application_totals** | Option<[**std::collections::HashMap<String, models::Totals>**](Totals.md)> |  | [optional]
 **global_registrations** | Option<**i64**> |  | [optional]
 **total_global_registrations** | Option<**i64**> |  | [optional]
 

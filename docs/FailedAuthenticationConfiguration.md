@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**action_cancel_policy** | Option<[**crate::models::FailedAuthenticationActionCancelPolicy**](FailedAuthenticationActionCancelPolicy.md)> |  | [optional]
+**action_cancel_policy** | Option<[**models::FailedAuthenticationActionCancelPolicy**](FailedAuthenticationActionCancelPolicy.md)> |  | [optional]
 **action_duration** | Option<**i64**> |  | [optional]
-**action_duration_unit** | Option<[**crate::models::ExpiryUnit**](ExpiryUnit.md)> |  | [optional]
+**action_duration_unit** | Option<[**models::ExpiryUnit**](ExpiryUnit.md)> |  | [optional]
 **email_user** | Option<**bool**> |  | [optional]
 **reset_count_in_seconds** | Option<**i32**> |  | [optional]
 **too_many_attempts** | Option<**i32**> |  | [optional]

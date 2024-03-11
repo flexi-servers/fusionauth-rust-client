@@ -5,9 +5,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **client_id** | Option<**String**> |  | [optional]
-**device_info** | Option<[**crate::models::DeviceInfo**](DeviceInfo.md)> |  | [optional]
+**device_info** | Option<[**models::DeviceInfo**](DeviceInfo.md)> |  | [optional]
 **expires_in** | Option<**i32**> |  | [optional]
-**pending_id_p_link** | Option<[**crate::models::PendingIdPLink**](PendingIdPLink.md)> |  | [optional]
+**pending_id_p_link** | Option<[**models::PendingIdPLink**](PendingIdPLink.md)> |  | [optional]
 **tenant_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **user_code** | Option<**String**> |  | [optional]
 

@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **connector_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
-**data** | Option<[**::std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
+**data** | Option<[**std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
 **domains** | Option<[**Vec<serde_json::Value>**](serde_json::Value.md)> |  | [optional]
 **migrate** | Option<**bool**> |  | [optional]
 

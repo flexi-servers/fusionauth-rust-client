@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | Option<**String**> |  | [optional]
-**state** | Option<[**crate::models::ObjectState**](ObjectState.md)> |  | [optional]
+**state** | Option<[**models::ObjectState**](ObjectState.md)> |  | [optional]
 **tenant_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **number_of_results** | Option<**i32**> |  | [optional]
 **order_by** | Option<**String**> |  | [optional]

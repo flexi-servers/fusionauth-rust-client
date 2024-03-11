@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**breach_detection** | Option<[**crate::models::PasswordBreachDetection**](PasswordBreachDetection.md)> |  | [optional]
+**breach_detection** | Option<[**models::PasswordBreachDetection**](PasswordBreachDetection.md)> |  | [optional]
 **max_length** | Option<**i32**> |  | [optional]
 **min_length** | Option<**i32**> |  | [optional]
-**remember_previous_passwords** | Option<[**crate::models::RememberPreviousPasswords**](RememberPreviousPasswords.md)> |  | [optional]
+**remember_previous_passwords** | Option<[**models::RememberPreviousPasswords**](RememberPreviousPasswords.md)> |  | [optional]
 **require_mixed_case** | Option<**bool**> |  | [optional]
 **require_non_alpha** | Option<**bool**> |  | [optional]
 **require_number** | Option<**bool**> |  | [optional]

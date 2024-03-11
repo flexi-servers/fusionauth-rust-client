@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **user_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **ip_address** | Option<**String**> |  | [optional]
-**meta_data** | Option<[**crate::models::MetaData**](MetaData.md)> |  | [optional]
+**meta_data** | Option<[**models::MetaData**](MetaData.md)> |  | [optional]
 **new_device** | Option<**bool**> |  | [optional]
 **no_jwt** | Option<**bool**> |  | [optional]
 

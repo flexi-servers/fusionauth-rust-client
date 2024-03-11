@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **device_grant_status** | Option<**String**> |  | [optional]
-**device_info** | Option<[**crate::models::DeviceInfo**](DeviceInfo.md)> |  | [optional]
-**identity_provider_link** | Option<[**crate::models::IdentityProviderLink**](IdentityProviderLink.md)> |  | [optional]
+**device_info** | Option<[**models::DeviceInfo**](DeviceInfo.md)> |  | [optional]
+**identity_provider_link** | Option<[**models::IdentityProviderLink**](IdentityProviderLink.md)> |  | [optional]
 **tenant_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **user_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 

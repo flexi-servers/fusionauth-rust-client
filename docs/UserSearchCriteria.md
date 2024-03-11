@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **next_results** | Option<**String**> |  | [optional]
 **query** | Option<**String**> |  | [optional]
 **query_string** | Option<**String**> |  | [optional]
-**sort_fields** | Option<[**Vec<crate::models::SortField>**](SortField.md)> |  | [optional]
+**sort_fields** | Option<[**Vec<models::SortField>**](SortField.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

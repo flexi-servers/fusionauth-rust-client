@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**algorithm** | Option<[**crate::models::CoseAlgorithmIdentifier**](CoseAlgorithmIdentifier.md)> |  | [optional]
-**attestation_type** | Option<[**crate::models::AttestationType**](AttestationType.md)> |  | [optional]
+**algorithm** | Option<[**models::CoseAlgorithmIdentifier**](CoseAlgorithmIdentifier.md)> |  | [optional]
+**attestation_type** | Option<[**models::AttestationType**](AttestationType.md)> |  | [optional]
 **authenticator_supports_user_verification** | Option<**bool**> |  | [optional]
 **credential_id** | Option<**String**> |  | [optional]
-**data** | Option<[**::std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
+**data** | Option<[**std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
 **discoverable** | Option<**bool**> |  | [optional]
 **display_name** | Option<**String**> |  | [optional]
 **id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]

@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **allow_credentials** | Option<**bool**> |  | [optional]
 **allowed_headers** | Option<**Vec<String>**> |  | [optional]
-**allowed_methods** | Option<[**Vec<crate::models::HttpMethod>**](HTTPMethod.md)> |  | [optional]
+**allowed_methods** | Option<[**Vec<models::HttpMethod>**](HTTPMethod.md)> |  | [optional]
 **allowed_origins** | Option<**Vec<String>**> |  | [optional]
 **debug** | Option<**bool**> |  | [optional]
 **exposed_headers** | Option<**Vec<String>**> |  | [optional]

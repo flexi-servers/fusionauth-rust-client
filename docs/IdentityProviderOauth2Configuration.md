@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **authorization_endpoint** | Option<**String**> |  | [optional]
-**client_authentication_method** | Option<[**crate::models::ClientAuthenticationMethod**](ClientAuthenticationMethod.md)> |  | [optional]
+**client_authentication_method** | Option<[**models::ClientAuthenticationMethod**](ClientAuthenticationMethod.md)> |  | [optional]
 **client_id** | Option<**String**> |  | [optional]
 **client_secret** | Option<**String**> |  | [optional]
 **email_claim** | Option<**String**> |  | [optional]

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**algorithm** | Option<[**crate::models::TotpAlgorithm**](TOTPAlgorithm.md)> |  | [optional]
+**algorithm** | Option<[**models::TotpAlgorithm**](TOTPAlgorithm.md)> |  | [optional]
 **code_length** | Option<**i32**> |  | [optional]
 **time_step** | Option<**i32**> |  | [optional]
 **enabled** | Option<**bool**> |  | [optional]

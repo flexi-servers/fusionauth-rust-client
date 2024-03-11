@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**bootstrap_workflow** | Option<[**crate::models::TenantWebAuthnWorkflowConfiguration**](TenantWebAuthnWorkflowConfiguration.md)> |  | [optional]
+**bootstrap_workflow** | Option<[**models::TenantWebAuthnWorkflowConfiguration**](TenantWebAuthnWorkflowConfiguration.md)> |  | [optional]
 **debug** | Option<**bool**> |  | [optional]
-**reauthentication_workflow** | Option<[**crate::models::TenantWebAuthnWorkflowConfiguration**](TenantWebAuthnWorkflowConfiguration.md)> |  | [optional]
+**reauthentication_workflow** | Option<[**models::TenantWebAuthnWorkflowConfiguration**](TenantWebAuthnWorkflowConfiguration.md)> |  | [optional]
 **relying_party_id** | Option<**String**> |  | [optional]
 **relying_party_name** | Option<**String**> |  | [optional]
 **enabled** | Option<**bool**> |  | [optional]
