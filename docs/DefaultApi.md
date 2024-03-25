@@ -538,7 +538,7 @@ Name | Type | Description  | Required | Notes
 
 ## comment_on_user_with_id
 
-> comment_on_user_with_id(x_fusion_auth_tenant_id, user_comment_request)
+> models::UserCommentResponse comment_on_user_with_id(x_fusion_auth_tenant_id, user_comment_request)
 
 
 Adds a comment to the user's account.
@@ -553,7 +553,7 @@ Name | Type | Description  | Required | Notes
 
 ### Return type
 
- (empty response body)
+[**models::UserCommentResponse**](UserCommentResponse.md)
 
 ### Authorization
 
