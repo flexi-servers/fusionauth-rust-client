@@ -26,6 +26,7 @@ Name | Type | Description | Notes
 **registration_delete_policy** | Option<[**models::ApplicationRegistrationDeletePolicy**](ApplicationRegistrationDeletePolicy.md)> |  | [optional]
 **roles** | Option<[**Vec<models::ApplicationRole>**](ApplicationRole.md)> |  | [optional]
 **samlv2_configuration** | Option<[**models::Samlv2Configuration**](SAMLv2Configuration.md)> |  | [optional]
+**scopes** | Option<[**Vec<models::ApplicationOAuthScope>**](ApplicationOAuthScope.md)> |  | [optional]
 **state** | Option<[**models::ObjectState**](ObjectState.md)> |  | [optional]
 **tenant_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **theme_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]

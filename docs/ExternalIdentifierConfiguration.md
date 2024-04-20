@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **registration_verification_id_generator** | Option<[**models::SecureGeneratorConfiguration**](SecureGeneratorConfiguration.md)> |  | [optional]
 **registration_verification_id_time_to_live_in_seconds** | Option<**i32**> |  | [optional]
 **registration_verification_one_time_code_generator** | Option<[**models::SecureGeneratorConfiguration**](SecureGeneratorConfiguration.md)> |  | [optional]
+**remember_o_auth_scope_consent_choice_time_to_live_in_seconds** | Option<**i32**> |  | [optional]
 **samlv2_auth_n_request_id_time_to_live_in_seconds** | Option<**i32**> |  | [optional]
 **setup_password_id_generator** | Option<[**models::SecureGeneratorConfiguration**](SecureGeneratorConfiguration.md)> |  | [optional]
 **setup_password_id_time_to_live_in_seconds** | Option<**i32**> |  | [optional]

@@ -56,6 +56,8 @@ Method | HTTP request | Description
 [**create_message_template_with_id**](DefaultApi.md#create_message_template_with_id) | **POST** /api/message/template/{messageTemplateId} | 
 [**create_messenger**](DefaultApi.md#create_messenger) | **POST** /api/messenger | 
 [**create_messenger_with_id**](DefaultApi.md#create_messenger_with_id) | **POST** /api/messenger/{messengerId} | 
+[**create_o_auth_scope**](DefaultApi.md#create_o_auth_scope) | **POST** /api/application/{applicationId}/scope | 
+[**create_o_auth_scope_with_id**](DefaultApi.md#create_o_auth_scope_with_id) | **POST** /api/application/{applicationId}/scope/{scopeId} | 
 [**create_tenant**](DefaultApi.md#create_tenant) | **POST** /api/tenant | 
 [**create_tenant_with_id**](DefaultApi.md#create_tenant_with_id) | **POST** /api/tenant/{tenantId} | 
 [**create_theme**](DefaultApi.md#create_theme) | **POST** /api/theme | 
@@ -94,6 +96,7 @@ Method | HTTP request | Description
 [**delete_lambda_with_id**](DefaultApi.md#delete_lambda_with_id) | **DELETE** /api/lambda/{lambdaId} | 
 [**delete_message_template_with_id**](DefaultApi.md#delete_message_template_with_id) | **DELETE** /api/message/template/{messageTemplateId} | 
 [**delete_messenger_with_id**](DefaultApi.md#delete_messenger_with_id) | **DELETE** /api/messenger/{messengerId} | 
+[**delete_o_auth_scope_with_id**](DefaultApi.md#delete_o_auth_scope_with_id) | **DELETE** /api/application/{applicationId}/scope/{scopeId} | 
 [**delete_tenant_with_id**](DefaultApi.md#delete_tenant_with_id) | **DELETE** /api/tenant/{tenantId} | 
 [**delete_theme_with_id**](DefaultApi.md#delete_theme_with_id) | **DELETE** /api/theme/{themeId} | 
 [**delete_user_action_reason_with_id**](DefaultApi.md#delete_user_action_reason_with_id) | **DELETE** /api/user-action-reason/{userActionReasonId} | 
@@ -137,6 +140,7 @@ Method | HTTP request | Description
 [**patch_lambda_with_id**](DefaultApi.md#patch_lambda_with_id) | **PATCH** /api/lambda/{lambdaId} | 
 [**patch_message_template_with_id**](DefaultApi.md#patch_message_template_with_id) | **PATCH** /api/message/template/{messageTemplateId} | 
 [**patch_messenger_with_id**](DefaultApi.md#patch_messenger_with_id) | **PATCH** /api/messenger/{messengerId} | 
+[**patch_o_auth_scope_with_id**](DefaultApi.md#patch_o_auth_scope_with_id) | **PATCH** /api/application/{applicationId}/scope/{scopeId} | 
 [**patch_registration_with_id**](DefaultApi.md#patch_registration_with_id) | **PATCH** /api/user/registration/{userId} | 
 [**patch_system_configuration_with_id**](DefaultApi.md#patch_system_configuration_with_id) | **PATCH** /api/system-configuration | 
 [**patch_tenant_with_id**](DefaultApi.md#patch_tenant_with_id) | **PATCH** /api/tenant/{tenantId} | 
@@ -186,6 +190,7 @@ Method | HTTP request | Description
 [**retrieve_message_template_with_id**](DefaultApi.md#retrieve_message_template_with_id) | **GET** /api/message/template/{messageTemplateId} | 
 [**retrieve_messenger_with_id**](DefaultApi.md#retrieve_messenger_with_id) | **GET** /api/messenger/{messengerId} | 
 [**retrieve_monthly_active_report_with_id**](DefaultApi.md#retrieve_monthly_active_report_with_id) | **GET** /api/report/monthly-active-user | 
+[**retrieve_o_auth_scope_with_id**](DefaultApi.md#retrieve_o_auth_scope_with_id) | **GET** /api/application/{applicationId}/scope/{scopeId} | 
 [**retrieve_oauth_configuration_with_id**](DefaultApi.md#retrieve_oauth_configuration_with_id) | **GET** /api/application/{applicationId}/oauth-configuration | 
 [**retrieve_open_id_configuration_with_id**](DefaultApi.md#retrieve_open_id_configuration_with_id) | **GET** /.well-known/openid-configuration | 
 [**retrieve_password_validation_rules_with_id**](DefaultApi.md#retrieve_password_validation_rules_with_id) | **GET** /api/tenant/password-validation-rules | 
@@ -276,6 +281,7 @@ Method | HTTP request | Description
 [**update_lambda_with_id**](DefaultApi.md#update_lambda_with_id) | **PUT** /api/lambda/{lambdaId} | 
 [**update_message_template_with_id**](DefaultApi.md#update_message_template_with_id) | **PUT** /api/message/template/{messageTemplateId} | 
 [**update_messenger_with_id**](DefaultApi.md#update_messenger_with_id) | **PUT** /api/messenger/{messengerId} | 
+[**update_o_auth_scope_with_id**](DefaultApi.md#update_o_auth_scope_with_id) | **PUT** /api/application/{applicationId}/scope/{scopeId} | 
 [**update_registration_with_id**](DefaultApi.md#update_registration_with_id) | **PUT** /api/user/registration/{userId} | 
 [**update_system_configuration_with_id**](DefaultApi.md#update_system_configuration_with_id) | **PUT** /api/system-configuration | 
 [**update_tenant_with_id**](DefaultApi.md#update_tenant_with_id) | **PUT** /api/tenant/{tenantId} | 
@@ -1892,6 +1898,71 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
+## create_o_auth_scope
+
+> models::ApplicationOAuthScopeResponse create_o_auth_scope(application_id, x_fusion_auth_tenant_id, application_o_auth_scope_request)
+
+
+Creates a new custom OAuth scope for an application. You must specify the Id of the application you are creating the scope for. You can optionally specify an Id for the OAuth scope on the URL, if not provided one will be generated.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**application_id** | **String** | The Id of the application to create the OAuth scope on. | [required] |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**application_o_auth_scope_request** | Option<[**ApplicationOAuthScopeRequest**](ApplicationOAuthScopeRequest.md)> |  |  |
+
+### Return type
+
+[**models::ApplicationOAuthScopeResponse**](ApplicationOAuthScopeResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## create_o_auth_scope_with_id
+
+> models::ApplicationOAuthScopeResponse create_o_auth_scope_with_id(application_id, scope_id, x_fusion_auth_tenant_id, application_o_auth_scope_request)
+
+
+Creates a new custom OAuth scope for an application. You must specify the Id of the application you are creating the scope for. You can optionally specify an Id for the OAuth scope on the URL, if not provided one will be generated.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**application_id** | **String** | The Id of the application to create the OAuth scope on. | [required] |
+**scope_id** | **String** | The Id of the OAuth scope. If not provided a secure random UUID will be generated. | [required] |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**application_o_auth_scope_request** | Option<[**ApplicationOAuthScopeRequest**](ApplicationOAuthScopeRequest.md)> |  |  |
+
+### Return type
+
+[**models::ApplicationOAuthScopeResponse**](ApplicationOAuthScopeResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
 ## create_tenant
 
 > models::TenantResponse create_tenant(x_fusion_auth_tenant_id, tenant_request)
@@ -2454,7 +2525,7 @@ Hard deletes an application role. This is a dangerous operation and should not b
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**application_id** | **String** | The Id of the application to deactivate. | [required] |
+**application_id** | **String** | The Id of the application that the role belongs to. | [required] |
 **role_id** | **String** | The Id of the role to delete. | [required] |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 
@@ -3040,6 +3111,38 @@ Deletes the messenger for the given Id.
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **messenger_id** | **String** | The Id of the messenger to delete. | [required] |
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## delete_o_auth_scope_with_id
+
+> delete_o_auth_scope_with_id(application_id, scope_id, x_fusion_auth_tenant_id)
+
+
+Hard deletes a custom OAuth scope. OAuth workflows that are still requesting the deleted OAuth scope may fail depending on the application's unknown scope policy.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**application_id** | **String** | The Id of the application that the OAuth scope belongs to. | [required] |
+**scope_id** | **String** | The Id of the OAuth scope to delete. | [required] |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 
 ### Return type
 
@@ -4378,6 +4481,39 @@ Name | Type | Description  | Required | Notes
 ### Return type
 
 [**models::MessengerResponse**](MessengerResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patch_o_auth_scope_with_id
+
+> models::ApplicationOAuthScopeResponse patch_o_auth_scope_with_id(application_id, scope_id, x_fusion_auth_tenant_id, application_o_auth_scope_request)
+
+
+Updates, via PATCH, the custom OAuth scope with the given Id for the application.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**application_id** | **String** | The Id of the application that the OAuth scope belongs to. | [required] |
+**scope_id** | **String** | The Id of the OAuth scope to update. | [required] |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**application_o_auth_scope_request** | Option<[**ApplicationOAuthScopeRequest**](ApplicationOAuthScopeRequest.md)> |  |  |
+
+### Return type
+
+[**models::ApplicationOAuthScopeResponse**](ApplicationOAuthScopeResponse.md)
 
 ### Authorization
 
@@ -5870,6 +6006,38 @@ Name | Type | Description  | Required | Notes
 ### Return type
 
 [**models::MonthlyActiveUserReportResponse**](MonthlyActiveUserReportResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## retrieve_o_auth_scope_with_id
+
+> models::ApplicationOAuthScopeResponse retrieve_o_auth_scope_with_id(application_id, scope_id, x_fusion_auth_tenant_id)
+
+
+Retrieves a custom OAuth scope.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**application_id** | **String** | The Id of the application that the OAuth scope belongs to. | [required] |
+**scope_id** | **String** | The Id of the OAuth scope to retrieve. | [required] |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+
+### Return type
+
+[**models::ApplicationOAuthScopeResponse**](ApplicationOAuthScopeResponse.md)
 
 ### Authorization
 
@@ -8601,6 +8769,39 @@ Name | Type | Description  | Required | Notes
 ### Return type
 
 [**models::MessengerResponse**](MessengerResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## update_o_auth_scope_with_id
+
+> models::ApplicationOAuthScopeResponse update_o_auth_scope_with_id(application_id, scope_id, x_fusion_auth_tenant_id, application_o_auth_scope_request)
+
+
+Updates the OAuth scope with the given Id for the application.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**application_id** | **String** | The Id of the application that the OAuth scope belongs to. | [required] |
+**scope_id** | **String** | The Id of the OAuth scope to update. | [required] |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**application_o_auth_scope_request** | Option<[**ApplicationOAuthScopeRequest**](ApplicationOAuthScopeRequest.md)> |  |  |
+
+### Return type
+
+[**models::ApplicationOAuthScopeResponse**](ApplicationOAuthScopeResponse.md)
 
 ### Authorization
 

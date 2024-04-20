@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **device_info** | Option<[**models::DeviceInfo**](DeviceInfo.md)> |  | [optional]
 **expires_in** | Option<**i32**> |  | [optional]
 **pending_id_p_link** | Option<[**models::PendingIdPLink**](PendingIdPLink.md)> |  | [optional]
+**scope** | Option<**String**> |  | [optional]
 **tenant_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **user_code** | Option<**String**> |  | [optional]
 

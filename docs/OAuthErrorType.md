@@ -13,6 +13,7 @@
 | ServerError | server_error |
 | UnsupportedGrantType | unsupported_grant_type |
 | UnsupportedResponseType | unsupported_response_type |
+| AccessDenied | access_denied |
 | ChangePasswordRequired | change_password_required |
 | NotLicensed | not_licensed |
 | TwoFactorRequired | two_factor_required |

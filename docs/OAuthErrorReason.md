@@ -10,6 +10,7 @@
 | AccessTokenUnavailableForProcessing | access_token_unavailable_for_processing |
 | AccessTokenFailedProcessing | access_token_failed_processing |
 | AccessTokenInvalid | access_token_invalid |
+| AccessTokenRequired | access_token_required |
 | RefreshTokenNotFound | refresh_token_not_found |
 | RefreshTokenTypeNotSupported | refresh_token_type_not_supported |
 | InvalidClientId | invalid_client_id |
@@ -61,6 +62,9 @@
 | ChangePasswordExpired | change_password_expired |
 | ChangePasswordValidation | change_password_validation |
 | Unknown | unknown |
+| MissingRequiredScope | missing_required_scope |
+| UnknownScope | unknown_scope |
+| ConsentCanceled | consent_canceled |
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

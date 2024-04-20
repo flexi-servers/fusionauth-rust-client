@@ -24,6 +24,7 @@ Name | Type | Description | Notes
 **oauth2_child_registration_not_allowed** | Option<**String**> |  | [optional]
 **oauth2_child_registration_not_allowed_complete** | Option<**String**> |  | [optional]
 **oauth2_complete_registration** | Option<**String**> |  | [optional]
+**oauth2_consent** | Option<**String**> |  | [optional]
 **oauth2_device** | Option<**String**> |  | [optional]
 **oauth2_device_complete** | Option<**String**> |  | [optional]
 **oauth2_error** | Option<**String**> |  | [optional]
