@@ -1,20 +1,14 @@
 [package]
 name = "fusionauth-rust-client"
-version = "2.1.1"
+version = "2.2.0"
 authors = ["OpenAPI Generator team and contributors"]
 description = "This is a FusionAuth server. Find out more at [https://fusionauth.io](https://fusionauth.io). You need to [set up an API key](https://fusionauth.io/docs/v1/tech/apis/authentication#managing-api-keys) in the FusionAuth instance you are using to test out the API calls."
 license = "Apache-2.0"
-edition = "2018"
-keywords = [ "openapi", "fusionauth"]
-repository = "https://github.com/flexi-servers/fusionauth-rust-client"
-readme = "README.md"
+edition = "2021"
 
 [dependencies]
-serde = "^1.0"
-serde_derive = "^1.0"
+serde = { version = "^1.0", features = ["derive"] }
 serde_json = "^1.0"
-url = "^2.2"
-uuid = { version = "^1.0", features = ["serde", "v4"] }
-[dependencies.reqwest]
-version = "^0.11"
-features = ["json", "multipart"]
+url = "^2.5"
+uuid = { version = "^1.8", features = ["serde", "v4"] }
+reqwest = { version = "^0.12", features = ["json", "multipart"] }

@@ -13,6 +13,8 @@ Name | Type | Description | Notes
 **name** | Option<**String**> |  | [optional]
 **stylesheet** | Option<**String**> |  | [optional]
 **templates** | Option<[**models::Templates**](Templates.md)> |  | [optional]
+**r#type** | Option<[**models::ThemeType**](ThemeType.md)> |  | [optional]
+**variables** | Option<[**models::SimpleThemeVariables**](SimpleThemeVariables.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
