@@ -19,6 +19,7 @@ if [ -d "fusionauth" ]; then rm -r fusionauth; fi
 
 mkdir fusionauth
 
+docker image pull openapitools/openapi-generator-cli:latest
 docker run --rm -v "${PWD}:/client" openapitools/openapi-generator-cli:latest \
     generate \
     -i /client/api.yaml \

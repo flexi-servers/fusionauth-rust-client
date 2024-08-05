@@ -203,6 +203,8 @@ Method | HTTP request | Description
 [**retrieve_registration_report_with_id**](DefaultApi.md#retrieve_registration_report_with_id) | **GET** /api/report/registration | 
 [**retrieve_registration_with_id**](DefaultApi.md#retrieve_registration_with_id) | **GET** /api/user/registration/{userId}/{applicationId} | 
 [**retrieve_report_login**](DefaultApi.md#retrieve_report_login) | **GET** /api/report/login | 
+[**retrieve_status**](DefaultApi.md#retrieve_status) | **GET** /api/status | 
+[**retrieve_system_health_with_id**](DefaultApi.md#retrieve_system_health_with_id) | **GET** /api/health | 
 [**retrieve_tenant_with_id**](DefaultApi.md#retrieve_tenant_with_id) | **GET** /api/tenant/{tenantId} | 
 [**retrieve_theme_with_id**](DefaultApi.md#retrieve_theme_with_id) | **GET** /api/theme/{themeId} | 
 [**retrieve_total_report_with_id**](DefaultApi.md#retrieve_total_report_with_id) | **GET** /api/report/totals | 
@@ -6408,6 +6410,60 @@ Name | Type | Description  | Required | Notes
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## retrieve_status
+
+> serde_json::Value retrieve_status()
+
+
+Retrieves the FusionAuth system status. This request is anonymous and does not require an API key. When an API key is not provided the response will contain a single value in the JSON response indicating the current health check. OR Retrieves the FusionAuth system status using an API key. Using an API key will cause the response to include the product version, health checks and various runtime metrics.
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**serde_json::Value**](serde_json::Value.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## retrieve_system_health_with_id
+
+> retrieve_system_health_with_id()
+
+
+Retrieves the FusionAuth system health. This API will return 200 if the system is healthy, and 500 if the system is un-healthy.
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
