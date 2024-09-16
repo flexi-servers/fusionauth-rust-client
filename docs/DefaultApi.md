@@ -227,6 +227,8 @@ Method | HTTP request | Description
 [**retrieve_web_authn_credential_with_id**](DefaultApi.md#retrieve_web_authn_credential_with_id) | **GET** /api/webauthn/{id} | 
 [**retrieve_web_authn_credentials_for_user_with_id**](DefaultApi.md#retrieve_web_authn_credentials_for_user_with_id) | **GET** /api/webauthn | 
 [**retrieve_webhook**](DefaultApi.md#retrieve_webhook) | **GET** /api/webhook | 
+[**retrieve_webhook_attempt_log_with_id**](DefaultApi.md#retrieve_webhook_attempt_log_with_id) | **GET** /api/system/webhook-attempt-log/{webhookAttemptLogId} | 
+[**retrieve_webhook_event_log_with_id**](DefaultApi.md#retrieve_webhook_event_log_with_id) | **GET** /api/system/webhook-event-log/{webhookEventLogId} | 
 [**retrieve_webhook_with_id**](DefaultApi.md#retrieve_webhook_with_id) | **GET** /api/webhook/{webhookId} | 
 [**revoke_refresh_token_by_id_with_id**](DefaultApi.md#revoke_refresh_token_by_id_with_id) | **DELETE** /api/jwt/refresh/{tokenId} | 
 [**revoke_user_consent_with_id**](DefaultApi.md#revoke_user_consent_with_id) | **DELETE** /api/user/consent/{userConsentId} | 
@@ -251,6 +253,7 @@ Method | HTTP request | Description
 [**search_user_comments_with_id**](DefaultApi.md#search_user_comments_with_id) | **POST** /api/user/comment/search | 
 [**search_users_by_ids_with_id**](DefaultApi.md#search_users_by_ids_with_id) | **GET** /api/user/search | 
 [**search_users_by_query_with_id**](DefaultApi.md#search_users_by_query_with_id) | **POST** /api/user/search | 
+[**search_webhook_event_logs_with_id**](DefaultApi.md#search_webhook_event_logs_with_id) | **POST** /api/system/webhook-event-log/search | 
 [**search_webhooks_with_id**](DefaultApi.md#search_webhooks_with_id) | **POST** /api/webhook/search | 
 [**send_email_with_id**](DefaultApi.md#send_email_with_id) | **POST** /api/email/send/{emailTemplateId} | 
 [**send_family_request_email_with_id**](DefaultApi.md#send_family_request_email_with_id) | **POST** /api/user/family/request | 
@@ -7129,6 +7132,66 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
+## retrieve_webhook_attempt_log_with_id
+
+> models::WebhookAttemptLogResponse retrieve_webhook_attempt_log_with_id(webhook_attempt_log_id)
+
+
+Retrieves a single webhook attempt log for the given Id.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**webhook_attempt_log_id** | **String** | The Id of the webhook attempt log to retrieve. | [required] |
+
+### Return type
+
+[**models::WebhookAttemptLogResponse**](WebhookAttemptLogResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## retrieve_webhook_event_log_with_id
+
+> models::WebhookEventLogResponse retrieve_webhook_event_log_with_id(webhook_event_log_id)
+
+
+Retrieves a single webhook event log for the given Id.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**webhook_event_log_id** | **String** | The Id of the webhook event log to retrieve. | [required] |
+
+### Return type
+
+[**models::WebhookEventLogResponse**](WebhookEventLogResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
 ## retrieve_webhook_with_id
 
 > models::WebhookResponse retrieve_webhook_with_id(webhook_id)
@@ -7836,6 +7899,36 @@ Name | Type | Description  | Required | Notes
 ### Return type
 
 [**models::SearchResponse**](SearchResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## search_webhook_event_logs_with_id
+
+> models::WebhookEventLogSearchResponse search_webhook_event_logs_with_id(webhook_event_log_search_request)
+
+
+Searches the webhook event logs with the specified criteria and pagination.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**webhook_event_log_search_request** | Option<[**WebhookEventLogSearchRequest**](WebhookEventLogSearchRequest.md)> |  |  |
+
+### Return type
+
+[**models::WebhookEventLogSearchResponse**](WebhookEventLogSearchResponse.md)
 
 ### Authorization
 

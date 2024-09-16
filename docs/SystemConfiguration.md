@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **report_timezone** | Option<**String**> | Timezone Identifier | [optional]
 **trusted_proxy_configuration** | Option<[**models::SystemTrustedProxyConfiguration**](SystemTrustedProxyConfiguration.md)> |  | [optional]
 **ui_configuration** | Option<[**models::UiConfiguration**](UIConfiguration.md)> |  | [optional]
+**webhook_event_log_configuration** | Option<[**models::WebhookEventLogConfiguration**](WebhookEventLogConfiguration.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **email_verification_id_time_to_live_in_seconds** | Option<**i32**> |  | [optional]
 **email_verification_one_time_code_generator** | Option<[**models::SecureGeneratorConfiguration**](SecureGeneratorConfiguration.md)> |  | [optional]
 **external_authentication_id_time_to_live_in_seconds** | Option<**i32**> |  | [optional]
+**login_intent_time_to_live_in_seconds** | Option<**i32**> |  | [optional]
 **one_time_password_time_to_live_in_seconds** | Option<**i32**> |  | [optional]
 **passwordless_login_generator** | Option<[**models::SecureGeneratorConfiguration**](SecureGeneratorConfiguration.md)> |  | [optional]
 **passwordless_login_time_to_live_in_seconds** | Option<**i32**> |  | [optional]

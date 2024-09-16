@@ -1,10 +1,12 @@
 #!/bin/bash
 
-# check if $PWD ends with scritps
+# check if $PWD ends with scripts
 if [[ $PWD != *scripts ]]; then
     echo "This script should be executed from the scripts directory."
     exit 1
 fi
+
+git pull
 
 # Input, if the version should be released
 read -p "Update api.yaml? (y/n) " -n 1 -r update_api
@@ -55,13 +57,17 @@ if [ -z "$version" ]; then
     exit 1
 fi
 
-# Inuput override version
+# Write the version to api_version.yaml before overriding
+echo "version: $version" > api_version.yaml
+
+# Input to override version
 read -p "Override version $version? (y/n) " -n 1 -r override_version
 
 if [[ $override_version =~ ^[Yy]$ ]]; then
     read -p "Enter version: " version
     # Update version in Cargo.toml
     sed -i '' "s/^version = .*/version = \"$version\"/" "Cargo.toml"
+    # Update the version in api_version.yaml
 fi
 
 # Input, if the version should be released
@@ -72,7 +78,6 @@ if [[ $release_version =~ ^[Yy]$ ]]; then
 else
     exit 0
 fi
-
 
 if git rev-parse "v$version" >/dev/null 2>&1; then
     echo "Git tag v$version already exists."
