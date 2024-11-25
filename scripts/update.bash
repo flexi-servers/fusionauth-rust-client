@@ -63,6 +63,9 @@ echo "version: $version" > api_version.yaml
 # Input to override version
 read -p "Override version $version? (y/n) " -n 1 -r override_version
 
+printf "\n\n[features]\nrusttls = [\"reqwest/rustls-tls\"]\n" >> Cargo.toml
+
+
 if [[ $override_version =~ ^[Yy]$ ]]; then
     read -p "Enter version: " version
     # Update version in Cargo.toml
