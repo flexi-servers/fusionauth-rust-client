@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **refresh_token** | Option<**String**> |  | [optional]
+**refresh_token_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **registration** | Option<[**models::UserRegistration**](UserRegistration.md)> |  | [optional]
 **registration_verification_id** | Option<**String**> |  | [optional]
 **registration_verification_one_time_code** | Option<**String**> |  | [optional]

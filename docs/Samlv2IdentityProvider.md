@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **request_signing_key_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **sign_request** | Option<**bool**> |  | [optional]
 **xml_signature_c14n_method** | Option<[**models::CanonicalizationMethod**](CanonicalizationMethod.md)> |  | [optional]
+**assertion_decryption_configuration** | Option<[**models::Samlv2AssertionDecryptionConfiguration**](SAMLv2AssertionDecryptionConfiguration.md)> |  | [optional]
 **email_claim** | Option<**String**> |  | [optional]
 **key_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **unique_id_claim** | Option<**String**> |  | [optional]
