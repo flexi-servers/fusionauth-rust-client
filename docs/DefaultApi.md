@@ -6,7 +6,6 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**action_user_with_id**](DefaultApi.md#action_user_with_id) | **POST** /api/user/action | 
 [**activate_reactor_with_id**](DefaultApi.md#activate_reactor_with_id) | **POST** /api/reactor | 
-[**add_user_to_family_with_id**](DefaultApi.md#add_user_to_family_with_id) | **PUT** /api/user/family/{familyId} | 
 [**approve_device_with_id**](DefaultApi.md#approve_device_with_id) | **POST** /oauth2/device/approve | 
 [**cancel_action_with_id**](DefaultApi.md#cancel_action_with_id) | **DELETE** /api/user/action/{actionId} | 
 [**change_password_by_identity_with_id**](DefaultApi.md#change_password_by_identity_with_id) | **POST** /api/user/change-password | 
@@ -133,10 +132,15 @@ Method | HTTP request | Description
 [**patch_connector_with_id**](DefaultApi.md#patch_connector_with_id) | **PATCH** /api/connector/{connectorId} | 
 [**patch_consent_with_id**](DefaultApi.md#patch_consent_with_id) | **PATCH** /api/consent/{consentId} | 
 [**patch_email_template_with_id**](DefaultApi.md#patch_email_template_with_id) | **PATCH** /api/email/template/{emailTemplateId} | 
+[**patch_entity_type_permission_with_id**](DefaultApi.md#patch_entity_type_permission_with_id) | **PATCH** /api/entity/type/{entityTypeId}/permission/{permissionId} | 
 [**patch_entity_type_with_id**](DefaultApi.md#patch_entity_type_with_id) | **PATCH** /api/entity/type/{entityTypeId} | 
+[**patch_entity_with_id**](DefaultApi.md#patch_entity_with_id) | **PATCH** /api/entity/{entityId} | 
+[**patch_form_field_with_id**](DefaultApi.md#patch_form_field_with_id) | **PATCH** /api/form/field/{fieldId} | 
+[**patch_form_with_id**](DefaultApi.md#patch_form_with_id) | **PATCH** /api/form/{formId} | 
 [**patch_group_with_id**](DefaultApi.md#patch_group_with_id) | **PATCH** /api/group/{groupId} | 
 [**patch_identity_provider_with_id**](DefaultApi.md#patch_identity_provider_with_id) | **PATCH** /api/identity-provider/{identityProviderId} | 
 [**patch_integrations_with_id**](DefaultApi.md#patch_integrations_with_id) | **PATCH** /api/integration | 
+[**patch_ip_access_control_list_with_id**](DefaultApi.md#patch_ip_access_control_list_with_id) | **PATCH** /api/ip-acl/{accessControlListId} | 
 [**patch_lambda_with_id**](DefaultApi.md#patch_lambda_with_id) | **PATCH** /api/lambda/{lambdaId} | 
 [**patch_message_template_with_id**](DefaultApi.md#patch_message_template_with_id) | **PATCH** /api/message/template/{messageTemplateId} | 
 [**patch_messenger_with_id**](DefaultApi.md#patch_messenger_with_id) | **PATCH** /api/messenger/{messengerId} | 
@@ -149,6 +153,7 @@ Method | HTTP request | Description
 [**patch_user_action_with_id**](DefaultApi.md#patch_user_action_with_id) | **PATCH** /api/user-action/{userActionId} | 
 [**patch_user_consent_with_id**](DefaultApi.md#patch_user_consent_with_id) | **PATCH** /api/user/consent/{userConsentId} | 
 [**patch_user_with_id**](DefaultApi.md#patch_user_with_id) | **PATCH** /api/user/{userId} | 
+[**patch_webhook_with_id**](DefaultApi.md#patch_webhook_with_id) | **PATCH** /api/webhook/{webhookId} | 
 [**reconcile_jwt_with_id**](DefaultApi.md#reconcile_jwt_with_id) | **POST** /api/jwt/reconcile | 
 [**register**](DefaultApi.md#register) | **POST** /api/user/registration | 
 [**register_with_id**](DefaultApi.md#register_with_id) | **POST** /api/user/registration/{userId} | 
@@ -294,6 +299,7 @@ Method | HTTP request | Description
 [**update_user_action_reason_with_id**](DefaultApi.md#update_user_action_reason_with_id) | **PUT** /api/user-action-reason/{userActionReasonId} | 
 [**update_user_action_with_id**](DefaultApi.md#update_user_action_with_id) | **PUT** /api/user-action/{userActionId} | 
 [**update_user_consent_with_id**](DefaultApi.md#update_user_consent_with_id) | **PUT** /api/user/consent/{userConsentId} | 
+[**update_user_family_with_id**](DefaultApi.md#update_user_family_with_id) | **PUT** /api/user/family/{familyId} | 
 [**update_user_verify_email**](DefaultApi.md#update_user_verify_email) | **PUT** /api/user/verify-email | 
 [**update_user_verify_registration**](DefaultApi.md#update_user_verify_registration) | **PUT** /api/user/verify-registration | 
 [**update_user_with_id**](DefaultApi.md#update_user_with_id) | **PUT** /api/user/{userId} | 
@@ -353,38 +359,6 @@ Name | Type | Description  | Required | Notes
 ### Return type
 
  (empty response body)
-
-### Authorization
-
-[ApiKeyAuth](../README.md#ApiKeyAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## add_user_to_family_with_id
-
-> models::FamilyResponse add_user_to_family_with_id(family_id, x_fusion_auth_tenant_id, family_request)
-
-
-Adds a user to an existing family. The family Id must be specified.
-
-### Parameters
-
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**family_id** | **String** | The Id of the family. | [required] |
-**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
-**family_request** | Option<[**FamilyRequest**](FamilyRequest.md)> |  |  |
-
-### Return type
-
-[**models::FamilyResponse**](FamilyResponse.md)
 
 ### Authorization
 
@@ -1605,7 +1579,7 @@ Name | Type | Description  | Required | Notes
 > serde_json::Value create_introspect()
 
 
-Inspect an access token issued as the result of the Client Credentials Grant. OR Inspect an access token issued as the result of the User based grant such as the Authorization Code Grant, Implicit Grant, the User Credentials Grant or the Refresh Grant.
+Inspect an access token issued as the result of the User based grant such as the Authorization Code Grant, Implicit Grant, the User Credentials Grant or the Refresh Grant. OR Inspect an access token issued as the result of the Client Credentials Grant.
 
 ### Parameters
 
@@ -2097,7 +2071,7 @@ Name | Type | Description  | Required | Notes
 > models::AccessToken create_token()
 
 
-Exchange a Refresh Token for an Access Token. If you will be using the Refresh Token Grant, you will make a request to the Token endpoint to exchange the user’s refresh token for an access token. OR Exchange User Credentials for a Token. If you will be using the Resource Owner Password Credential Grant, you will make a request to the Token endpoint to exchange the user’s email and password for an access token. OR Exchanges an OAuth authorization code and code_verifier for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint and a code_verifier for an access token. OR Exchanges an OAuth authorization code for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint for an access token. OR Make a Client Credentials grant request to obtain an access token.
+Exchanges an OAuth authorization code and code_verifier for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint and a code_verifier for an access token. OR Make a Client Credentials grant request to obtain an access token. OR Exchange a Refresh Token for an Access Token. If you will be using the Refresh Token Grant, you will make a request to the Token endpoint to exchange the user’s refresh token for an access token. OR Exchange User Credentials for a Token. If you will be using the Resource Owner Password Credential Grant, you will make a request to the Token endpoint to exchange the user’s email and password for an access token. OR Exchanges an OAuth authorization code for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint for an access token.
 
 ### Parameters
 
@@ -2982,18 +2956,18 @@ Name | Type | Description  | Required | Notes
 
 ## delete_jwt_refresh
 
-> delete_jwt_refresh(application_id, user_id, token, refresh_token_revoke_request)
+> delete_jwt_refresh(user_id, application_id, token, refresh_token_revoke_request)
 
 
-Revokes refresh tokens using the information in the JSON body. The handling for this method is the same as the revokeRefreshToken method and is based on the information you provide in the RefreshDeleteRequest object. See that method for additional information. OR Revoke all refresh tokens that belong to an application by applicationId. OR Revoke all refresh tokens that belong to a user by user Id. OR Revokes a single refresh token by using the actual refresh token value. This refresh token value is sensitive, so  be careful with this API request. OR Revoke all refresh tokens that belong to a user by user Id for a specific application by applicationId. OR Revokes refresh tokens.  Usage examples:   - Delete a single refresh token, pass in only the token.       revokeRefreshToken(token)    - Delete all refresh tokens for a user, pass in only the userId.       revokeRefreshToken(null, userId)    - Delete all refresh tokens for a user for a specific application, pass in both the userId and the applicationId.       revokeRefreshToken(null, userId, applicationId)    - Delete all refresh tokens for an application       revokeRefreshToken(null, null, applicationId)  Note: <code>null</code> may be handled differently depending upon the programming language.  See also: (method names may vary by language... but you'll figure it out)   - revokeRefreshTokenById  - revokeRefreshTokenByToken  - revokeRefreshTokensByUserId  - revokeRefreshTokensByApplicationId  - revokeRefreshTokensByUserIdForApplication
+Revoke all refresh tokens that belong to a user by user Id. OR Revoke all refresh tokens that belong to a user by user Id for a specific application by applicationId. OR Revoke all refresh tokens that belong to an application by applicationId. OR Revokes refresh tokens using the information in the JSON body. The handling for this method is the same as the revokeRefreshToken method and is based on the information you provide in the RefreshDeleteRequest object. See that method for additional information. OR Revokes a single refresh token by using the actual refresh token value. This refresh token value is sensitive, so  be careful with this API request. OR Revokes refresh tokens.  Usage examples:   - Delete a single refresh token, pass in only the token.       revokeRefreshToken(token)    - Delete all refresh tokens for a user, pass in only the userId.       revokeRefreshToken(null, userId)    - Delete all refresh tokens for a user for a specific application, pass in both the userId and the applicationId.       revokeRefreshToken(null, userId, applicationId)    - Delete all refresh tokens for an application       revokeRefreshToken(null, null, applicationId)  Note: <code>null</code> may be handled differently depending upon the programming language.  See also: (method names may vary by language... but you'll figure it out)   - revokeRefreshTokenById  - revokeRefreshTokenByToken  - revokeRefreshTokensByUserId  - revokeRefreshTokensByApplicationId  - revokeRefreshTokensByUserIdForApplication
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**application_id** | Option<**String**> | The unique Id of the application that you want to delete all refresh tokens for. |  |
 **user_id** | Option<**String**> | The unique Id of the user that you want to delete all refresh tokens for. |  |
+**application_id** | Option<**String**> | The unique Id of the application that you want to delete refresh tokens for. |  |
 **token** | Option<**String**> | The refresh token to delete. |  |
 **refresh_token_revoke_request** | Option<[**RefreshTokenRevokeRequest**](RefreshTokenRevokeRequest.md)> |  |  |
 
@@ -3167,10 +3141,10 @@ Name | Type | Description  | Required | Notes
 
 ## delete_tenant_with_id
 
-> delete_tenant_with_id(tenant_id, r#async, x_fusion_auth_tenant_id, tenant_delete_request)
+> delete_tenant_with_id(tenant_id, x_fusion_auth_tenant_id, r#async, tenant_delete_request)
 
 
-Deletes the tenant for the given Id asynchronously. This method is helpful if you do not want to wait for the delete operation to complete. OR Deletes the tenant based on the given request (sent to the API as JSON). This permanently deletes all information, metrics, reports and data associated with the tenant and everything under the tenant (applications, users, etc). OR Deletes the tenant based on the given Id on the URL. This permanently deletes all information, metrics, reports and data associated with the tenant and everything under the tenant (applications, users, etc).
+Deletes the tenant based on the given Id on the URL. This permanently deletes all information, metrics, reports and data associated with the tenant and everything under the tenant (applications, users, etc). OR Deletes the tenant for the given Id asynchronously. This method is helpful if you do not want to wait for the delete operation to complete. OR Deletes the tenant based on the given request (sent to the API as JSON). This permanently deletes all information, metrics, reports and data associated with the tenant and everything under the tenant (applications, users, etc).
 
 ### Parameters
 
@@ -3178,8 +3152,8 @@ Deletes the tenant for the given Id asynchronously. This method is helpful if yo
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **tenant_id** | **String** | The Id of the tenant to delete. | [required] |
-**r#async** | Option<**String**> |  |  |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**r#async** | Option<**String**> |  |  |
 **tenant_delete_request** | Option<[**TenantDeleteRequest**](TenantDeleteRequest.md)> |  |  |
 
 ### Return type
@@ -3360,7 +3334,7 @@ Name | Type | Description  | Required | Notes
 > delete_user_registration_with_id(user_id, application_id, x_fusion_auth_tenant_id, registration_delete_request)
 
 
-Deletes the user registration for the given user and application along with the given JSON body that contains the event information. OR Deletes the user registration for the given user and application.
+Deletes the user registration for the given user and application. OR Deletes the user registration for the given user and application along with the given JSON body that contains the event information.
 
 ### Parameters
 
@@ -3426,14 +3400,14 @@ Name | Type | Description  | Required | Notes
 > delete_user_with_id(user_id, x_fusion_auth_tenant_id, hard_delete, user_delete_single_request)
 
 
-Deactivates the user with the given Id. OR Deletes the user for the given Id. This permanently deletes all information, metrics, reports and data associated with the user. OR Deletes the user based on the given request (sent to the API as JSON). This permanently deletes all information, metrics, reports and data associated with the user.
+Deletes the user based on the given request (sent to the API as JSON). This permanently deletes all information, metrics, reports and data associated with the user. OR Deletes the user for the given Id. This permanently deletes all information, metrics, reports and data associated with the user. OR Deactivates the user with the given Id.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**user_id** | **String** | The Id of the user to deactivate. | [required] |
+**user_id** | **String** | The Id of the user to delete (required). | [required] |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 **hard_delete** | Option<**String**> |  |  |
 **user_delete_single_request** | Option<[**UserDeleteSingleRequest**](UserDeleteSingleRequest.md)> |  |  |
@@ -4282,6 +4256,38 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
+## patch_entity_type_permission_with_id
+
+> models::EntityTypeResponse patch_entity_type_permission_with_id(entity_type_id, permission_id, entity_type_request)
+
+
+Patches the permission with the given Id for the entity type.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**entity_type_id** | **String** | The Id of the entityType that the permission belongs to. | [required] |
+**permission_id** | **String** | The Id of the permission to patch. | [required] |
+**entity_type_request** | Option<[**EntityTypeRequest**](EntityTypeRequest.md)> |  |  |
+
+### Return type
+
+[**models::EntityTypeResponse**](EntityTypeResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
 ## patch_entity_type_with_id
 
 > models::EntityTypeResponse patch_entity_type_with_id(entity_type_id, entity_type_request)
@@ -4300,6 +4306,100 @@ Name | Type | Description  | Required | Notes
 ### Return type
 
 [**models::EntityTypeResponse**](EntityTypeResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patch_entity_with_id
+
+> models::EntityResponse patch_entity_with_id(entity_id, x_fusion_auth_tenant_id, entity_request)
+
+
+Updates, via PATCH, the Entity with the given Id.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**entity_id** | **String** | The Id of the Entity Type to update. | [required] |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**entity_request** | Option<[**EntityRequest**](EntityRequest.md)> |  |  |
+
+### Return type
+
+[**models::EntityResponse**](EntityResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patch_form_field_with_id
+
+> models::FormFieldResponse patch_form_field_with_id(field_id, form_field_request)
+
+
+Patches the form field with the given Id.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**field_id** | **String** | The Id of the form field to patch. | [required] |
+**form_field_request** | Option<[**FormFieldRequest**](FormFieldRequest.md)> |  |  |
+
+### Return type
+
+[**models::FormFieldResponse**](FormFieldResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patch_form_with_id
+
+> models::FormResponse patch_form_with_id(form_id, form_request)
+
+
+Patches the form with the given Id.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**form_id** | **String** | The Id of the form to patch. | [required] |
+**form_request** | Option<[**FormRequest**](FormRequest.md)> |  |  |
+
+### Return type
+
+[**models::FormResponse**](FormResponse.md)
 
 ### Authorization
 
@@ -4393,6 +4493,37 @@ Name | Type | Description  | Required | Notes
 ### Return type
 
 [**models::IntegrationResponse**](IntegrationResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patch_ip_access_control_list_with_id
+
+> models::IpAccessControlListResponse patch_ip_access_control_list_with_id(access_control_list_id, ip_access_control_list_request)
+
+
+Update the IP Access Control List with the given Id.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**access_control_list_id** | **String** | The Id of the IP Access Control List to patch. | [required] |
+**ip_access_control_list_request** | Option<[**IpAccessControlListRequest**](IpAccessControlListRequest.md)> |  |  |
+
+### Return type
+
+[**models::IpAccessControlListResponse**](IPAccessControlListResponse.md)
 
 ### Authorization
 
@@ -4783,6 +4914,37 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
+## patch_webhook_with_id
+
+> models::WebhookResponse patch_webhook_with_id(webhook_id, webhook_request)
+
+
+Patches the webhook with the given Id.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**webhook_id** | **String** | The Id of the webhook to update. | [required] |
+**webhook_request** | Option<[**WebhookRequest**](WebhookRequest.md)> |  |  |
+
+### Return type
+
+[**models::WebhookResponse**](WebhookResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
 ## reconcile_jwt_with_id
 
 > models::LoginResponse reconcile_jwt_with_id(identity_provider_login_request)
@@ -5000,18 +5162,18 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_application
 
-> models::ApplicationResponse retrieve_application(inactive, x_fusion_auth_tenant_id)
+> models::ApplicationResponse retrieve_application(x_fusion_auth_tenant_id, inactive)
 
 
-Retrieves all the applications that are currently inactive. OR Retrieves the application for the given Id or all the applications if the Id is null.
+Retrieves the application for the given Id or all the applications if the Id is null. OR Retrieves all the applications that are currently inactive.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**inactive** | Option<**String**> |  |  |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**inactive** | Option<**String**> |  |  |
 
 ### Return type
 
@@ -5610,19 +5772,19 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_identity_provider_link
 
-> models::IdentityProviderLinkResponse retrieve_identity_provider_link(identity_provider_id, user_id, identity_provider_user_id)
+> models::IdentityProviderLinkResponse retrieve_identity_provider_link(identity_provider_id, identity_provider_user_id, user_id)
 
 
-Retrieve all Identity Provider users (links) for the user. Specify the optional identityProviderId to retrieve links for a particular IdP. OR Retrieve a single Identity Provider user (link).
+Retrieve a single Identity Provider user (link). OR Retrieve all Identity Provider users (links) for the user. Specify the optional identityProviderId to retrieve links for a particular IdP.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**identity_provider_id** | Option<**String**> | The unique Id of the identity provider. Specify this value to reduce the links returned to those for a particular IdP. |  |
-**user_id** | Option<**String**> | The unique Id of the user. |  |
+**identity_provider_id** | Option<**String**> | The unique Id of the identity provider. |  |
 **identity_provider_user_id** | Option<**String**> | The unique Id of the user in the 3rd party identity provider. |  |
+**user_id** | Option<**String**> | The unique Id of the FusionAuth user. |  |
 
 ### Return type
 
@@ -6385,10 +6547,10 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_report_login
 
-> models::LoginReportResponse retrieve_report_login(application_id, login_id, start, end, user_id)
+> models::LoginReportResponse retrieve_report_login(application_id, start, end, user_id, login_id)
 
 
-Retrieves the login report between the two instants for a particular user by login Id. If you specify an application id, it will only return the login counts for that application. OR Retrieves the login report between the two instants for a particular user by Id. If you specify an application id, it will only return the login counts for that application. OR Retrieves the login report between the two instants. If you specify an application id, it will only return the login counts for that application.
+Retrieves the login report between the two instants. If you specify an application id, it will only return the login counts for that application. OR Retrieves the login report between the two instants for a particular user by Id. If you specify an application id, it will only return the login counts for that application. OR Retrieves the login report between the two instants for a particular user by login Id. If you specify an application id, it will only return the login counts for that application.
 
 ### Parameters
 
@@ -6396,10 +6558,10 @@ Retrieves the login report between the two instants for a particular user by log
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **application_id** | Option<**String**> | The application id. |  |
-**login_id** | Option<**String**> | The userId id. |  |
 **start** | Option<**String**> | The start instant as UTC milliseconds since Epoch. |  |
 **end** | Option<**String**> | The end instant as UTC milliseconds since Epoch. |  |
 **user_id** | Option<**String**> | The userId id. |  |
+**login_id** | Option<**String**> | The userId id. |  |
 
 ### Return type
 
@@ -6623,20 +6785,20 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_user
 
-> models::UserResponse retrieve_user(x_fusion_auth_tenant_id, change_password_id, verification_id, username, email, login_id)
+> models::UserResponse retrieve_user(username, x_fusion_auth_tenant_id, verification_id, change_password_id, email, login_id)
 
 
-Retrieves the user for the given Id. This method does not use an API key, instead it uses a JSON Web Token (JWT) for authentication. OR Retrieves the user by a change password Id. The intended use of this API is to retrieve a user after the forgot password workflow has been initiated and you may not know the user's email or username. OR Retrieves the user by a verificationId. The intended use of this API is to retrieve a user after the forgot password workflow has been initiated and you may not know the user's email or username. OR Retrieves the user for the given username. OR Retrieves the user for the given email. OR Retrieves the user for the loginId. The loginId can be either the username or the email.
+Retrieves the user for the given username. OR Retrieves the user by a verificationId. The intended use of this API is to retrieve a user after the forgot password workflow has been initiated and you may not know the user's email or username. OR Retrieves the user by a change password Id. The intended use of this API is to retrieve a user after the forgot password workflow has been initiated and you may not know the user's email or username. OR Retrieves the user for the given Id. This method does not use an API key, instead it uses a JSON Web Token (JWT) for authentication. OR Retrieves the user for the given email. OR Retrieves the user for the loginId. The loginId can be either the username or the email.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
-**change_password_id** | Option<**String**> | The unique change password Id that was sent via email or returned by the Forgot Password API. |  |
-**verification_id** | Option<**String**> | The unique verification Id that has been set on the user object. |  |
 **username** | Option<**String**> | The username of the user. |  |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**verification_id** | Option<**String**> | The unique verification Id that has been set on the user object. |  |
+**change_password_id** | Option<**String**> | The unique change password Id that was sent via email or returned by the Forgot Password API. |  |
 **email** | Option<**String**> | The email of the user. |  |
 **login_id** | Option<**String**> | The email or username of the user. |  |
 
@@ -6646,7 +6808,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -6777,10 +6939,10 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_user_actioning
 
-> models::ActionResponse retrieve_user_actioning(user_id, active, preventing_login)
+> models::ActionResponse retrieve_user_actioning(user_id, preventing_login, active)
 
 
-Retrieves all the actions for the user with the given Id. This will return all time based actions that are active, and inactive as well as non-time based actions. OR Retrieves all the actions for the user with the given Id that are currently inactive. An inactive action means one that is time based and has been canceled or has expired, or is not time based. OR Retrieves all the actions for the user with the given Id that are currently active. An active action means one that is time based and has not been canceled, and has not ended. OR Retrieves all the actions for the user with the given Id that are currently preventing the User from logging in.
+Retrieves all the actions for the user with the given Id that are currently preventing the User from logging in. OR Retrieves all the actions for the user with the given Id. This will return all time based actions that are active, and inactive as well as non-time based actions. OR Retrieves all the actions for the user with the given Id that are currently active. An active action means one that is time based and has not been canceled, and has not ended. OR Retrieves all the actions for the user with the given Id that are currently inactive. An inactive action means one that is time based and has been canceled or has expired, or is not time based.
 
 ### Parameters
 
@@ -6788,8 +6950,8 @@ Retrieves all the actions for the user with the given Id. This will return all t
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **user_id** | Option<**String**> | The Id of the user to fetch the actions for. |  |
-**active** | Option<**String**> |  |  |
 **preventing_login** | Option<**String**> |  |  |
+**active** | Option<**String**> |  |  |
 
 ### Return type
 
@@ -6812,7 +6974,7 @@ Name | Type | Description  | Required | Notes
 > retrieve_user_change_password(login_id)
 
 
-Check to see if the user must obtain a Trust Token Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Token by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API. OR Check to see if the user must obtain a Trust Request Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Request Id by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API.
+Check to see if the user must obtain a Trust Request Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Request Id by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API. OR Check to see if the user must obtain a Trust Token Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Token by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API.
 
 ### Parameters
 
@@ -6827,7 +6989,7 @@ Name | Type | Description  | Required | Notes
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[ApiKeyAuth](../README.md#ApiKeyAuth)
 
 ### HTTP request headers
 
@@ -8370,19 +8532,19 @@ Name | Type | Description  | Required | Notes
 
 ## update_application_with_id
 
-> models::ApplicationResponse update_application_with_id(application_id, reactivate, x_fusion_auth_tenant_id, application_request)
+> models::ApplicationResponse update_application_with_id(application_id, x_fusion_auth_tenant_id, reactivate, application_request)
 
 
-Reactivates the application with the given Id. OR Updates the application with the given Id.
+Updates the application with the given Id. OR Reactivates the application with the given Id.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**application_id** | **String** | The Id of the application to reactivate. | [required] |
-**reactivate** | Option<**String**> |  |  |
+**application_id** | **String** | The Id of the application to update. | [required] |
 **x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**reactivate** | Option<**String**> |  |  |
 **application_request** | Option<[**ApplicationRequest**](ApplicationRequest.md)> |  |  |
 
 ### Return type
@@ -9184,12 +9346,44 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
+## update_user_family_with_id
+
+> models::FamilyResponse update_user_family_with_id(family_id, x_fusion_auth_tenant_id, family_request)
+
+
+Updates a family with a given Id. OR Adds a user to an existing family. The family Id must be specified.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**family_id** | **String** | The Id of the family to update. | [required] |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**family_request** | Option<[**FamilyRequest**](FamilyRequest.md)> |  |  |
+
+### Return type
+
+[**models::FamilyResponse**](FamilyResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
 ## update_user_verify_email
 
-> models::VerifyEmailResponse update_user_verify_email(email, send_verify_email, application_id)
+> models::VerifyEmailResponse update_user_verify_email(email, application_id, send_verify_email)
 
 
-Generate a new Email Verification Id to be used with the Verify Email API. This API will not attempt to send an email to the User. This API may be used to collect the verificationId for use with a third party system. OR Re-sends the verification email to the user. If the Application has configured a specific email template this will be used instead of the tenant configuration. OR Re-sends the verification email to the user.
+Re-sends the verification email to the user. OR Re-sends the verification email to the user. If the Application has configured a specific email template this will be used instead of the tenant configuration. OR Generate a new Email Verification Id to be used with the Verify Email API. This API will not attempt to send an email to the User. This API may be used to collect the verificationId for use with a third party system.
 
 ### Parameters
 
@@ -9197,8 +9391,8 @@ Generate a new Email Verification Id to be used with the Verify Email API. This 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **email** | Option<**String**> | The email address of the user that needs a new verification email. |  |
-**send_verify_email** | Option<**String**> |  |  |
 **application_id** | Option<**String**> | The unique Application Id to used to resolve an application specific email template. |  |
+**send_verify_email** | Option<**String**> |  |  |
 
 ### Return type
 
@@ -9250,19 +9444,19 @@ Name | Type | Description  | Required | Notes
 
 ## update_user_with_id
 
-> models::UserResponse update_user_with_id(user_id, x_fusion_auth_tenant_id, reactivate, user_request)
+> models::UserResponse update_user_with_id(user_id, reactivate, x_fusion_auth_tenant_id, user_request)
 
 
-Updates the user with the given Id. OR Reactivates the user with the given Id.
+Reactivates the user with the given Id. OR Updates the user with the given Id.
 
 ### Parameters
 
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
-**user_id** | **String** | The Id of the user to update. | [required] |
-**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
+**user_id** | **String** | The Id of the user to reactivate. | [required] |
 **reactivate** | Option<**String**> |  |  |
+**x_fusion_auth_tenant_id** | Option<**uuid::Uuid**> | The unique Id of the tenant used to scope this API request. Only required when there is more than one tenant and the API key is not tenant-scoped. |  |
 **user_request** | Option<[**UserRequest**](UserRequest.md)> |  |  |
 
 ### Return type
