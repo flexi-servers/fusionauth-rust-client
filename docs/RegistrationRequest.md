@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **generate_authentication_token** | Option<**bool**> |  | [optional]
 **registration** | Option<[**models::UserRegistration**](UserRegistration.md)> |  | [optional]
 **send_set_password_email** | Option<**bool**> |  | [optional]
+**send_set_password_identity_type** | Option<[**models::SendSetPasswordIdentityType**](SendSetPasswordIdentityType.md)> |  | [optional]
 **skip_registration_verification** | Option<**bool**> |  | [optional]
 **skip_verification** | Option<**bool**> |  | [optional]
 **user** | Option<[**models::User**](User.md)> |  | [optional]

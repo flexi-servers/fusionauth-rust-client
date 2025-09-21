@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **credential_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **login_id** | Option<**String**> |  | [optional]
+**login_id_types** | Option<**Vec<String>**> |  | [optional]
 **state** | Option<[**std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
 **user_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **workflow** | Option<[**models::WebAuthnWorkflow**](WebAuthnWorkflow.md)> |  | [optional]

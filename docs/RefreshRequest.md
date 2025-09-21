@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **refresh_token** | Option<**String**> |  | [optional]
+**time_to_live_in_seconds** | Option<**i32**> |  | [optional]
 **token** | Option<**String**> |  | [optional]
 **event_info** | Option<[**models::EventInfo**](EventInfo.md)> |  | [optional]
 

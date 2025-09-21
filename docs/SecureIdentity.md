@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**identities** | Option<[**Vec<models::UserIdentity>**](UserIdentity.md)> |  | [optional]
 **breached_password_last_checked_instant** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
 **breached_password_status** | Option<[**models::BreachedPasswordStatus**](BreachedPasswordStatus.md)> |  | [optional]
 **connector_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]

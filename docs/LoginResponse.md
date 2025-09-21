@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **change_password_reason** | Option<[**models::ChangePasswordReason**](ChangePasswordReason.md)> |  | [optional]
 **configurable_methods** | Option<**Vec<String>**> |  | [optional]
 **email_verification_id** | Option<**String**> |  | [optional]
+**identity_verification_id** | Option<**String**> |  | [optional]
 **methods** | Option<[**Vec<models::TwoFactorMethod>**](TwoFactorMethod.md)> |  | [optional]
 **pending_id_p_link_id** | Option<**String**> |  | [optional]
 **refresh_token** | Option<**String**> |  | [optional]

@@ -13,7 +13,11 @@
 | AccessTokenRequired | access_token_required |
 | RefreshTokenNotFound | refresh_token_not_found |
 | RefreshTokenTypeNotSupported | refresh_token_type_not_supported |
+| IdTokenInvalid | id_token_invalid |
+| UnsupportedTokenType | unsupported_token_type |
+| TokenTypeHintMismatch | token_type_hint_mismatch |
 | InvalidClientId | invalid_client_id |
+| InvalidExpiresIn | invalid_expires_in |
 | InvalidUserCredentials | invalid_user_credentials |
 | InvalidGrantType | invalid_grant_type |
 | InvalidOrigin | invalid_origin |
@@ -21,6 +25,7 @@
 | InvalidPkceCodeVerifier | invalid_pkce_code_verifier |
 | InvalidPkceCodeChallenge | invalid_pkce_code_challenge |
 | InvalidPkceCodeChallengeMethod | invalid_pkce_code_challenge_method |
+| InvalidPrompt | invalid_prompt |
 | InvalidRedirectUri | invalid_redirect_uri |
 | InvalidResponseMode | invalid_response_mode |
 | InvalidResponseType | invalid_response_type |
@@ -32,6 +37,7 @@
 | InvalidTargetEntityScope | invalid_target_entity_scope |
 | InvalidEntityPermissionScope | invalid_entity_permission_scope |
 | InvalidUserId | invalid_user_id |
+| InvalidTenantId | invalid_tenant_id |
 | GrantTypeDisabled | grant_type_disabled |
 | MissingClientId | missing_client_id |
 | MissingClientSecret | missing_client_secret |
@@ -47,6 +53,7 @@
 | MissingUserCode | missing_user_code |
 | MissingUserId | missing_user_id |
 | MissingVerificationUri | missing_verification_uri |
+| MissingTenantId | missing_tenant_id |
 | LoginPrevented | login_prevented |
 | NotLicensed | not_licensed |
 | UserCodeExpired | user_code_expired |
@@ -65,6 +72,14 @@
 | MissingRequiredScope | missing_required_scope |
 | UnknownScope | unknown_scope |
 | ConsentCanceled | consent_canceled |
+| AuthenticationRequired | authentication_required |
+| EmailVerificationRequired | email_verification_required |
+| MultiFactorChallengeRequired | multi_factor_challenge_required |
+| PhoneVerificationRequired | phone_verification_required |
+| RegistrationMissingRequirement | registration_missing_requirement |
+| RegistrationRequired | registration_required |
+| RegistrationVerificationRequired | registration_verification_required |
+| ConsentRequired | consent_required |
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

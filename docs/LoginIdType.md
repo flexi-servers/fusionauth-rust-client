@@ -5,6 +5,7 @@
 | Name | Value |
 |---- | -----|
 | Email | email |
+| PhoneNumber | phoneNumber |
 | Username | username |
 
 

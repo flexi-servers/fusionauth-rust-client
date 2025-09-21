@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **change_password_id** | Option<**String**> |  | [optional]
 **current_password** | Option<**String**> |  | [optional]
 **login_id** | Option<**String**> |  | [optional]
+**login_id_types** | Option<**Vec<String>**> |  | [optional]
 **password** | Option<**String**> |  | [optional]
 **refresh_token** | Option<**String**> |  | [optional]
 **trust_challenge** | Option<**String**> |  | [optional]

@@ -31,6 +31,7 @@ Name | Type | Description | Notes
 **oauth_configuration** | Option<[**models::TenantOAuth2Configuration**](TenantOAuth2Configuration.md)> |  | [optional]
 **password_encryption_configuration** | Option<[**models::PasswordEncryptionConfiguration**](PasswordEncryptionConfiguration.md)> |  | [optional]
 **password_validation_rules** | Option<[**models::PasswordValidationRules**](PasswordValidationRules.md)> |  | [optional]
+**phone_configuration** | Option<[**models::TenantPhoneConfiguration**](TenantPhoneConfiguration.md)> |  | [optional]
 **rate_limit_configuration** | Option<[**models::TenantRateLimitConfiguration**](TenantRateLimitConfiguration.md)> |  | [optional]
 **registration_configuration** | Option<[**models::TenantRegistrationConfiguration**](TenantRegistrationConfiguration.md)> |  | [optional]
 **scim_server_configuration** | Option<[**models::TenantScimServerConfiguration**](TenantSCIMServerConfiguration.md)> |  | [optional]

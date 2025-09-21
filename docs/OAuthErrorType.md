@@ -8,6 +8,9 @@
 | InvalidClient | invalid_client |
 | InvalidGrant | invalid_grant |
 | InvalidToken | invalid_token |
+| ConsentRequired | consent_required |
+| InteractionRequired | interaction_required |
+| LoginRequired | login_required |
 | UnauthorizedClient | unauthorized_client |
 | InvalidScope | invalid_scope |
 | ServerError | server_error |

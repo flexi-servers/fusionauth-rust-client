@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **data** | Option<**std::collections::HashMap<String, String>**> |  | [optional]
 **identity_provider_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **login_id** | Option<**String**> |  | [optional]
+**login_id_types** | Option<**Vec<String>**> |  | [optional]
 **state** | Option<[**std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
 **application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **ip_address** | Option<**String**> |  | [optional]

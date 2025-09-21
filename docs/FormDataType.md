@@ -9,6 +9,7 @@
 | Date | date |
 | Email | email |
 | Number | number |
+| PhoneNumber | phoneNumber |
 | String | string |
 
 

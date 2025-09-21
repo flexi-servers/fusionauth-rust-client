@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **login_id** | Option<**String**> |  | [optional]
+**login_id_types** | Option<**Vec<String>**> |  | [optional]
 **one_time_password** | Option<**String**> |  | [optional]
 **password** | Option<**String**> |  | [optional]
 **two_factor_trust_id** | Option<**String**> |  | [optional]

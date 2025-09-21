@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | Option<**String**> |  | [optional]
+**one_time_code** | Option<**String**> |  | [optional]
 **two_factor_trust_id** | Option<**String**> |  | [optional]
 **application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
 **ip_address** | Option<**String**> |  | [optional]
