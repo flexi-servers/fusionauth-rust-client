@@ -5,11 +5,11 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **confirm** | Option<**bool**> |  | [optional]
-**consent_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**consent_id** | Option<**uuid::Uuid**> |  | [optional]
 **control** | Option<[**models::FormControl**](FormControl.md)> |  | [optional]
-**data** | Option<[**std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
+**data** | Option<**std::collections::HashMap<String, serde_json::Value>**> |  | [optional]
 **description** | Option<**String**> |  | [optional]
-**id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**id** | Option<**uuid::Uuid**> |  | [optional]
 **insert_instant** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
 **key** | Option<**String**> |  | [optional]
 **last_update_instant** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]

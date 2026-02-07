@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**application_id** | Option<**uuid::Uuid**> |  | [optional]
 **authentication_type** | Option<**String**> |  | [optional]
-**connector_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
-**identity_provider_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**connector_id** | Option<**uuid::Uuid**> |  | [optional]
+**identity_provider_id** | Option<**uuid::Uuid**> |  | [optional]
 **identity_provider_name** | Option<**String**> |  | [optional]
 **ip_address** | Option<**String**> |  | [optional]
 **user** | Option<[**models::User**](User.md)> |  | [optional]

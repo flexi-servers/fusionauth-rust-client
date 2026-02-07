@@ -1,0 +1,19 @@
+# Trust
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**application_id** | Option<**uuid::Uuid**> |  | [optional]
+**attributes** | Option<**std::collections::HashMap<String, String>**> |  | [optional]
+**expiration_instant** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
+**id** | Option<**String**> |  | [optional]
+**insert_instant** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
+**start_instants** | Option<[**models::StartInstant**](StartInstant.md)> |  | [optional]
+**state** | Option<**std::collections::HashMap<String, serde_json::Value>**> |  | [optional]
+**tenant_id** | Option<**uuid::Uuid**> |  | [optional]
+**user_id** | Option<**uuid::Uuid**> |  | [optional]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

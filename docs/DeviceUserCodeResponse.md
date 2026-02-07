@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **expires_in** | Option<**i32**> |  | [optional]
 **pending_id_p_link** | Option<[**models::PendingIdPLink**](PendingIdPLink.md)> |  | [optional]
 **scope** | Option<**String**> |  | [optional]
-**tenant_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**tenant_id** | Option<**uuid::Uuid**> |  | [optional]
 **user_code** | Option<**String**> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

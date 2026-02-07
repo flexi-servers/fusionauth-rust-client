@@ -4,8 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**application_id** | Option<**uuid::Uuid**> |  | [optional]
 **name** | Option<**String**> |  | [optional]
+**tenant_id** | Option<**uuid::Uuid**> |  | [optional]
 **r#type** | Option<[**models::IdentityProviderType**](IdentityProviderType.md)> |  | [optional]
 **number_of_results** | Option<**i32**> |  | [optional]
 **order_by** | Option<**String**> |  | [optional]

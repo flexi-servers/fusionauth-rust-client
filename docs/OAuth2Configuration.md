@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **consent_mode** | Option<[**models::OAuthScopeConsentMode**](OAuthScopeConsentMode.md)> |  | [optional]
 **debug** | Option<**bool**> |  | [optional]
 **device_verification_url** | Option<**String**> |  | [optional]
-**enabled_grants** | Option<[**Vec<serde_json::Value>**](serde_json::Value.md)> |  | [optional]
+**enabled_grants** | Option<**HashSet<serde_json::Value>**> |  | [optional]
 **generate_refresh_tokens** | Option<**bool**> |  | [optional]
 **logout_behavior** | Option<[**models::LogoutBehavior**](LogoutBehavior.md)> |  | [optional]
 **logout_url** | Option<**String**> |  | [optional]

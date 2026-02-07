@@ -5,10 +5,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **data** | Option<**std::collections::HashMap<String, String>**> |  | [optional]
-**identity_provider_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**identity_provider_id** | Option<**uuid::Uuid**> |  | [optional]
 **no_link** | Option<**bool**> |  | [optional]
 **encoded_jwt** | Option<**String**> |  | [optional]
-**application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**application_id** | Option<**uuid::Uuid**> |  | [optional]
 **ip_address** | Option<**String**> |  | [optional]
 **meta_data** | Option<[**models::MetaData**](MetaData.md)> |  | [optional]
 **new_device** | Option<**bool**> |  | [optional]

@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **skip_registration_verification** | Option<**bool**> |  | [optional]
 **skip_verification** | Option<**bool**> |  | [optional]
 **user** | Option<[**models::User**](User.md)> |  | [optional]
+**verification_ids** | Option<**Vec<String>**> |  | [optional]
 **event_info** | Option<[**models::EventInfo**](EventInfo.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**group_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
-**tenant_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
-**user_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**group_id** | Option<**uuid::Uuid**> |  | [optional]
+**tenant_id** | Option<**uuid::Uuid**> |  | [optional]
+**user_id** | Option<**uuid::Uuid**> |  | [optional]
 **number_of_results** | Option<**i32**> |  | [optional]
 **order_by** | Option<**String**> |  | [optional]
 **start_row** | Option<**i32**> |  | [optional]

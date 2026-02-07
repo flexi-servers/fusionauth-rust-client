@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
-**data** | Option<[**std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
+**application_id** | Option<**uuid::Uuid**> |  | [optional]
+**data** | Option<**std::collections::HashMap<String, serde_json::Value>**> |  | [optional]
 **default_consent_detail** | Option<**String**> |  | [optional]
 **default_consent_message** | Option<**String**> |  | [optional]
 **description** | Option<**String**> |  | [optional]
-**id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**id** | Option<**uuid::Uuid**> |  | [optional]
 **insert_instant** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
 **last_update_instant** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
 **name** | Option<**String**> |  | [optional]

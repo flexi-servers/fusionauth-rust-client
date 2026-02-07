@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**actioner_user_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**actioner_user_id** | Option<**uuid::Uuid**> |  | [optional]
 **comment** | Option<**String**> |  | [optional]
 **create_instant** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
 **expiry** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]

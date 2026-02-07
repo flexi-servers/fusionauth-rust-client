@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **accurate_total** | Option<**bool**> |  | [optional]
-**ids** | Option<[**Vec<uuid::Uuid>**](uuid::Uuid.md)> |  | [optional]
+**ids** | Option<**Vec<uuid::Uuid>**> |  | [optional]
 **next_results** | Option<**String**> |  | [optional]
 **query** | Option<**String**> |  | [optional]
 **query_string** | Option<**String**> |  | [optional]

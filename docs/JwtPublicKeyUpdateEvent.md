@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**application_ids** | Option<[**Vec<serde_json::Value>**](serde_json::Value.md)> |  | [optional]
+**application_ids** | Option<**HashSet<serde_json::Value>**> |  | [optional]
 **create_instant** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
-**id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**id** | Option<**uuid::Uuid**> |  | [optional]
 **info** | Option<[**models::EventInfo**](EventInfo.md)> |  | [optional]
-**tenant_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**tenant_id** | Option<**uuid::Uuid**> |  | [optional]
 **r#type** | Option<[**models::EventType**](EventType.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

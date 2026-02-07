@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **one_time_code** | Option<**String**> |  | [optional]
-**user_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**user_id** | Option<**uuid::Uuid**> |  | [optional]
 **verification_id** | Option<**String**> |  | [optional]
 **event_info** | Option<[**models::EventInfo**](EventInfo.md)> |  | [optional]
 

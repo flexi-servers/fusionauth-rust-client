@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**application_id** | Option<**uuid::Uuid**> |  | [optional]
 **current_password** | Option<**String**> |  | [optional]
 **disable_domain_block** | Option<**bool**> |  | [optional]
 **send_set_password_email** | Option<**bool**> |  | [optional]

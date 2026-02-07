@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **email_user** | Option<**bool**> |  | [optional]
 **reset_count_in_seconds** | Option<**i32**> |  | [optional]
 **too_many_attempts** | Option<**i32**> |  | [optional]
-**user_action_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**user_action_id** | Option<**uuid::Uuid**> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

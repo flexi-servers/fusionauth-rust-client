@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**email_template_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**email_template_id** | Option<**uuid::Uuid**> |  | [optional]
 **maximum_time_to_send_email_in_hours** | Option<**i32**> |  | [optional]
 **minimum_time_to_send_email_in_hours** | Option<**i32**> |  | [optional]
 **enabled** | Option<**bool**> |  | [optional]

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **encryption_algorithm** | Option<**String**> |  | [optional]
 **key_location** | Option<**String**> |  | [optional]
 **key_transport_algorithm** | Option<**String**> |  | [optional]
-**key_transport_encryption_key_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**key_transport_encryption_key_id** | Option<**uuid::Uuid**> |  | [optional]
 **mask_generation_function** | Option<**String**> |  | [optional]
 **enabled** | Option<**bool**> |  | [optional]
 

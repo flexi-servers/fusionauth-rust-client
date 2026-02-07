@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**application_id** | Option<**uuid::Uuid**> |  | [optional]
 **code** | Option<**String**> |  | [optional]
 **method_id** | Option<**String**> |  | [optional]
 **event_info** | Option<[**models::EventInfo**](EventInfo.md)> |  | [optional]

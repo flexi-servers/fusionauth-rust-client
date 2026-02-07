@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **certificate_information** | Option<[**models::CertificateInformation**](CertificateInformation.md)> |  | [optional]
 **expiration_instant** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
 **has_private_key** | Option<**bool**> |  | [optional]
-**id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**id** | Option<**uuid::Uuid**> |  | [optional]
 **insert_instant** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
 **issuer** | Option<**String**> |  | [optional]
 **kid** | Option<**String**> |  | [optional]

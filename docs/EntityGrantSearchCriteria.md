@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**entity_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**entity_id** | Option<**uuid::Uuid**> |  | [optional]
 **name** | Option<**String**> |  | [optional]
-**user_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**user_id** | Option<**uuid::Uuid**> |  | [optional]
 **number_of_results** | Option<**i32**> |  | [optional]
 **order_by** | Option<**String**> |  | [optional]
 **start_row** | Option<**i32**> |  | [optional]

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **kid** | Option<**String**> |  | [optional]
 **kty** | Option<[**models::KeyType**](KeyType.md)> |  | [optional]
 **n** | Option<**String**> |  | [optional]
-**other** | Option<[**std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
+**other** | Option<**std::collections::HashMap<String, serde_json::Value>**> |  | [optional]
 **p** | Option<**String**> |  | [optional]
 **q** | Option<**String**> |  | [optional]
 **qi** | Option<**String**> |  | [optional]

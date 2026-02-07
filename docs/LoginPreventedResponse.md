@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**action_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
-**actioner_user_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**action_id** | Option<**uuid::Uuid**> |  | [optional]
+**actioner_user_id** | Option<**uuid::Uuid**> |  | [optional]
 **expiry** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
 **localized_name** | Option<**String**> |  | [optional]
 **localized_option** | Option<**String**> |  | [optional]

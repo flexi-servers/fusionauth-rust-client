@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**application_id** | Option<**uuid::Uuid**> |  | [optional]
 **authenticator_id** | Option<**String**> |  | [optional]
 **code** | Option<**String**> |  | [optional]
 **email** | Option<**String**> |  | [optional]

@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 **device_grant_status** | Option<**String**> |  | [optional]
 **device_info** | Option<[**models::DeviceInfo**](DeviceInfo.md)> |  | [optional]
 **identity_provider_link** | Option<[**models::IdentityProviderLink**](IdentityProviderLink.md)> |  | [optional]
-**tenant_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
-**user_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**tenant_id** | Option<**uuid::Uuid**> |  | [optional]
+**user_id** | Option<**uuid::Uuid**> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

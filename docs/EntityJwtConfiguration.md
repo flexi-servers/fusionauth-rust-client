@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**access_token_key_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**access_token_key_id** | Option<**uuid::Uuid**> |  | [optional]
 **time_to_live_in_seconds** | Option<**i32**> |  | [optional]
 **enabled** | Option<**bool**> |  | [optional]
 

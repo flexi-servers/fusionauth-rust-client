@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
-**credential_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**application_id** | Option<**uuid::Uuid**> |  | [optional]
+**credential_id** | Option<**uuid::Uuid**> |  | [optional]
 **login_id** | Option<**String**> |  | [optional]
 **login_id_types** | Option<**Vec<String>**> |  | [optional]
-**state** | Option<[**std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
-**user_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**state** | Option<**std::collections::HashMap<String, serde_json::Value>**> |  | [optional]
+**user_id** | Option<**uuid::Uuid**> |  | [optional]
 **workflow** | Option<[**models::WebAuthnWorkflow**](WebAuthnWorkflow.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

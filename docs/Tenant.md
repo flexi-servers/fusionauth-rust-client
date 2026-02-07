@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | Option<[**std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
+**data** | Option<**std::collections::HashMap<String, serde_json::Value>**> |  | [optional]
 **access_control_configuration** | Option<[**models::TenantAccessControlConfiguration**](TenantAccessControlConfiguration.md)> |  | [optional]
 **captcha_configuration** | Option<[**models::TenantCaptchaConfiguration**](TenantCaptchaConfiguration.md)> |  | [optional]
 **configured** | Option<**bool**> |  | [optional]
@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **family_configuration** | Option<[**models::FamilyConfiguration**](FamilyConfiguration.md)> |  | [optional]
 **form_configuration** | Option<[**models::TenantFormConfiguration**](TenantFormConfiguration.md)> |  | [optional]
 **http_session_max_inactive_interval** | Option<**i32**> |  | [optional]
-**id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**id** | Option<**uuid::Uuid**> |  | [optional]
 **insert_instant** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
 **issuer** | Option<**String**> |  | [optional]
 **jwt_configuration** | Option<[**models::JwtConfiguration**](JWTConfiguration.md)> |  | [optional]
@@ -37,7 +37,7 @@ Name | Type | Description | Notes
 **scim_server_configuration** | Option<[**models::TenantScimServerConfiguration**](TenantSCIMServerConfiguration.md)> |  | [optional]
 **sso_configuration** | Option<[**models::TenantSsoConfiguration**](TenantSSOConfiguration.md)> |  | [optional]
 **state** | Option<[**models::ObjectState**](ObjectState.md)> |  | [optional]
-**theme_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**theme_id** | Option<**uuid::Uuid**> |  | [optional]
 **user_delete_policy** | Option<[**models::TenantUserDeletePolicy**](TenantUserDeletePolicy.md)> |  | [optional]
 **username_configuration** | Option<[**models::TenantUsernameConfiguration**](TenantUsernameConfiguration.md)> |  | [optional]
 **web_authn_configuration** | Option<[**models::TenantWebAuthnConfiguration**](TenantWebAuthnConfiguration.md)> |  | [optional]

@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **api_key** | Option<**String**> |  | [optional]
-**application_ids** | Option<[**Vec<uuid::Uuid>**](uuid::Uuid.md)> |  | [optional]
+**application_ids** | Option<**Vec<uuid::Uuid>**> |  | [optional]
 **url** | Option<**String**> |  | [optional]
 **username_moderation** | Option<[**models::UsernameModeration**](UsernameModeration.md)> |  | [optional]
 **enabled** | Option<**bool**> |  | [optional]

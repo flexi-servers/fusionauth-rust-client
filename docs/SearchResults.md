@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **next_results** | Option<**String**> |  | [optional]
-**results** | Option<[**Vec<serde_json::Value>**](serde_json::Value.md)> |  | [optional]
+**results** | Option<**Vec<serde_json::Value>**> |  | [optional]
 **total** | Option<**i64**> |  | [optional]
 **total_equal_to_actual** | Option<**bool**> |  | [optional]
 

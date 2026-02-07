@@ -6,10 +6,8 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**action_user_with_id**](DefaultApi.md#action_user_with_id) | **POST** /api/user/action | 
 [**activate_reactor_with_id**](DefaultApi.md#activate_reactor_with_id) | **POST** /api/reactor | 
-[**approve_device_with_id**](DefaultApi.md#approve_device_with_id) | **POST** /oauth2/device/approve | 
 [**cancel_action_with_id**](DefaultApi.md#cancel_action_with_id) | **DELETE** /api/user/action/{actionId} | 
 [**change_password_with_id**](DefaultApi.md#change_password_with_id) | **POST** /api/user/change-password/{changePasswordId} | 
-[**check_change_password_using_id_with_id**](DefaultApi.md#check_change_password_using_id_with_id) | **GET** /api/user/change-password/{changePasswordId} | 
 [**comment_on_user_with_id**](DefaultApi.md#comment_on_user_with_id) | **POST** /api/user/comment | 
 [**complete_verify_identity_with_id**](DefaultApi.md#complete_verify_identity_with_id) | **POST** /api/identity/verify/complete | 
 [**complete_web_authn_assertion_with_id**](DefaultApi.md#complete_web_authn_assertion_with_id) | **POST** /api/webauthn/assert | 
@@ -26,6 +24,9 @@ Method | HTTP request | Description
 [**create_connector_with_id**](DefaultApi.md#create_connector_with_id) | **POST** /api/connector/{connectorId} | 
 [**create_consent**](DefaultApi.md#create_consent) | **POST** /api/consent | 
 [**create_consent_with_id**](DefaultApi.md#create_consent_with_id) | **POST** /api/consent/{consentId} | 
+[**create_device_approve**](DefaultApi.md#create_device_approve) | **POST** /oauth2/device/approve | 
+[**create_device_authorize**](DefaultApi.md#create_device_authorize) | **POST** /oauth2/device_authorize | 
+[**create_device_user_code**](DefaultApi.md#create_device_user_code) | **POST** /oauth2/device/user-code | 
 [**create_email_template**](DefaultApi.md#create_email_template) | **POST** /api/email/template | 
 [**create_email_template_with_id**](DefaultApi.md#create_email_template_with_id) | **POST** /api/email/template/{emailTemplateId} | 
 [**create_entity**](DefaultApi.md#create_entity) | **POST** /api/entity | 
@@ -170,6 +171,7 @@ Method | HTTP request | Description
 [**retrieve_consent_with_id**](DefaultApi.md#retrieve_consent_with_id) | **GET** /api/consent/{consentId} | 
 [**retrieve_daily_active_report_with_id**](DefaultApi.md#retrieve_daily_active_report_with_id) | **GET** /api/report/daily-active-user | 
 [**retrieve_device_user_code**](DefaultApi.md#retrieve_device_user_code) | **GET** /oauth2/device/user-code | 
+[**retrieve_device_validate**](DefaultApi.md#retrieve_device_validate) | **GET** /oauth2/device/validate | 
 [**retrieve_email_template**](DefaultApi.md#retrieve_email_template) | **GET** /api/email/template | 
 [**retrieve_email_template_preview_with_id**](DefaultApi.md#retrieve_email_template_preview_with_id) | **POST** /api/email/template/preview | 
 [**retrieve_email_template_with_id**](DefaultApi.md#retrieve_email_template_with_id) | **GET** /api/email/template/{emailTemplateId} | 
@@ -214,9 +216,10 @@ Method | HTTP request | Description
 [**retrieve_system_health_with_id**](DefaultApi.md#retrieve_system_health_with_id) | **GET** /api/health | 
 [**retrieve_tenant_with_id**](DefaultApi.md#retrieve_tenant_with_id) | **GET** /api/tenant/{tenantId} | 
 [**retrieve_theme_with_id**](DefaultApi.md#retrieve_theme_with_id) | **GET** /api/theme/{themeId} | 
-[**retrieve_total_report_with_id**](DefaultApi.md#retrieve_total_report_with_id) | **GET** /api/report/totals | 
+[**retrieve_total_report_with_excludes_with_id**](DefaultApi.md#retrieve_total_report_with_excludes_with_id) | **GET** /api/report/totals | 
 [**retrieve_two_factor_recovery_codes_with_id**](DefaultApi.md#retrieve_two_factor_recovery_codes_with_id) | **GET** /api/user/two-factor/recovery-code/{userId} | 
 [**retrieve_two_factor_status_with_id**](DefaultApi.md#retrieve_two_factor_status_with_id) | **GET** /api/two-factor/status/{twoFactorTrustId} | 
+[**retrieve_two_factor_status_with_request_with_id**](DefaultApi.md#retrieve_two_factor_status_with_request_with_id) | **POST** /api/two-factor/status | 
 [**retrieve_user**](DefaultApi.md#retrieve_user) | **GET** /api/user | 
 [**retrieve_user_action**](DefaultApi.md#retrieve_user_action) | **GET** /api/user-action | 
 [**retrieve_user_action_reason**](DefaultApi.md#retrieve_user_action_reason) | **GET** /api/user-action-reason | 
@@ -224,6 +227,7 @@ Method | HTTP request | Description
 [**retrieve_user_action_with_id**](DefaultApi.md#retrieve_user_action_with_id) | **GET** /api/user-action/{userActionId} | 
 [**retrieve_user_actioning**](DefaultApi.md#retrieve_user_actioning) | **GET** /api/user/action | 
 [**retrieve_user_change_password**](DefaultApi.md#retrieve_user_change_password) | **GET** /api/user/change-password | 
+[**retrieve_user_change_password_with_id**](DefaultApi.md#retrieve_user_change_password_with_id) | **GET** /api/user/change-password/{changePasswordId} | 
 [**retrieve_user_comments_with_id**](DefaultApi.md#retrieve_user_comments_with_id) | **GET** /api/user/comment/{userId} | 
 [**retrieve_user_consent_with_id**](DefaultApi.md#retrieve_user_consent_with_id) | **GET** /api/user/consent/{userConsentId} | 
 [**retrieve_user_consents_with_id**](DefaultApi.md#retrieve_user_consents_with_id) | **GET** /api/user/consent | 
@@ -309,7 +313,6 @@ Method | HTTP request | Description
 [**update_user_with_id**](DefaultApi.md#update_user_with_id) | **PUT** /api/user/{userId} | 
 [**update_webhook_with_id**](DefaultApi.md#update_webhook_with_id) | **PUT** /api/webhook/{webhookId} | 
 [**upsert_entity_grant_with_id**](DefaultApi.md#upsert_entity_grant_with_id) | **POST** /api/entity/{entityId}/grant | 
-[**validate_device_with_id**](DefaultApi.md#validate_device_with_id) | **GET** /oauth2/device/validate | 
 [**validate_jwt_with_id**](DefaultApi.md#validate_jwt_with_id) | **GET** /api/jwt/validate | 
 [**vend_jwt_with_id**](DefaultApi.md#vend_jwt_with_id) | **POST** /api/jwt/vend | 
 [**verify_identity_with_id**](DefaultApi.md#verify_identity_with_id) | **POST** /api/identity/verify | 
@@ -377,33 +380,6 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## approve_device_with_id
-
-> models::DeviceApprovalResponse approve_device_with_id()
-
-
-Approve a device grant.
-
-### Parameters
-
-This endpoint does not need any parameter.
-
-### Return type
-
-[**models::DeviceApprovalResponse**](DeviceApprovalResponse.md)
-
-### Authorization
-
-[ApiKeyAuth](../README.md#ApiKeyAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
 ## cancel_action_with_id
 
 > models::ActionResponse cancel_action_with_id(action_id, action_request)
@@ -461,36 +437,6 @@ Name | Type | Description  | Required | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## check_change_password_using_id_with_id
-
-> check_change_password_using_id_with_id(change_password_id)
-
-
-Check to see if the user must obtain a Trust Token Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Token by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API.
-
-### Parameters
-
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**change_password_id** | **String** | The change password Id used to find the user. This value is generated by FusionAuth once the change password workflow has been initiated. | [required] |
-
-### Return type
-
- (empty response body)
-
-### Authorization
-
-[ApiKeyAuth](../README.md#ApiKeyAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -986,6 +932,87 @@ Name | Type | Description  | Required | Notes
 
 - **Content-Type**: application/json
 - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## create_device_approve
+
+> models::DeviceApprovalResponse create_device_approve()
+
+
+Approve a device grant. OR Approve a device grant.
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**models::DeviceApprovalResponse**](DeviceApprovalResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## create_device_authorize
+
+> models::DeviceResponse create_device_authorize()
+
+
+Start the Device Authorization flow using a request body OR Start the Device Authorization flow using form-encoded parameters
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**models::DeviceResponse**](DeviceResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## create_device_user_code
+
+> create_device_user_code()
+
+
+Retrieve a user_code that is part of an in-progress Device Authorization Grant.  This API is useful if you want to build your own login workflow to complete a device grant. OR Retrieve a user_code that is part of an in-progress Device Authorization Grant.  This API is useful if you want to build your own login workflow to complete a device grant.  This request will require an API key.
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -1584,7 +1611,7 @@ Name | Type | Description  | Required | Notes
 > serde_json::Value create_introspect()
 
 
-Inspect an access token issued as the result of the Client Credentials Grant. OR Inspect an access token issued as the result of the User based grant such as the Authorization Code Grant, Implicit Grant, the User Credentials Grant or the Refresh Grant.
+Inspect an access token issued as the result of the Client Credentials Grant. OR Inspect an access token issued as the result of the Client Credentials Grant. OR Inspect an access token issued as the result of the User based grant such as the Authorization Code Grant, Implicit Grant, the User Credentials Grant or the Refresh Grant. OR Inspect an access token issued as the result of the User based grant such as the Authorization Code Grant, Implicit Grant, the User Credentials Grant or the Refresh Grant.
 
 ### Parameters
 
@@ -2076,7 +2103,7 @@ Name | Type | Description  | Required | Notes
 > models::AccessToken create_token()
 
 
-Exchange User Credentials for a Token. If you will be using the Resource Owner Password Credential Grant, you will make a request to the Token endpoint to exchange the user’s email and password for an access token. OR Exchange a Refresh Token for an Access Token. If you will be using the Refresh Token Grant, you will make a request to the Token endpoint to exchange the user’s refresh token for an access token. OR Exchanges an OAuth authorization code and code_verifier for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint and a code_verifier for an access token. OR Exchanges an OAuth authorization code for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint for an access token. OR Make a Client Credentials grant request to obtain an access token.
+Exchange User Credentials for a Token. If you will be using the Resource Owner Password Credential Grant, you will make a request to the Token endpoint to exchange the user’s email and password for an access token. OR Exchange User Credentials for a Token. If you will be using the Resource Owner Password Credential Grant, you will make a request to the Token endpoint to exchange the user’s email and password for an access token. OR Exchange a Refresh Token for an Access Token. If you will be using the Refresh Token Grant, you will make a request to the Token endpoint to exchange the user’s refresh token for an access token. OR Exchange a Refresh Token for an Access Token. If you will be using the Refresh Token Grant, you will make a request to the Token endpoint to exchange the user’s refresh token for an access token. OR Exchanges an OAuth authorization code for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint for an access token. OR Exchanges an OAuth authorization code and code_verifier for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint and a code_verifier for an access token. OR Exchanges an OAuth authorization code and code_verifier for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint and a code_verifier for an access token. OR Exchanges an OAuth authorization code for an access token. Makes a request to the Token endpoint to exchange the authorization code returned from the Authorize endpoint for an access token. OR Make a Client Credentials grant request to obtain an access token. OR Make a Client Credentials grant request to obtain an access token.
 
 ### Parameters
 
@@ -5438,6 +5465,37 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
+## retrieve_device_validate
+
+> retrieve_device_validate(user_code, client_id)
+
+
+Validates the end-user provided user_code from the user-interaction of the Device Authorization Grant. If you build your own activation form you should validate the user provided code prior to beginning the Authorization grant. OR Validates the end-user provided user_code from the user-interaction of the Device Authorization Grant. If you build your own activation form you should validate the user provided code prior to beginning the Authorization grant.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**user_code** | Option<**String**> | The end-user verification code. |  |
+**client_id** | Option<**String**> | The client Id. |  |
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
 ## retrieve_email_template
 
 > models::EmailTemplateResponse retrieve_email_template(x_fusion_auth_tenant_id)
@@ -6627,7 +6685,7 @@ Name | Type | Description  | Required | Notes
 **login_id** | Option<**String**> | The userId id. |  |
 **start** | Option<**String**> | The start instant as UTC milliseconds since Epoch. |  |
 **end** | Option<**String**> | The end instant as UTC milliseconds since Epoch. |  |
-**login_id_types** | Option<[**Vec<String>**](String.md)> | the identity types that FusionAuth will compare the loginId to. |  |
+**login_id_types** | Option<[**Vec<String>**](String.md)> | The identity types that FusionAuth will compare the loginId to. |  |
 **user_id** | Option<**String**> | The userId Id. |  |
 
 ### Return type
@@ -6761,16 +6819,19 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## retrieve_total_report_with_id
+## retrieve_total_report_with_excludes_with_id
 
-> models::TotalsReportResponse retrieve_total_report_with_id()
+> models::TotalsReportResponse retrieve_total_report_with_excludes_with_id(excludes)
 
 
-Retrieves the totals report. This contains all the total counts for each application and the global registration count.
+Retrieves the totals report. This allows excluding applicationTotals from the report. An empty list will include the applicationTotals.
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**excludes** | Option<[**Vec<String>**](String.md)> | List of fields to exclude in the response. Currently only allows applicationTotals. |  |
 
 ### Return type
 
@@ -6850,6 +6911,36 @@ Name | Type | Description  | Required | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
+## retrieve_two_factor_status_with_request_with_id
+
+> models::TwoFactorStatusResponse retrieve_two_factor_status_with_request_with_id(two_factor_status_request)
+
+
+Retrieve a user's two-factor status.  This can be used to see if a user will need to complete a two-factor challenge to complete a login, and optionally identify the state of the two-factor trust across various applications. This operation provides more payload options than retrieveTwoFactorStatus.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**two_factor_status_request** | Option<[**TwoFactorStatusRequest**](TwoFactorStatusRequest.md)> |  |  |
+
+### Return type
+
+[**models::TwoFactorStatusResponse**](TwoFactorStatusResponse.md)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
 ## retrieve_user
 
 > models::UserResponse retrieve_user(x_fusion_auth_tenant_id, verification_id, username, login_id, login_id_types, email, change_password_id)
@@ -6866,7 +6957,7 @@ Name | Type | Description  | Required | Notes
 **verification_id** | Option<**String**> | The unique verification Id that has been set on the user object. |  |
 **username** | Option<**String**> | The username of the user. |  |
 **login_id** | Option<**String**> | The email or username of the user. |  |
-**login_id_types** | Option<[**Vec<String>**](String.md)> | the identity types that FusionAuth will compare the loginId to. |  |
+**login_id_types** | Option<[**Vec<String>**](String.md)> | The identity types that FusionAuth will compare the loginId to. |  |
 **email** | Option<**String**> | The email of the user. |  |
 **change_password_id** | Option<**String**> | The unique change password Id that was sent via email or returned by the Forgot Password API. |  |
 
@@ -7039,10 +7130,10 @@ Name | Type | Description  | Required | Notes
 
 ## retrieve_user_change_password
 
-> retrieve_user_change_password(login_id)
+> retrieve_user_change_password(login_id, login_id_types, ip_address)
 
 
-Check to see if the user must obtain a Trust Request Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Request Id by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API. OR Check to see if the user must obtain a Trust Token Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Token by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API.
+Check to see if the user must obtain a Trust Request Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Request Id by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API. OR Check to see if the user must obtain a Trust Request Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Request Id by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API. OR Check to see if the user must obtain a Trust Request Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Request Id by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API. OR Check to see if the user must obtain a Trust Request Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Request Id by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API. OR Check to see if the user must obtain a Trust Token Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Token by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API. OR Check to see if the user must obtain a Trust Token Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Token by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API.
 
 ### Parameters
 
@@ -7050,6 +7141,39 @@ Check to see if the user must obtain a Trust Request Id in order to complete a c
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
 **login_id** | Option<**String**> | The loginId of the User that you intend to change the password for. |  |
+**login_id_types** | Option<[**Vec<String>**](String.md)> | The identity types that FusionAuth will compare the loginId to. |  |
+**ip_address** | Option<**String**> | IP address of the user changing their password. This is used for MFA risk assessment. |  |
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[ApiKeyAuth](../README.md#ApiKeyAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## retrieve_user_change_password_with_id
+
+> retrieve_user_change_password_with_id(change_password_id, ip_address)
+
+
+Check to see if the user must obtain a Trust Token Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Token by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API. OR Check to see if the user must obtain a Trust Token Id in order to complete a change password request. When a user has enabled Two-Factor authentication, before you are allowed to use the Change Password API to change your password, you must obtain a Trust Token by completing a Two-Factor Step-Up authentication.  An HTTP status code of 400 with a general error code of [TrustTokenRequired] indicates that a Trust Token is required to make a POST request to this API.
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**change_password_id** | **String** | The change password Id used to find the user. This value is generated by FusionAuth once the change password workflow has been initiated. | [required] |
+**ip_address** | Option<**String**> | IP address of the user changing their password. This is used for MFA risk assessment. |  |
 
 ### Return type
 
@@ -9662,37 +9786,6 @@ Name | Type | Description  | Required | Notes
 
 - **Content-Type**: application/json
 - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## validate_device_with_id
-
-> validate_device_with_id(user_code, client_id)
-
-
-Validates the end-user provided user_code from the user-interaction of the Device Authorization Grant. If you build your own activation form you should validate the user provided code prior to beginning the Authorization grant.
-
-### Parameters
-
-
-Name | Type | Description  | Required | Notes
-------------- | ------------- | ------------- | ------------- | -------------
-**user_code** | Option<**String**> | The end-user verification code. |  |
-**client_id** | Option<**String**> | The client Id. |  |
-
-### Return type
-
- (empty response body)
-
-### Authorization
-
-[ApiKeyAuth](../README.md#ApiKeyAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

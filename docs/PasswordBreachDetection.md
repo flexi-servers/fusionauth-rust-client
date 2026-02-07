@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **match_mode** | Option<[**models::BreachMatchMode**](BreachMatchMode.md)> |  | [optional]
-**notify_user_email_template_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**notify_user_email_template_id** | Option<**uuid::Uuid**> |  | [optional]
 **on_login** | Option<[**models::BreachAction**](BreachAction.md)> |  | [optional]
 **enabled** | Option<**bool**> |  | [optional]
 

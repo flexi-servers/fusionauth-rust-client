@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**threats_detected** | Option<[**Vec<serde_json::Value>**](serde_json::Value.md)> |  | [optional]
-**application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**threats_detected** | Option<**HashSet<serde_json::Value>**> |  | [optional]
+**application_id** | Option<**uuid::Uuid**> |  | [optional]
 **authentication_type** | Option<**String**> |  | [optional]
-**connector_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
-**identity_provider_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**connector_id** | Option<**uuid::Uuid**> |  | [optional]
+**identity_provider_id** | Option<**uuid::Uuid**> |  | [optional]
 **identity_provider_name** | Option<**String**> |  | [optional]
 **ip_address** | Option<**String**> |  | [optional]
 

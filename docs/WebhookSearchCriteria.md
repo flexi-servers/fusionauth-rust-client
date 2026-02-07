@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **description** | Option<**String**> |  | [optional]
-**tenant_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**tenant_id** | Option<**uuid::Uuid**> |  | [optional]
 **url** | Option<**String**> |  | [optional]
 **number_of_results** | Option<**i32**> |  | [optional]
 **order_by** | Option<**String**> |  | [optional]

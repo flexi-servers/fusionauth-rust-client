@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**attachment** | Option<[**std::path::PathBuf**](std::path::PathBuf.md)> |  | [optional]
+**attachment** | Option<**std::path::PathBuf**> |  | [optional]
 **mime** | Option<**String**> |  | [optional]
 **name** | Option<**String**> |  | [optional]
 

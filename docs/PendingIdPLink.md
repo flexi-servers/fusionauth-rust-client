@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **display_name** | Option<**String**> |  | [optional]
 **email** | Option<**String**> |  | [optional]
-**identity_provider_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**identity_provider_id** | Option<**uuid::Uuid**> |  | [optional]
 **identity_provider_links** | Option<[**Vec<models::IdentityProviderLink>**](IdentityProviderLink.md)> |  | [optional]
 **identity_provider_name** | Option<**String**> |  | [optional]
 **identity_provider_tenant_configuration** | Option<[**models::IdentityProviderTenantConfiguration**](IdentityProviderTenantConfiguration.md)> |  | [optional]

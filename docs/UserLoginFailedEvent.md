@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**application_id** | Option<**uuid::Uuid**> |  | [optional]
 **authentication_type** | Option<**String**> |  | [optional]
 **ip_address** | Option<**String**> |  | [optional]
 **reason** | Option<[**models::UserLoginFailedReason**](UserLoginFailedReason.md)> |  | [optional]

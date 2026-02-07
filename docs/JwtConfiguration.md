@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**access_token_key_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
-**id_token_key_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**access_token_key_id** | Option<**uuid::Uuid**> |  | [optional]
+**id_token_key_id** | Option<**uuid::Uuid**> |  | [optional]
 **refresh_token_expiration_policy** | Option<[**models::RefreshTokenExpirationPolicy**](RefreshTokenExpirationPolicy.md)> |  | [optional]
 **refresh_token_one_time_use_configuration** | Option<[**models::RefreshTokenOneTimeUseConfiguration**](RefreshTokenOneTimeUseConfiguration.md)> |  | [optional]
 **refresh_token_revocation_policy** | Option<[**models::RefreshTokenRevocationPolicy**](RefreshTokenRevocationPolicy.md)> |  | [optional]

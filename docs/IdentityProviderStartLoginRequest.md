@@ -5,11 +5,11 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **data** | Option<**std::collections::HashMap<String, String>**> |  | [optional]
-**identity_provider_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**identity_provider_id** | Option<**uuid::Uuid**> |  | [optional]
 **login_id** | Option<**String**> |  | [optional]
 **login_id_types** | Option<**Vec<String>**> |  | [optional]
-**state** | Option<[**std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
-**application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**state** | Option<**std::collections::HashMap<String, serde_json::Value>**> |  | [optional]
+**application_id** | Option<**uuid::Uuid**> |  | [optional]
 **ip_address** | Option<**String**> |  | [optional]
 **meta_data** | Option<[**models::MetaData**](MetaData.md)> |  | [optional]
 **new_device** | Option<**bool**> |  | [optional]

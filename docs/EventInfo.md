@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | Option<[**std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
+**data** | Option<**std::collections::HashMap<String, serde_json::Value>**> |  | [optional]
 **device_description** | Option<**String**> |  | [optional]
 **device_name** | Option<**String**> |  | [optional]
 **device_type** | Option<**String**> |  | [optional]

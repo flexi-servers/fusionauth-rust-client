@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**domains** | Option<[**Vec<serde_json::Value>**](serde_json::Value.md)> |  | [optional]
+**domains** | Option<**HashSet<serde_json::Value>**> |  | [optional]
 **assertion_configuration** | Option<[**models::Samlv2AssertionConfiguration**](SAMLv2AssertionConfiguration.md)> |  | [optional]
 **button_image_url** | Option<**String**> |  | [optional]
 **button_text** | Option<**String**> |  | [optional]
@@ -14,12 +14,12 @@ Name | Type | Description | Notes
 **login_hint_configuration** | Option<[**models::LoginHintConfiguration**](LoginHintConfiguration.md)> |  | [optional]
 **name_id_format** | Option<**String**> |  | [optional]
 **post_request** | Option<**bool**> |  | [optional]
-**request_signing_key_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**request_signing_key_id** | Option<**uuid::Uuid**> |  | [optional]
 **sign_request** | Option<**bool**> |  | [optional]
 **xml_signature_c14n_method** | Option<[**models::CanonicalizationMethod**](CanonicalizationMethod.md)> |  | [optional]
 **assertion_decryption_configuration** | Option<[**models::Samlv2AssertionDecryptionConfiguration**](SAMLv2AssertionDecryptionConfiguration.md)> |  | [optional]
 **email_claim** | Option<**String**> |  | [optional]
-**key_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**key_id** | Option<**uuid::Uuid**> |  | [optional]
 **unique_id_claim** | Option<**String**> |  | [optional]
 **use_name_id_for_email** | Option<**bool**> |  | [optional]
 **username_claim** | Option<**String**> |  | [optional]

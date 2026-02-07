@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **expiration** | Option<**String**> | A date without a time-zone in the ISO-8601 calendar system, such as 2007-12-03. | [optional]
 **license_attributes** | Option<**std::collections::HashMap<String, String>**> |  | [optional]
 **licensed** | Option<**bool**> |  | [optional]
+**multi_factor_lambdas** | Option<[**models::ReactorFeatureStatus**](ReactorFeatureStatus.md)> |  | [optional]
 **scim_server** | Option<[**models::ReactorFeatureStatus**](ReactorFeatureStatus.md)> |  | [optional]
 **tenant_manager_application** | Option<[**models::ReactorFeatureStatus**](ReactorFeatureStatus.md)> |  | [optional]
 **threat_detection** | Option<[**models::ReactorFeatureStatus**](ReactorFeatureStatus.md)> |  | [optional]

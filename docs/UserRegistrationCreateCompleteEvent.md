@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**application_id** | Option<**uuid::Uuid**> |  | [optional]
 **registration** | Option<[**models::UserRegistration**](UserRegistration.md)> |  | [optional]
 **user** | Option<[**models::User**](User.md)> |  | [optional]
 

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **one_time_password** | Option<**String**> |  | [optional]
 **password** | Option<**String**> |  | [optional]
 **two_factor_trust_id** | Option<**String**> |  | [optional]
-**application_id** | Option<[**uuid::Uuid**](uuid::Uuid.md)> |  | [optional]
+**application_id** | Option<**uuid::Uuid**> |  | [optional]
 **ip_address** | Option<**String**> |  | [optional]
 **meta_data** | Option<[**models::MetaData**](MetaData.md)> |  | [optional]
 **new_device** | Option<**bool**> |  | [optional]

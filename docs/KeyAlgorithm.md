@@ -13,6 +13,7 @@
 | Rs256 | RS256 |
 | Rs384 | RS384 |
 | Rs512 | RS512 |
+| Ed25519 | Ed25519 |
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

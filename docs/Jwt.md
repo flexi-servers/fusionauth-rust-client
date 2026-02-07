@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**aud** | Option<[**serde_json::Value**](.md)> |  | [optional]
+**aud** | Option<**serde_json::Value**> |  | [optional]
 **exp** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
 **iat** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
 **iss** | Option<**String**> |  | [optional]
 **nbf** | Option<**i64**> | The number of milliseconds since the unix epoch: January 1, 1970 00:00:00 UTC. This value is always in UTC. | [optional]
-**other_claims** | Option<[**std::collections::HashMap<String, serde_json::Value>**](serde_json::Value.md)> |  | [optional]
+**other_claims** | Option<**std::collections::HashMap<String, serde_json::Value>**> |  | [optional]
 **sub** | Option<**String**> |  | [optional]
 **jti** | Option<**String**> |  | [optional]
 
